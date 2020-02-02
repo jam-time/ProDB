@@ -1,0 +1,961 @@
+
+
+<!DOCTYPE html 
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"><meta http-equiv="Content-type" content="text/html; charset=UTF-8"><title>
+	Search Results - Image Mate Online
+</title><link media="all" href="styles/imostyle.css" type="text/css" rel="stylesheet" />
+    <style media="all" type="text/css">
+      #tblList td {
+         font-size: 10pt;
+      }
+      #tblList .headerTD {
+         font-size: 1.2em;
+      }
+      #tblList td a {
+         display: block;
+         padding: 0.1em;
+      }
+      .sortColumn a {
+         background-color: #337BEE;
+         color: #E0E8FF;
+      }
+      
+      tr.historic td {
+         text-decoration: line-through;
+      }
+    </style>
+    <link media="print" href="styles/printersheet.css" type="text/css" rel="stylesheet" /></head>
+  <body>
+    <form name="Form1" method="post" action="viewlist.aspx?sort=printkey&amp;swis=all&amp;sitetype=res&amp;advanced=true" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTY2MjYyMzI1Mg9kFgICAw9kFgoCBw9kFgJmD2QWAgIBDw8WAh4EVGV4dAUKUHJvcGVydHkgI2RkAgkPZBYCAgEPZBYIAgEPDxYCHgdWaXNpYmxlaGRkAgMPDxYCHwAFATFkZAIFDw8WAh8ABQM2NTRkZAIHDw8WAh4LTmF2aWdhdGVVcmwFOT9zb3J0PXByaW50a2V5JnN3aXM9YWxsJnNpdGV0eXBlPXJlcyZhZHZhbmNlZD10cnVlJnBhZ2U9MmRkAgsPZBYCZg9kFgxmDw8WAh8ABV48YSBocmVmPSIvSW1hdGUvdmlld2xpc3QuYXNweD9zb3J0PXByb3BudW0mc3dpcz1hbGwmc2l0ZXR5cGU9cmVzJmFkdmFuY2VkPXRydWUiPlByb3BlcnR5ICM8L2E+ZGQCAQ8PFgIfAAVkPGEgaHJlZj0iL0ltYXRlL3ZpZXdsaXN0LmFzcHg/c29ydD1zd2lzJnN3aXM9YWxsJnNpdGV0eXBlPXJlcyZhZHZhbmNlZD10cnVlIj5TV0lTIC0gTXVuaWNpcGFsaXR5PC9hPmRkAgIPDxYGHwAFWzxhIGhyZWY9Ii9JbWF0ZS92aWV3bGlzdC5hc3B4P3NvcnQ9cHJpbnRrZXkmc3dpcz1hbGwmc2l0ZXR5cGU9cmVzJmFkdmFuY2VkPXRydWUiPlRheCBJRDwvYT4eCENzc0NsYXNzBRNoZWFkZXJURCBzb3J0Q29sdW1uHgRfIVNCAgJkZAIDDw8WAh8ABVc8YSBocmVmPSIvSW1hdGUvdmlld2xpc3QuYXNweD9zb3J0PW93bmVyJnN3aXM9YWxsJnNpdGV0eXBlPXJlcyZhZHZhbmNlZD10cnVlIj5Pd25lcjwvYT5kZAIEDw8WAh8ABV48YSBocmVmPSIvSW1hdGUvdmlld2xpc3QuYXNweD9zb3J0PXN0cmVldG51bSZzd2lzPWFsbCZzaXRldHlwZT1yZXMmYWR2YW5jZWQ9dHJ1ZSI+U3RyZWV0ICM8L2E+ZGQCBQ8PFgIfAAViPGEgaHJlZj0iL0ltYXRlL3ZpZXdsaXN0LmFzcHg/c29ydD1zdHJlZXRuYW1lJnN3aXM9YWxsJnNpdGV0eXBlPXJlcyZhZHZhbmNlZD10cnVlIj5TdHJlZXQgTmFtZTwvYT5kZAIND2QWAgIBD2QWCAIBDw8WAh8BaGRkAgMPDxYCHwAFATFkZAIFDw8WAh8ABQM2NTRkZAIHDw8WAh8CBTk/c29ydD1wcmludGtleSZzd2lzPWFsbCZzaXRldHlwZT1yZXMmYWR2YW5jZWQ9dHJ1ZSZwYWdlPTJkZAIPDw8WAh8ABSVTaG93aW5nIHJlc3VsdHMgMSZuZGFzaDs0MDAgb2YgMjYxNTA4ZGRk+EnQO8IDq1YLCq/nhecN7YuptHc=" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="98AE7D9C" />
+      
+<script type="text/javascript">
+//<!--
+function openWindow(NewUrl){
+	var newWin;
+	newWin = window.open(NewUrl, 'display');
+	if (window.focus) {newWin.focus();}
+}
+
+function openHelp(HelpUrl)
+{	
+	var helpWin = window.open(HelpUrl, 'help', 
+	                          'width=800,height=600,scrollbars,toolbar');
+	if (window.focus) {
+	   helpWin.focus();
+	}
+}
+
+//window.onerror = function() {return true;}
+//-->
+</script>
+<script type="text/javascript" src="/Imate/javascript/dropdown.js"></script>
+<!--[if lt IE 8]>
+<script type="text/javascript" src="/Imate/javascript/common.js"></script>
+<script type="text/javascript">
+  addEvent(window, "load", fixIE, false);
+</script>
+<![endif]-->
+
+
+<script type="text/javascript">
+// <!--
+
+  function setupGisLinkForNewWindow() {
+    var gisLink = document.getElementById('gisLink');
+    if (gisLink) {
+      gisLink.onclick = openGisToFullExtent;
+    }
+  }
+  
+  function openGisToFullExtent() {
+    // We need to get the URL from the existing link because it includes the
+    // site's root URL
+    var gisLink = document.getElementById('gisLink');
+    var url = gisLink.href;
+    
+    // Note: the "gisWindow" ID is the same as the one used by the GIS pin
+    // button on the property details page
+    var gisWindow = window.open(url, 'gisWindow');
+    gisWindow.focus();
+    return false;
+  }
+
+// -->
+</script>
+
+
+<div id="header">
+    <table id="_ctl6_tblSeals" border="0" bgcolor="White">
+	<tr>
+		<td width="16.5%"><font color="White"><h2 style="margin:0;line-height:1.5em;"><a href="https://www.ongov.net/" target="_blank"><img src="/Imate/images/countyseal.jpg" alt="Onondaga County" /></a></h2></font></td><td width="16.5%"><font color="White"><h2 style="margin:0;line-height:1.5em;"><a href="http://www.syracuse.ny.us" target="_blank"><img src="/Imate/images/cityseal.jpg" alt="City of Syracuse" /></a></h2></font></td><td><font color="White"><a href="https://www.sdgnys.com" target="_blank"><img src="/Imate/images/logo.png" alt="SDG Logo" /></a></font></td><td><font color="White"></font></td>
+	</tr>
+</table>
+    
+    <div id="links">
+        <ul id="linksList">
+            <li class="menu">Navigation<ul><li><a href="/Imate/search.aspx"  >Property Search</a></li><li><a href="/Imate/viewlist.aspx?sort=printkey&amp;swis=all&amp;sitetype=res&amp;advanced=true"  >Last Property Search</a></li></ul></li><li><a href="/Imate/toGIS.aspx"  id="gisLink">GIS Map</a></li><li><a href="/Imate/taxmaps.aspx"  >Tax Maps</a></li><li>|</li><li class="menu">DTF Links<ul><li><a href="https://www.orps.state.ny.us/cfapps/MuniPro/muni_theme/county/county.cfm?swis=31" target="_blank" >County Info</a></li><li><a href="https://www.tax.ny.gov/research/property/default.htm" target="_blank" >DTF Home Page</a></li><li><a href="https://www.tax.ny.gov/forms/orpts_cur_forms.htm" target="_blank" >DTF Forms</a></li><li><a href="https://www.tax.ny.gov/pit/property/exemption/index.htm" target="_blank" >DTF Exemptions</a></li><li><a href="https://www.tax.ny.gov/pit/property/contest/contestasmt.htm" target="_blank" >DTF Grievances</a></li></ul></li><li class="menu">Assessment Info<ul><li><a href="assessmentinfo.aspx" target="_blank" >County Assessment Info</a></li></ul></li><li class="rightAlign"><a href="/Imate/logout.aspx?passthrough=true"  >Log In</a></li><li class="rightAlign"><a href="javascript:openHelp('/Imate/help/browser.aspx?page=viewlist')"  >Help</a></li>
+        </ul>
+        
+        <script type="text/javascript">setupGisLinkForNewWindow();</script>
+        
+    </div>
+</div>
+
+      
+      <p align="center">
+        <span id="lblNameSwis"><font size="4"></font></span>
+      </p>
+      
+      
+      
+      <div id="tips">
+         <h2>Tips</h2>
+         <ul>
+            
+            <li>Click on a parcel&rsquo;s Tax ID to see its information.</li>
+            <li>Click on a column title to sort on that column.</li>
+            
+            <li>Rows with a <strike>line through them</strike> are historic or deleted parcels.</li>
+            
+         </ul>
+      </div>
+      
+      <div id="pnlPageControls">
+	
+        <p id="pageControls" style="text-align:center">
+          
+          | Page <span id="lblCurrentPage">1</span> of <span id="lblPageCount">654</span> |
+          <a id="lnkNextPage" href="?sort=printkey&amp;swis=all&amp;sitetype=res&amp;advanced=true&amp;page=2">Next Page &rarr;</a></p>
+      
+</div>
+            
+      <table id="tblList" class="reportTable" border="0" width="100%">
+	<tr>
+		<td id="cellPropNum" class="headerTD" nowrap="nowrap" colspan="1"><a href="/Imate/viewlist.aspx?sort=propnum&swis=all&sitetype=res&advanced=true">Property #</a></td><td id="cellSwis" class="headerTD" nowrap="nowrap"><a href="/Imate/viewlist.aspx?sort=swis&swis=all&sitetype=res&advanced=true">SWIS - Municipality</a></td><td id="cellTaxID" class="headerTD sortColumn" nowrap="nowrap"><a href="/Imate/viewlist.aspx?sort=printkey&swis=all&sitetype=res&advanced=true">Tax ID</a></td><td id="cellOwner" class="headerTD" nowrap="nowrap"><a href="/Imate/viewlist.aspx?sort=owner&swis=all&sitetype=res&advanced=true">Owner</a></td><td id="cellParcelLocNum" class="headerTD" nowrap="nowrap"><a href="/Imate/viewlist.aspx?sort=streetnum&swis=all&sitetype=res&advanced=true">Street #</a></td><td id="cellParcelLoc" class="headerTD" nowrap="nowrap"><a href="/Imate/viewlist.aspx?sort=streetname&swis=all&sitetype=res&advanced=true">Street Name</a></td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">312001 - Village of Camillus</td><td class="gray0TD"><a href='propdetail.aspx?swis=312001&amp;printkey=00100000010010000000'>001.-01-01.0&nbsp;</a></td><td class="gray0TD">Hines David A</td><td class="gray0TD">9</td><td class="gray0TD">Rolling Hills Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">312001 - Village of Camillus</td><td class="gray1TD"><a href='propdetail.aspx?swis=312001&amp;printkey=00100000010010000000'>001.-01-01.0&nbsp;</a></td><td class="gray1TD">Hines Susan J</td><td class="gray1TD">9</td><td class="gray1TD">Rolling Hills Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">312401 - Village of North Syracuse (Town of Clay)</td><td class="gray0TD"><a href='propdetail.aspx?swis=312401&amp;printkey=00100000010010000000'>001.-01-01.0&nbsp;</a></td><td class="gray0TD">Hochenberger Theodore A</td><td class="gray0TD">106</td><td class="gray0TD">Linda Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">312601 - Village of East Syracuse (Town of Dewitt)</td><td class="gray1TD"><a href='propdetail.aspx?swis=312601&amp;printkey=00100000010010000000'>001.-01-01.0&nbsp;</a></td><td class="gray1TD">Bott Lawrence K</td><td class="gray1TD"></td><td class="gray1TD">James St</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">312803 - Village of Jordan (Town of Elblridge)</td><td class="gray0TD"><a href='propdetail.aspx?swis=312803&amp;printkey=00100000010010000000'>001.-01-01.0&nbsp;</a></td><td class="gray0TD">Cook Michael K</td><td class="gray0TD">127</td><td class="gray0TD">N Main St</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">312803 - Village of Jordan (Town of Elblridge)</td><td class="gray1TD"><a href='propdetail.aspx?swis=312803&amp;printkey=00100000010010000000'>001.-01-01.0&nbsp;</a></td><td class="gray1TD">Cook Lillian K</td><td class="gray1TD">127</td><td class="gray1TD">N Main St</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313400 - Town of Lafayette</td><td class="gray0TD"><a href='propdetail.aspx?swis=313400&amp;printkey=00100000010010000000'>001.-01-01.0&nbsp;</a></td><td class="gray0TD">Coffin William F</td><td class="gray0TD"></td><td class="gray0TD">LaFayette Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314200 - Town of Onondaga</td><td class="gray1TD"><a href='propdetail.aspx?swis=314200&amp;printkey=00100000010010000000'>001.-01-01.0&nbsp;</a></td><td class="gray1TD">Sturm Dale</td><td class="gray1TD">5383</td><td class="gray1TD">Kasson Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314200 - Town of Onondaga</td><td class="gray0TD"><a href='propdetail.aspx?swis=314200&amp;printkey=00100000010010000000'>001.-01-01.0&nbsp;</a></td><td class="gray0TD">Sturm Patricia</td><td class="gray0TD">5383</td><td class="gray0TD">Kasson Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314600 - Town of Pompey</td><td class="gray1TD"><a href='propdetail.aspx?swis=314600&amp;printkey=00100000010010000000'>001.-01-01.0&nbsp;</a></td><td class="gray1TD">Osborn Ronald E</td><td class="gray1TD">4283</td><td class="gray1TD">Taylor Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314600 - Town of Pompey</td><td class="gray0TD"><a href='propdetail.aspx?swis=314600&amp;printkey=00100000010010000000'>001.-01-01.0&nbsp;</a></td><td class="gray0TD">Osborn Hildegarde H</td><td class="gray0TD">4283</td><td class="gray0TD">Taylor Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314801 - Village of Liverpool (Town of Salina)</td><td class="gray1TD"><a href='propdetail.aspx?swis=314801&amp;printkey=00100000010010000000'>001.-01-01.0&nbsp;</a></td><td class="gray1TD">Calo Alexander G</td><td class="gray1TD">1237</td><td class="gray1TD">Tulip St</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">315200 - Town of Spafford</td><td class="gray0TD"><a href='propdetail.aspx?swis=315200&amp;printkey=00100000010010000000'>001.-01-01.0&nbsp;</a></td><td class="gray0TD">Fleming Donald D</td><td class="gray0TD">2519</td><td class="gray0TD">Shamrock Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313805 - Village of Minoa (Town of Manlius)</td><td class="gray1TD"><a href='propdetail.aspx?swis=313805&amp;printkey=00100000010010010000'>001.-01-01.1&nbsp;</a></td><td class="gray1TD">Mullane Charles</td><td class="gray1TD">449</td><td class="gray1TD">East Ave</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313805 - Village of Minoa (Town of Manlius)</td><td class="gray0TD"><a href='propdetail.aspx?swis=313805&amp;printkey=00100000010010010000'>001.-01-01.1&nbsp;</a></td><td class="gray0TD">Mullane Josephine</td><td class="gray0TD">449</td><td class="gray0TD">East Ave</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">312001 - Village of Camillus</td><td class="gray1TD"><a href='propdetail.aspx?swis=312001&amp;printkey=00100000010020000000'>001.-01-02.0&nbsp;</a></td><td class="gray1TD">Bellnier Elizabeth J</td><td class="gray1TD">5</td><td class="gray1TD">Rolling Hills Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">312401 - Village of North Syracuse (Town of Clay)</td><td class="gray0TD"><a href='propdetail.aspx?swis=312401&amp;printkey=00100000010020000000'>001.-01-02.0&nbsp;</a></td><td class="gray0TD">Peterson Eric D Jr</td><td class="gray0TD">101</td><td class="gray0TD">Kenruth Dr</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">312601 - Village of East Syracuse (Town of Dewitt)</td><td class="gray1TD"><a href='propdetail.aspx?swis=312601&amp;printkey=00100000010020000000'>001.-01-02.0&nbsp;</a></td><td class="gray1TD">Bott Lawrence K</td><td class="gray1TD"></td><td class="gray1TD">James St</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">312803 - Village of Jordan (Town of Elblridge)</td><td class="gray0TD"><a href='propdetail.aspx?swis=312803&amp;printkey=00100000010020000000'>001.-01-02.0&nbsp;</a></td><td class="gray0TD">Brown Timothy P</td><td class="gray0TD"></td><td class="gray0TD">N Main St</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">312803 - Village of Jordan (Town of Elblridge)</td><td class="gray1TD"><a href='propdetail.aspx?swis=312803&amp;printkey=00100000010020000000'>001.-01-02.0&nbsp;</a></td><td class="gray1TD">Brown Cathy L</td><td class="gray1TD"></td><td class="gray1TD">N Main St</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313400 - Town of Lafayette</td><td class="gray0TD"><a href='propdetail.aspx?swis=313400&amp;printkey=00100000010020000000'>001.-01-02.0&nbsp;</a></td><td class="gray0TD">Coffin William F</td><td class="gray0TD">4131</td><td class="gray0TD">LaFayette Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314200 - Town of Onondaga</td><td class="gray1TD"><a href='propdetail.aspx?swis=314200&amp;printkey=00100000010020000000'>001.-01-02.0&nbsp;</a></td><td class="gray1TD">Doshna Nicholas B</td><td class="gray1TD">5381</td><td class="gray1TD">Kasson Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314600 - Town of Pompey</td><td class="gray0TD"><a href='propdetail.aspx?swis=314600&amp;printkey=00100000010020000000'>001.-01-02.0&nbsp;</a></td><td class="gray0TD">Sharpe Kay E</td><td class="gray0TD">4273</td><td class="gray0TD">Taylor Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314801 - Village of Liverpool (Town of Salina)</td><td class="gray1TD"><a href='propdetail.aspx?swis=314801&amp;printkey=00100000010020000000'>001.-01-02.0&nbsp;</a></td><td class="gray1TD">Wells Cherri L</td><td class="gray1TD">1233</td><td class="gray1TD">Tulip St</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">315200 - Town of Spafford</td><td class="gray0TD"><a href='propdetail.aspx?swis=315200&amp;printkey=00100000010020010000'>001.-01-02.1&nbsp;</a></td><td class="gray0TD">Brillo Eric</td><td class="gray0TD">2487</td><td class="gray0TD">Shamrock Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">315200 - Town of Spafford</td><td class="gray1TD"><a href='propdetail.aspx?swis=315200&amp;printkey=00100000010020010000'>001.-01-02.1&nbsp;</a></td><td class="gray1TD">Brillo Teresa</td><td class="gray1TD">2487</td><td class="gray1TD">Shamrock Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">315200 - Town of Spafford</td><td class="gray0TD"><a href='propdetail.aspx?swis=315200&amp;printkey=00100000010020020000'>001.-01-02.2&nbsp;</a></td><td class="gray0TD">Sawtell William</td><td class="gray0TD">2515</td><td class="gray0TD">Shamrock Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">315200 - Town of Spafford</td><td class="gray1TD"><a href='propdetail.aspx?swis=315200&amp;printkey=00100000010020020000'>001.-01-02.2&nbsp;</a></td><td class="gray1TD">Sawtell Shirley</td><td class="gray1TD">2515</td><td class="gray1TD">Shamrock Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">312001 - Village of Camillus</td><td class="gray0TD"><a href='propdetail.aspx?swis=312001&amp;printkey=00100000010030000000'>001.-01-03.0&nbsp;</a></td><td class="gray0TD">Seniecle Robert D</td><td class="gray0TD">3</td><td class="gray0TD">Rolling Hills Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">312001 - Village of Camillus</td><td class="gray1TD"><a href='propdetail.aspx?swis=312001&amp;printkey=00100000010030000000'>001.-01-03.0&nbsp;</a></td><td class="gray1TD">Seniecle Beverly A</td><td class="gray1TD">3</td><td class="gray1TD">Rolling Hills Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">312401 - Village of North Syracuse (Town of Clay)</td><td class="gray0TD"><a href='propdetail.aspx?swis=312401&amp;printkey=00100000010030000000'>001.-01-03.0&nbsp;</a></td><td class="gray0TD">Dunn Timothy</td><td class="gray0TD">205</td><td class="gray0TD">Edden Ln</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">312601 - Village of East Syracuse (Town of Dewitt)</td><td class="gray1TD"><a href='propdetail.aspx?swis=312601&amp;printkey=00100000010030000000'>001.-01-03.0&nbsp;</a></td><td class="gray1TD">Bott Lawrence K</td><td class="gray1TD">4508</td><td class="gray1TD">James St</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">312803 - Village of Jordan (Town of Elblridge)</td><td class="gray0TD"><a href='propdetail.aspx?swis=312803&amp;printkey=00100000010030000000'>001.-01-03.0&nbsp;</a></td><td class="gray0TD">Brown Timothy P</td><td class="gray0TD">123</td><td class="gray0TD">N Main St</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">312803 - Village of Jordan (Town of Elblridge)</td><td class="gray1TD"><a href='propdetail.aspx?swis=312803&amp;printkey=00100000010030000000'>001.-01-03.0&nbsp;</a></td><td class="gray1TD">Brown Cathy L</td><td class="gray1TD">123</td><td class="gray1TD">N Main St</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313400 - Town of Lafayette</td><td class="gray0TD"><a href='propdetail.aspx?swis=313400&amp;printkey=00100000010030000000'>001.-01-03.0&nbsp;</a></td><td class="gray0TD">Clarke Daniel R</td><td class="gray0TD">4121</td><td class="gray0TD">LaFayette Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314001 - Village of Marcellus</td><td class="gray1TD"><a href='propdetail.aspx?swis=314001&amp;printkey=00100000010030000000'>001.-01-03.0&nbsp;</a></td><td class="gray1TD">Village Of Marcellus</td><td class="gray1TD"></td><td class="gray1TD">North St</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314600 - Town of Pompey</td><td class="gray0TD"><a href='propdetail.aspx?swis=314600&amp;printkey=00100000010030000000'>001.-01-03.0&nbsp;</a></td><td class="gray0TD">Smith Joseph</td><td class="gray0TD">4265</td><td class="gray0TD">Taylor Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314600 - Town of Pompey</td><td class="gray1TD"><a href='propdetail.aspx?swis=314600&amp;printkey=00100000010030000000'>001.-01-03.0&nbsp;</a></td><td class="gray1TD">Smith Carmella</td><td class="gray1TD">4265</td><td class="gray1TD">Taylor Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314801 - Village of Liverpool (Town of Salina)</td><td class="gray0TD"><a href='propdetail.aspx?swis=314801&amp;printkey=00100000010030000000'>001.-01-03.0&nbsp;</a></td><td class="gray0TD">Meyer Marvin S</td><td class="gray0TD">1231</td><td class="gray0TD">Tulip St</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">315200 - Town of Spafford</td><td class="gray1TD"><a href='propdetail.aspx?swis=315200&amp;printkey=00100000010030000000'>001.-01-03.0&nbsp;</a></td><td class="gray1TD">Sawtell Joseph F</td><td class="gray1TD">2469</td><td class="gray1TD">Shamrock Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313805 - Village of Minoa (Town of Manlius)</td><td class="gray0TD"><a href='propdetail.aspx?swis=313805&amp;printkey=00100000010030010000'>001.-01-03.1&nbsp;</a></td><td class="gray0TD">Greiner Robert B</td><td class="gray0TD">429</td><td class="gray0TD">East Ave</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313805 - Village of Minoa (Town of Manlius)</td><td class="gray1TD"><a href='propdetail.aspx?swis=313805&amp;printkey=00100000010030010000'>001.-01-03.1&nbsp;</a></td><td class="gray1TD">Greiner Mary E</td><td class="gray1TD">429</td><td class="gray1TD">East Ave</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314200 - Town of Onondaga</td><td class="gray0TD"><a href='propdetail.aspx?swis=314200&amp;printkey=00100000010030010000'>001.-01-03.1&nbsp;</a></td><td class="gray0TD">Bealer Scott J</td><td class="gray0TD">5281</td><td class="gray0TD">Cpl Welch Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314200 - Town of Onondaga</td><td class="gray1TD"><a href='propdetail.aspx?swis=314200&amp;printkey=00100000010030010000'>001.-01-03.1&nbsp;</a></td><td class="gray1TD">Bealer Tammy M</td><td class="gray1TD">5281</td><td class="gray1TD">Cpl Welch Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313805 - Village of Minoa (Town of Manlius)</td><td class="gray0TD"><a href='propdetail.aspx?swis=313805&amp;printkey=00100000010030020000'>001.-01-03.2&nbsp;</a></td><td class="gray0TD">Roach Joseph J</td><td class="gray0TD">427</td><td class="gray0TD">East Ave</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313805 - Village of Minoa (Town of Manlius)</td><td class="gray1TD"><a href='propdetail.aspx?swis=313805&amp;printkey=00100000010030020000'>001.-01-03.2&nbsp;</a></td><td class="gray1TD">Roach Barbara G</td><td class="gray1TD">427</td><td class="gray1TD">East Ave</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">312001 - Village of Camillus</td><td class="gray0TD"><a href='propdetail.aspx?swis=312001&amp;printkey=00100000010040000000'>001.-01-04.0&nbsp;</a></td><td class="gray0TD">Daningburg Christopher</td><td class="gray0TD">1</td><td class="gray0TD">Rolling Hills Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">312001 - Village of Camillus</td><td class="gray1TD"><a href='propdetail.aspx?swis=312001&amp;printkey=00100000010040000000'>001.-01-04.0&nbsp;</a></td><td class="gray1TD">Daningburg Patricia M</td><td class="gray1TD">1</td><td class="gray1TD">Rolling Hills Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">312401 - Village of North Syracuse (Town of Clay)</td><td class="gray0TD"><a href='propdetail.aspx?swis=312401&amp;printkey=00100000010040000000'>001.-01-04.0&nbsp;</a></td><td class="gray0TD">Goettel Christine L</td><td class="gray0TD">203</td><td class="gray0TD">Edden Ln</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">312601 - Village of East Syracuse (Town of Dewitt)</td><td class="gray1TD"><a href='propdetail.aspx?swis=312601&amp;printkey=00100000010040000000'>001.-01-04.0&nbsp;</a></td><td class="gray1TD">Galuski Properties LLC</td><td class="gray1TD">103</td><td class="gray1TD">Worth St</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">312803 - Village of Jordan (Town of Elblridge)</td><td class="gray0TD"><a href='propdetail.aspx?swis=312803&amp;printkey=00100000010040000000'>001.-01-04.0&nbsp;</a></td><td class="gray0TD">Phillips Ricky W</td><td class="gray0TD">121</td><td class="gray0TD">N Main St</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313400 - Town of Lafayette</td><td class="gray1TD"><a href='propdetail.aspx?swis=313400&amp;printkey=00100000010040000000'>001.-01-04.0&nbsp;</a></td><td class="gray1TD">Coogan Collin</td><td class="gray1TD">4113</td><td class="gray1TD">LaFayette Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313400 - Town of Lafayette</td><td class="gray0TD"><a href='propdetail.aspx?swis=313400&amp;printkey=00100000010040000000'>001.-01-04.0&nbsp;</a></td><td class="gray0TD">Patti Ann</td><td class="gray0TD">4113</td><td class="gray0TD">LaFayette Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313805 - Village of Minoa (Town of Manlius)</td><td class="gray1TD"><a href='propdetail.aspx?swis=313805&amp;printkey=00100000010040000000'>001.-01-04.0&nbsp;</a></td><td class="gray1TD">Petterelli Beverly</td><td class="gray1TD">423</td><td class="gray1TD">East Ave</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313805 - Village of Minoa (Town of Manlius)</td><td class="gray0TD"><a href='propdetail.aspx?swis=313805&amp;printkey=00100000010040000000'>001.-01-04.0&nbsp;</a></td><td class="gray0TD">Petterelli Michael</td><td class="gray0TD">423</td><td class="gray0TD">East Ave</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313805 - Village of Minoa (Town of Manlius)</td><td class="gray1TD"><a href='propdetail.aspx?swis=313805&amp;printkey=00100000010040000000'>001.-01-04.0&nbsp;</a></td><td class="gray1TD">Lyons Marybeth</td><td class="gray1TD">423</td><td class="gray1TD">East Ave</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314001 - Village of Marcellus</td><td class="gray0TD"><a href='propdetail.aspx?swis=314001&amp;printkey=00100000010040000000'>001.-01-04.0&nbsp;</a></td><td class="gray0TD">Carmody Priscilla</td><td class="gray0TD">67</td><td class="gray0TD">North St</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314200 - Town of Onondaga</td><td class="gray1TD"><a href='propdetail.aspx?swis=314200&amp;printkey=00100000010040000000'>001.-01-04.0&nbsp;</a></td><td class="gray1TD">Smoral Robert J</td><td class="gray1TD">5277</td><td class="gray1TD">Cpl Welch Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314600 - Town of Pompey</td><td class="gray0TD"><a href='propdetail.aspx?swis=314600&amp;printkey=00100000010040000000'>001.-01-04.0&nbsp;</a></td><td class="gray0TD">Cooke Jeffrey D</td><td class="gray0TD">4257</td><td class="gray0TD">Taylor Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314600 - Town of Pompey</td><td class="gray1TD"><a href='propdetail.aspx?swis=314600&amp;printkey=00100000010040000000'>001.-01-04.0&nbsp;</a></td><td class="gray1TD">Campbell Rebecca</td><td class="gray1TD">4257</td><td class="gray1TD">Taylor Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">315200 - Town of Spafford</td><td class="gray0TD"><a href='propdetail.aspx?swis=315200&amp;printkey=00100000010040000000'>001.-01-04.0&nbsp;</a></td><td class="gray0TD">Leumaple Lane Dairy Farm</td><td class="gray0TD">2471</td><td class="gray0TD">Collard Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314801 - Village of Liverpool (Town of Salina)</td><td class="gray1TD"><a href='propdetail.aspx?swis=314801&amp;printkey=00100000010040010000'>001.-01-04.1&nbsp;</a></td><td class="gray1TD">Gilfus Scott C</td><td class="gray1TD">1229</td><td class="gray1TD">Tulip St</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314801 - Village of Liverpool (Town of Salina)</td><td class="gray0TD"><a href='propdetail.aspx?swis=314801&amp;printkey=00100000010040020000'>001.-01-04.2&nbsp;</a></td><td class="gray0TD">Meyer Manor LLC</td><td class="gray0TD"></td><td class="gray0TD">Tulip St</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">312401 - Village of North Syracuse (Town of Clay)</td><td class="gray1TD"><a href='propdetail.aspx?swis=312401&amp;printkey=00100000010050000000'>001.-01-05.0&nbsp;</a></td><td class="gray1TD">Koagel Willard R</td><td class="gray1TD">201</td><td class="gray1TD">Edden Ln</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">312401 - Village of North Syracuse (Town of Clay)</td><td class="gray0TD"><a href='propdetail.aspx?swis=312401&amp;printkey=00100000010050000000'>001.-01-05.0&nbsp;</a></td><td class="gray0TD">Koagel Julia T</td><td class="gray0TD">201</td><td class="gray0TD">Edden Ln</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">312803 - Village of Jordan (Town of Elblridge)</td><td class="gray1TD"><a href='propdetail.aspx?swis=312803&amp;printkey=00100000010050000000'>001.-01-05.0&nbsp;</a></td><td class="gray1TD">Fuller Marilyn B</td><td class="gray1TD">117</td><td class="gray1TD">N Main St</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313400 - Town of Lafayette</td><td class="gray0TD"><a href='propdetail.aspx?swis=313400&amp;printkey=00100000010050000000'>001.-01-05.0&nbsp;</a></td><td class="gray0TD">Rose John W</td><td class="gray0TD"></td><td class="gray0TD">LaFayette Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313805 - Village of Minoa (Town of Manlius)</td><td class="gray1TD"><a href='propdetail.aspx?swis=313805&amp;printkey=00100000010050000000'>001.-01-05.0&nbsp;</a></td><td class="gray1TD">Parish Scott P</td><td class="gray1TD">419</td><td class="gray1TD">East Ave</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314001 - Village of Marcellus</td><td class="gray0TD"><a href='propdetail.aspx?swis=314001&amp;printkey=00100000010050000000'>001.-01-05.0&nbsp;</a></td><td class="gray0TD">Spulick David B</td><td class="gray0TD">61</td><td class="gray0TD">North St</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314600 - Town of Pompey</td><td class="gray1TD"><a href='propdetail.aspx?swis=314600&amp;printkey=00100000010050000000'>001.-01-05.0&nbsp;</a></td><td class="gray1TD">Pipines William A</td><td class="gray1TD">4247</td><td class="gray1TD">Taylor Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">315200 - Town of Spafford</td><td class="gray0TD"><a href='propdetail.aspx?swis=315200&amp;printkey=00100000010050000000'>001.-01-05.0&nbsp;</a></td><td class="gray0TD">Delmonico Joel F</td><td class="gray0TD">1989</td><td class="gray0TD">Collard Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">315200 - Town of Spafford</td><td class="gray1TD"><a href='propdetail.aspx?swis=315200&amp;printkey=00100000010050000000'>001.-01-05.0&nbsp;</a></td><td class="gray1TD">Delmonico Christine M</td><td class="gray1TD">1989</td><td class="gray1TD">Collard Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">312001 - Village of Camillus</td><td class="gray0TD"><a href='propdetail.aspx?swis=312001&amp;printkey=00100000010050010000'>001.-01-05.1&nbsp;</a></td><td class="gray0TD">Berry Kurt</td><td class="gray0TD">130</td><td class="gray0TD">Maple Dr</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">312001 - Village of Camillus</td><td class="gray1TD"><a href='propdetail.aspx?swis=312001&amp;printkey=00100000010050010000'>001.-01-05.1&nbsp;</a></td><td class="gray1TD">Marsh Natasha</td><td class="gray1TD">130</td><td class="gray1TD">Maple Dr</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314200 - Town of Onondaga</td><td class="gray0TD"><a href='propdetail.aspx?swis=314200&amp;printkey=00100000010050010000'>001.-01-05.1&nbsp;</a></td><td class="gray0TD">Smoral Robert J</td><td class="gray0TD">5263</td><td class="gray0TD">Cpl Welch Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314801 - Village of Liverpool (Town of Salina)</td><td class="gray1TD"><a href='propdetail.aspx?swis=314801&amp;printkey=00100000010050010000'>001.-01-05.1&nbsp;</a></td><td class="gray1TD">Kemisty Brian</td><td class="gray1TD"></td><td class="gray1TD">Tulip St</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314200 - Town of Onondaga</td><td class="gray0TD"><a href='propdetail.aspx?swis=314200&amp;printkey=00100000010050020000'>001.-01-05.2&nbsp;</a></td><td class="gray0TD">Young David S</td><td class="gray0TD">5253</td><td class="gray0TD">Cpl Welch Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314200 - Town of Onondaga</td><td class="gray1TD"><a href='propdetail.aspx?swis=314200&amp;printkey=00100000010050030000'>001.-01-05.3&nbsp;</a></td><td class="gray1TD">Young David S</td><td class="gray1TD">5249</td><td class="gray1TD">Cpl Welch Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">312401 - Village of North Syracuse (Town of Clay)</td><td class="gray0TD"><a href='propdetail.aspx?swis=312401&amp;printkey=00100000010060000000'>001.-01-06.0&nbsp;</a></td><td class="gray0TD">Straub Cynthia M</td><td class="gray0TD">502</td><td class="gray0TD">Shaver Ave</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">312601 - Village of East Syracuse (Town of Dewitt)</td><td class="gray1TD"><a href='propdetail.aspx?swis=312601&amp;printkey=00100000010060000000'>001.-01-06.0&nbsp;</a></td><td class="gray1TD">Worth Louisa</td><td class="gray1TD"></td><td class="gray1TD">James St</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">312803 - Village of Jordan (Town of Elblridge)</td><td class="gray0TD"><a href='propdetail.aspx?swis=312803&amp;printkey=00100000010060000000'>001.-01-06.0&nbsp;</a></td><td class="gray0TD">Hahn Carl F</td><td class="gray0TD">115</td><td class="gray0TD">N Main St</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">312803 - Village of Jordan (Town of Elblridge)</td><td class="gray1TD"><a href='propdetail.aspx?swis=312803&amp;printkey=00100000010060000000'>001.-01-06.0&nbsp;</a></td><td class="gray1TD">Hahn Linda E</td><td class="gray1TD">115</td><td class="gray1TD">N Main St</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313400 - Town of Lafayette</td><td class="gray0TD"><a href='propdetail.aspx?swis=313400&amp;printkey=00100000010060000000'>001.-01-06.0&nbsp;</a></td><td class="gray0TD">Shaffer Matthew J</td><td class="gray0TD">4109</td><td class="gray0TD">LaFayette Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313400 - Town of Lafayette</td><td class="gray1TD"><a href='propdetail.aspx?swis=313400&amp;printkey=00100000010060000000'>001.-01-06.0&nbsp;</a></td><td class="gray1TD">Shaffer Jennifer A</td><td class="gray1TD">4109</td><td class="gray1TD">LaFayette Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313805 - Village of Minoa (Town of Manlius)</td><td class="gray0TD"><a href='propdetail.aspx?swis=313805&amp;printkey=00100000010060000000'>001.-01-06.0&nbsp;</a></td><td class="gray0TD">Houser Mark D</td><td class="gray0TD">415</td><td class="gray0TD">East Ave</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313805 - Village of Minoa (Town of Manlius)</td><td class="gray1TD"><a href='propdetail.aspx?swis=313805&amp;printkey=00100000010060000000'>001.-01-06.0&nbsp;</a></td><td class="gray1TD">Houser Rachelle L</td><td class="gray1TD">415</td><td class="gray1TD">East Ave</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314001 - Village of Marcellus</td><td class="gray0TD"><a href='propdetail.aspx?swis=314001&amp;printkey=00100000010060000000'>001.-01-06.0&nbsp;</a></td><td class="gray0TD">Kearns Margaret M</td><td class="gray0TD">59</td><td class="gray0TD">North St</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314001 - Village of Marcellus</td><td class="gray1TD"><a href='propdetail.aspx?swis=314001&amp;printkey=00100000010060000000'>001.-01-06.0&nbsp;</a></td><td class="gray1TD">Kearns Patrick V</td><td class="gray1TD">59</td><td class="gray1TD">North St</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314200 - Town of Onondaga</td><td class="gray0TD"><a href='propdetail.aspx?swis=314200&amp;printkey=00100000010060000000'>001.-01-06.0&nbsp;</a></td><td class="gray0TD">Wolfram Ronald Thomas</td><td class="gray0TD">5233</td><td class="gray0TD">Cpl Welch Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314600 - Town of Pompey</td><td class="gray1TD"><a href='propdetail.aspx?swis=314600&amp;printkey=00100000010060000000'>001.-01-06.0&nbsp;</a></td><td class="gray1TD">Catney Robert T</td><td class="gray1TD">4233</td><td class="gray1TD">Taylor Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314600 - Town of Pompey</td><td class="gray0TD"><a href='propdetail.aspx?swis=314600&amp;printkey=00100000010060000000'>001.-01-06.0&nbsp;</a></td><td class="gray0TD">Catney Odette A</td><td class="gray0TD">4233</td><td class="gray0TD">Taylor Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">312001 - Village of Camillus</td><td class="gray1TD"><a href='propdetail.aspx?swis=312001&amp;printkey=00100000010060010000'>001.-01-06.1&nbsp;</a></td><td class="gray1TD">Matthews Stephen R</td><td class="gray1TD">134</td><td class="gray1TD">Maple Dr</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">312001 - Village of Camillus</td><td class="gray0TD"><a href='propdetail.aspx?swis=312001&amp;printkey=00100000010060010000'>001.-01-06.1&nbsp;</a></td><td class="gray0TD">Matthews Karen L</td><td class="gray0TD">134</td><td class="gray0TD">Maple Dr</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">315200 - Town of Spafford</td><td class="gray1TD"><a href='propdetail.aspx?swis=315200&amp;printkey=00100000010060010000'>001.-01-06.1&nbsp;</a></td><td class="gray1TD">Davenport Robert M</td><td class="gray1TD">1975</td><td class="gray1TD">Collard Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">312001 - Village of Camillus</td><td class="gray0TD"><a href='propdetail.aspx?swis=312001&amp;printkey=00100000010060020000'>001.-01-06.2&nbsp;</a></td><td class="gray0TD">Spain James</td><td class="gray0TD">136</td><td class="gray0TD">Maple Dr</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">312001 - Village of Camillus</td><td class="gray1TD"><a href='propdetail.aspx?swis=312001&amp;printkey=00100000010060020000'>001.-01-06.2&nbsp;</a></td><td class="gray1TD">Spain Brenda</td><td class="gray1TD">136</td><td class="gray1TD">Maple Dr</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">315200 - Town of Spafford</td><td class="gray0TD"><a href='propdetail.aspx?swis=315200&amp;printkey=00100000010060020000'>001.-01-06.2&nbsp;</a></td><td class="gray0TD">Huba William S Jr</td><td class="gray0TD">1969</td><td class="gray0TD">Collard Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">315200 - Town of Spafford</td><td class="gray1TD"><a href='propdetail.aspx?swis=315200&amp;printkey=00100000010060020000'>001.-01-06.2&nbsp;</a></td><td class="gray1TD">Huba Geralyn</td><td class="gray1TD">1969</td><td class="gray1TD">Collard Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">312001 - Village of Camillus</td><td class="gray0TD"><a href='propdetail.aspx?swis=312001&amp;printkey=00100000010060030000'>001.-01-06.3&nbsp;</a></td><td class="gray0TD">Kiggins John L Jr</td><td class="gray0TD">138</td><td class="gray0TD">Maple Dr</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">315200 - Town of Spafford</td><td class="gray1TD"><a href='propdetail.aspx?swis=315200&amp;printkey=00100000010060030000'>001.-01-06.3&nbsp;</a></td><td class="gray1TD">Spina Dennis C</td><td class="gray1TD">1987</td><td class="gray1TD">Collard Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">315200 - Town of Spafford</td><td class="gray0TD"><a href='propdetail.aspx?swis=315200&amp;printkey=00100000010060030000'>001.-01-06.3&nbsp;</a></td><td class="gray0TD">Spina Sharlene M</td><td class="gray0TD">1987</td><td class="gray0TD">Collard Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">312001 - Village of Camillus</td><td class="gray1TD"><a href='propdetail.aspx?swis=312001&amp;printkey=00100000010060040000'>001.-01-06.4&nbsp;</a></td><td class="gray1TD">Lopez Fabian</td><td class="gray1TD">140</td><td class="gray1TD">Maple Dr</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">312001 - Village of Camillus</td><td class="gray0TD"><a href='propdetail.aspx?swis=312001&amp;printkey=00100000010060040000'>001.-01-06.4&nbsp;</a></td><td class="gray0TD">Lopez Valerie</td><td class="gray0TD">140</td><td class="gray0TD">Maple Dr</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">315200 - Town of Spafford</td><td class="gray1TD"><a href='propdetail.aspx?swis=315200&amp;printkey=00100000010060040000'>001.-01-06.4&nbsp;</a></td><td class="gray1TD">Crelot Robert</td><td class="gray1TD">1979</td><td class="gray1TD">Collard Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">315200 - Town of Spafford</td><td class="gray0TD"><a href='propdetail.aspx?swis=315200&amp;printkey=00100000010060040000'>001.-01-06.4&nbsp;</a></td><td class="gray0TD">Crelot Kathleen</td><td class="gray0TD">1979</td><td class="gray0TD">Collard Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">312001 - Village of Camillus</td><td class="gray1TD"><a href='propdetail.aspx?swis=312001&amp;printkey=00100000010060050000'>001.-01-06.5&nbsp;</a></td><td class="gray1TD">Littles George J</td><td class="gray1TD">142</td><td class="gray1TD">Maple Dr</td>
+	</tr><tr class="historic">
+		<td class="gray0TD"></td><td class="gray0TD">315200 - Town of Spafford</td><td class="gray0TD"><a href='propdetail.aspx?swis=315200&amp;printkey=00100000010060050000'>001.-01-06.5&nbsp;</a></td><td class="gray0TD">Davenport Robert M</td><td class="gray0TD"></td><td class="gray0TD">Collard Rd</td>
+	</tr><tr class="historic">
+		<td class="gray1TD"></td><td class="gray1TD">315200 - Town of Spafford</td><td class="gray1TD"><a href='propdetail.aspx?swis=315200&amp;printkey=00100000010060050000'>001.-01-06.5&nbsp;</a></td><td class="gray1TD">Davenport Sara</td><td class="gray1TD"></td><td class="gray1TD">Collard Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">315200 - Town of Spafford</td><td class="gray0TD"><a href='propdetail.aspx?swis=315200&amp;printkey=00100000010060060000'>001.-01-06.6&nbsp;</a></td><td class="gray0TD">Chapman Dene B Jr</td><td class="gray0TD">1983</td><td class="gray0TD">Collard Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">315200 - Town of Spafford</td><td class="gray1TD"><a href='propdetail.aspx?swis=315200&amp;printkey=00100000010060060000'>001.-01-06.6&nbsp;</a></td><td class="gray1TD">Chapman Linda</td><td class="gray1TD">1983</td><td class="gray1TD">Collard Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">312001 - Village of Camillus</td><td class="gray0TD"><a href='propdetail.aspx?swis=312001&amp;printkey=00100000010070000000'>001.-01-07.0&nbsp;</a></td><td class="gray0TD">Kiggins Helen M</td><td class="gray0TD">146</td><td class="gray0TD">Maple Dr</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">312401 - Village of North Syracuse (Town of Clay)</td><td class="gray1TD"><a href='propdetail.aspx?swis=312401&amp;printkey=00100000010070000000'>001.-01-07.0&nbsp;</a></td><td class="gray1TD">Dukell Carol Ann</td><td class="gray1TD">504</td><td class="gray1TD">Shaver Ave</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313201 - Village of Solvay (Town of Geddes)</td><td class="gray0TD"><a href='propdetail.aspx?swis=313201&amp;printkey=00100000010070000000'>001.-01-07.0&nbsp;</a></td><td class="gray0TD">Stanton Foundry</td><td class="gray0TD">3004</td><td class="gray0TD">Milton Ave</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313400 - Town of Lafayette</td><td class="gray1TD"><a href='propdetail.aspx?swis=313400&amp;printkey=00100000010070000000'>001.-01-07.0&nbsp;</a></td><td class="gray1TD">Reynolds Revocable Trust</td><td class="gray1TD">4101</td><td class="gray1TD">LaFayette Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313805 - Village of Minoa (Town of Manlius)</td><td class="gray0TD"><a href='propdetail.aspx?swis=313805&amp;printkey=00100000010070000000'>001.-01-07.0&nbsp;</a></td><td class="gray0TD">Searles Ann</td><td class="gray0TD">407</td><td class="gray0TD">East Ave</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314001 - Village of Marcellus</td><td class="gray1TD"><a href='propdetail.aspx?swis=314001&amp;printkey=00100000010070000000'>001.-01-07.0&nbsp;</a></td><td class="gray1TD">Cox Sherry G</td><td class="gray1TD">57</td><td class="gray1TD">North St</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314001 - Village of Marcellus</td><td class="gray0TD"><a href='propdetail.aspx?swis=314001&amp;printkey=00100000010070000000'>001.-01-07.0&nbsp;</a></td><td class="gray0TD">Cox, Ronald S.</td><td class="gray0TD">57</td><td class="gray0TD">North St</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314001 - Village of Marcellus</td><td class="gray1TD"><a href='propdetail.aspx?swis=314001&amp;printkey=00100000010070000000'>001.-01-07.0&nbsp;</a></td><td class="gray1TD">Cox Laura</td><td class="gray1TD">57</td><td class="gray1TD">North St</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314001 - Village of Marcellus</td><td class="gray0TD"><a href='propdetail.aspx?swis=314001&amp;printkey=00100000010070000000'>001.-01-07.0&nbsp;</a></td><td class="gray0TD">Cox Rim</td><td class="gray0TD">57</td><td class="gray0TD">North St</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314200 - Town of Onondaga</td><td class="gray1TD"><a href='propdetail.aspx?swis=314200&amp;printkey=00100000010070000000'>001.-01-07.0&nbsp;</a></td><td class="gray1TD">Kelley Karen A</td><td class="gray1TD"></td><td class="gray1TD">Cpl Welch Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314200 - Town of Onondaga</td><td class="gray0TD"><a href='propdetail.aspx?swis=314200&amp;printkey=00100000010070000000'>001.-01-07.0&nbsp;</a></td><td class="gray0TD">Crockett Kevin H</td><td class="gray0TD"></td><td class="gray0TD">Cpl Welch Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314801 - Village of Liverpool (Town of Salina)</td><td class="gray1TD"><a href='propdetail.aspx?swis=314801&amp;printkey=00100000010070000000'>001.-01-07.0&nbsp;</a></td><td class="gray1TD">Froehlich David</td><td class="gray1TD">1206</td><td class="gray1TD">Tulip St</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314801 - Village of Liverpool (Town of Salina)</td><td class="gray0TD"><a href='propdetail.aspx?swis=314801&amp;printkey=00100000010070000000'>001.-01-07.0&nbsp;</a></td><td class="gray0TD">Froehlich Constance A</td><td class="gray0TD">1206</td><td class="gray0TD">Tulip St</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">315200 - Town of Spafford</td><td class="gray1TD"><a href='propdetail.aspx?swis=315200&amp;printkey=00100000010070000000'>001.-01-07.0&nbsp;</a></td><td class="gray1TD">Sisto Constance J</td><td class="gray1TD">1955</td><td class="gray1TD">Collard Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">312803 - Village of Jordan (Town of Elblridge)</td><td class="gray0TD"><a href='propdetail.aspx?swis=312803&amp;printkey=00100000010070010000'>001.-01-07.1&nbsp;</a></td><td class="gray0TD">Cook Michael K</td><td class="gray0TD"></td><td class="gray0TD">N Main St</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">312803 - Village of Jordan (Town of Elblridge)</td><td class="gray1TD"><a href='propdetail.aspx?swis=312803&amp;printkey=00100000010070010000'>001.-01-07.1&nbsp;</a></td><td class="gray1TD">Cook Lillian K</td><td class="gray1TD"></td><td class="gray1TD">N Main St</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314600 - Town of Pompey</td><td class="gray0TD"><a href='propdetail.aspx?swis=314600&amp;printkey=00100000010070010000'>001.-01-07.1&nbsp;</a></td><td class="gray0TD">Abdo David P</td><td class="gray0TD">4207</td><td class="gray0TD">Taylor Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">312803 - Village of Jordan (Town of Elblridge)</td><td class="gray1TD"><a href='propdetail.aspx?swis=312803&amp;printkey=00100000010070020000'>001.-01-07.2&nbsp;</a></td><td class="gray1TD">Agan Mark R</td><td class="gray1TD">149</td><td class="gray1TD">N Main St</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">312401 - Village of North Syracuse (Town of Clay)</td><td class="gray0TD"><a href='propdetail.aspx?swis=312401&amp;printkey=00100000010080000000'>001.-01-08.0&nbsp;</a></td><td class="gray0TD">Seymour Meghan</td><td class="gray0TD">102</td><td class="gray0TD">Linda Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">312401 - Village of North Syracuse (Town of Clay)</td><td class="gray1TD"><a href='propdetail.aspx?swis=312401&amp;printkey=00100000010080000000'>001.-01-08.0&nbsp;</a></td><td class="gray1TD">Seymour Emily</td><td class="gray1TD">102</td><td class="gray1TD">Linda Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313400 - Town of Lafayette</td><td class="gray0TD"><a href='propdetail.aspx?swis=313400&amp;printkey=00100000010080000000'>001.-01-08.0&nbsp;</a></td><td class="gray0TD">Simmons Anne F</td><td class="gray0TD">4097</td><td class="gray0TD">LaFayette Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313805 - Village of Minoa (Town of Manlius)</td><td class="gray1TD"><a href='propdetail.aspx?swis=313805&amp;printkey=00100000010080000000'>001.-01-08.0&nbsp;</a></td><td class="gray1TD">Mahoney Michael T</td><td class="gray1TD">405</td><td class="gray1TD">East Ave</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313805 - Village of Minoa (Town of Manlius)</td><td class="gray0TD"><a href='propdetail.aspx?swis=313805&amp;printkey=00100000010080000000'>001.-01-08.0&nbsp;</a></td><td class="gray0TD">Mahoney Deborah G</td><td class="gray0TD">405</td><td class="gray0TD">East Ave</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314600 - Town of Pompey</td><td class="gray1TD"><a href='propdetail.aspx?swis=314600&amp;printkey=00100000010080000000'>001.-01-08.0&nbsp;</a></td><td class="gray1TD">Abdo Davis</td><td class="gray1TD">4193</td><td class="gray1TD">Taylor Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314600 - Town of Pompey</td><td class="gray0TD"><a href='propdetail.aspx?swis=314600&amp;printkey=00100000010080000000'>001.-01-08.0&nbsp;</a></td><td class="gray0TD">Abdo Fred</td><td class="gray0TD">4193</td><td class="gray0TD">Taylor Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314001 - Village of Marcellus</td><td class="gray1TD"><a href='propdetail.aspx?swis=314001&amp;printkey=00100000010080010000'>001.-01-08.1&nbsp;</a></td><td class="gray1TD">Baker Living Trust</td><td class="gray1TD">55</td><td class="gray1TD">North St</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314200 - Town of Onondaga</td><td class="gray0TD"><a href='propdetail.aspx?swis=314200&amp;printkey=00100000010080010000'>001.-01-08.1&nbsp;</a></td><td class="gray0TD">Newell Randy</td><td class="gray0TD"></td><td class="gray0TD">Cpl Welch Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">315200 - Town of Spafford</td><td class="gray1TD"><a href='propdetail.aspx?swis=315200&amp;printkey=00100000010080010000'>001.-01-08.1&nbsp;</a></td><td class="gray1TD">Ireland Jeffrey G</td><td class="gray1TD"></td><td class="gray1TD">E Lake Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">315200 - Town of Spafford</td><td class="gray0TD"><a href='propdetail.aspx?swis=315200&amp;printkey=00100000010080010000'>001.-01-08.1&nbsp;</a></td><td class="gray0TD">Ireland Steven A</td><td class="gray0TD"></td><td class="gray0TD">E Lake Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314001 - Village of Marcellus</td><td class="gray1TD"><a href='propdetail.aspx?swis=314001&amp;printkey=00100000010080020000'>001.-01-08.2&nbsp;</a></td><td class="gray1TD">Cox Sherry G</td><td class="gray1TD"></td><td class="gray1TD">North St</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314001 - Village of Marcellus</td><td class="gray0TD"><a href='propdetail.aspx?swis=314001&amp;printkey=00100000010080020000'>001.-01-08.2&nbsp;</a></td><td class="gray0TD">Cox, Ronald S.</td><td class="gray0TD"></td><td class="gray0TD">North St</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314001 - Village of Marcellus</td><td class="gray1TD"><a href='propdetail.aspx?swis=314001&amp;printkey=00100000010080020000'>001.-01-08.2&nbsp;</a></td><td class="gray1TD">Cox, Laura</td><td class="gray1TD"></td><td class="gray1TD">North St</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314001 - Village of Marcellus</td><td class="gray0TD"><a href='propdetail.aspx?swis=314001&amp;printkey=00100000010080020000'>001.-01-08.2&nbsp;</a></td><td class="gray0TD">Cox Rim</td><td class="gray0TD"></td><td class="gray0TD">North St</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314200 - Town of Onondaga</td><td class="gray1TD"><a href='propdetail.aspx?swis=314200&amp;printkey=00100000010080020000'>001.-01-08.2&nbsp;</a></td><td class="gray1TD">Riccelli Lon D</td><td class="gray1TD">5217</td><td class="gray1TD">Cpl Welch Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">315200 - Town of Spafford</td><td class="gray0TD"><a href='propdetail.aspx?swis=315200&amp;printkey=00100000010080020000'>001.-01-08.2&nbsp;</a></td><td class="gray0TD">Gleitman Ronald M.</td><td class="gray0TD">2438</td><td class="gray0TD">E Lake Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">315200 - Town of Spafford</td><td class="gray1TD"><a href='propdetail.aspx?swis=315200&amp;printkey=00100000010080020000'>001.-01-08.2&nbsp;</a></td><td class="gray1TD">Gleitman Tracy F.</td><td class="gray1TD">2438</td><td class="gray1TD">E Lake Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">312401 - Village of North Syracuse (Town of Clay)</td><td class="gray0TD"><a href='propdetail.aspx?swis=312401&amp;printkey=00100000010090000000'>001.-01-09.0&nbsp;</a></td><td class="gray0TD">Decker Christophr F</td><td class="gray0TD">104</td><td class="gray0TD">Linda Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">312401 - Village of North Syracuse (Town of Clay)</td><td class="gray1TD"><a href='propdetail.aspx?swis=312401&amp;printkey=00100000010090000000'>001.-01-09.0&nbsp;</a></td><td class="gray1TD">Decker Stacey E</td><td class="gray1TD">104</td><td class="gray1TD">Linda Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">312803 - Village of Jordan (Town of Elblridge)</td><td class="gray0TD"><a href='propdetail.aspx?swis=312803&amp;printkey=00100000010090000000'>001.-01-09.0&nbsp;</a></td><td class="gray0TD">Owen Marguerite</td><td class="gray0TD"></td><td class="gray0TD">N Main St</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313400 - Town of Lafayette</td><td class="gray1TD"><a href='propdetail.aspx?swis=313400&amp;printkey=00100000010090000000'>001.-01-09.0&nbsp;</a></td><td class="gray1TD">Terrell Jack E</td><td class="gray1TD">4091</td><td class="gray1TD">LaFayette Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314200 - Town of Onondaga</td><td class="gray0TD"><a href='propdetail.aspx?swis=314200&amp;printkey=00100000010090000000'>001.-01-09.0&nbsp;</a></td><td class="gray0TD">Ward Dinae M</td><td class="gray0TD">5211</td><td class="gray0TD">Cpl Welch Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314600 - Town of Pompey</td><td class="gray1TD"><a href='propdetail.aspx?swis=314600&amp;printkey=00100000010090000000'>001.-01-09.0&nbsp;</a></td><td class="gray1TD">Weldum David L</td><td class="gray1TD">4181</td><td class="gray1TD">Taylor Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">315200 - Town of Spafford</td><td class="gray0TD"><a href='propdetail.aspx?swis=315200&amp;printkey=00100000010090000000'>001.-01-09.0&nbsp;</a></td><td class="gray0TD">Brassfield Aaron</td><td class="gray0TD">2444</td><td class="gray0TD">E Lake Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313805 - Village of Minoa (Town of Manlius)</td><td class="gray1TD"><a href='propdetail.aspx?swis=313805&amp;printkey=00100000010090020000'>001.-01-09.2&nbsp;</a></td><td class="gray1TD">Pellenz Family Trust David H</td><td class="gray1TD">317</td><td class="gray1TD">East Ave</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313805 - Village of Minoa (Town of Manlius)</td><td class="gray0TD"><a href='propdetail.aspx?swis=313805&amp;printkey=00100000010090020000'>001.-01-09.2&nbsp;</a></td><td class="gray0TD">Pellenz Christopher D</td><td class="gray0TD">317</td><td class="gray0TD">East Ave</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313805 - Village of Minoa (Town of Manlius)</td><td class="gray1TD"><a href='propdetail.aspx?swis=313805&amp;printkey=00100000010090020000'>001.-01-09.2&nbsp;</a></td><td class="gray1TD">Pellenz William H</td><td class="gray1TD">317</td><td class="gray1TD">East Ave</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">312803 - Village of Jordan (Town of Elblridge)</td><td class="gray0TD"><a href='propdetail.aspx?swis=312803&amp;printkey=00100000010100000000'>001.-01-10.0&nbsp;</a></td><td class="gray0TD">Schleicher Steven D</td><td class="gray0TD"></td><td class="gray0TD">N Main St</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313201 - Village of Solvay (Town of Geddes)</td><td class="gray1TD"><a href='propdetail.aspx?swis=313201&amp;printkey=00100000010100000000'>001.-01-10.0&nbsp;</a></td><td class="gray1TD">Village of Solvay</td><td class="gray1TD"></td><td class="gray1TD">Belle Isle Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313400 - Town of Lafayette</td><td class="gray0TD"><a href='propdetail.aspx?swis=313400&amp;printkey=00100000010100000000'>001.-01-10.0&nbsp;</a></td><td class="gray0TD">McIntyre David</td><td class="gray0TD">4087</td><td class="gray0TD">LaFayette Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313400 - Town of Lafayette</td><td class="gray1TD"><a href='propdetail.aspx?swis=313400&amp;printkey=00100000010100000000'>001.-01-10.0&nbsp;</a></td><td class="gray1TD">McIntyre Michele</td><td class="gray1TD">4087</td><td class="gray1TD">LaFayette Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313601 - Village of Baldwinsville (Town of Lysander)</td><td class="gray0TD"><a href='propdetail.aspx?swis=313601&amp;printkey=00100000010100000000'>001.-01-10.0&nbsp;</a></td><td class="gray0TD">Pullano Salvatore</td><td class="gray0TD">157</td><td class="gray0TD">Smokey Hollow Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313601 - Village of Baldwinsville (Town of Lysander)</td><td class="gray1TD"><a href='propdetail.aspx?swis=313601&amp;printkey=00100000010100000000'>001.-01-10.0&nbsp;</a></td><td class="gray1TD">Pullano Bonnie</td><td class="gray1TD">157</td><td class="gray1TD">Smokey Hollow Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313805 - Village of Minoa (Town of Manlius)</td><td class="gray0TD"><a href='propdetail.aspx?swis=313805&amp;printkey=00100000010100000000'>001.-01-10.0&nbsp;</a></td><td class="gray0TD">Greene Bonnie M</td><td class="gray0TD">309</td><td class="gray0TD">East Ave</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314200 - Town of Onondaga</td><td class="gray1TD"><a href='propdetail.aspx?swis=314200&amp;printkey=00100000010100000000'>001.-01-10.0&nbsp;</a></td><td class="gray1TD">Ward Dinae M</td><td class="gray1TD">5203</td><td class="gray1TD">Cpl Welch Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314600 - Town of Pompey</td><td class="gray0TD"><a href='propdetail.aspx?swis=314600&amp;printkey=00100000010100000000'>001.-01-10.0&nbsp;</a></td><td class="gray0TD">Garcia Despina</td><td class="gray0TD">4157</td><td class="gray0TD">Taylor Rd</td>
+	</tr><tr class="historic">
+		<td class="gray1TD"></td><td class="gray1TD">314801 - Village of Liverpool (Town of Salina)</td><td class="gray1TD"><a href='propdetail.aspx?swis=314801&amp;printkey=00100000010100000000'>001.-01-10.0&nbsp;</a></td><td class="gray1TD">Saucier Patricia</td><td class="gray1TD"></td><td class="gray1TD">Tulip St</td>
+	</tr><tr class="historic">
+		<td class="gray0TD"></td><td class="gray0TD">314801 - Village of Liverpool (Town of Salina)</td><td class="gray0TD"><a href='propdetail.aspx?swis=314801&amp;printkey=00100000010100000000'>001.-01-10.0&nbsp;</a></td><td class="gray0TD">Saucier Robert Sr.</td><td class="gray0TD"></td><td class="gray0TD">Tulip St</td>
+	</tr><tr class="historic">
+		<td class="gray1TD"></td><td class="gray1TD">314801 - Village of Liverpool (Town of Salina)</td><td class="gray1TD"><a href='propdetail.aspx?swis=314801&amp;printkey=00100000010100000000'>001.-01-10.0&nbsp;</a></td><td class="gray1TD">Saucier Robert Leo Jr.</td><td class="gray1TD"></td><td class="gray1TD">Tulip St</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">315200 - Town of Spafford</td><td class="gray0TD"><a href='propdetail.aspx?swis=315200&amp;printkey=00100000010100010000'>001.-01-10.1&nbsp;</a></td><td class="gray0TD">Pattarini Stephen M</td><td class="gray0TD">2450</td><td class="gray0TD">E Lake Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">315200 - Town of Spafford</td><td class="gray1TD"><a href='propdetail.aspx?swis=315200&amp;printkey=00100000010100010000'>001.-01-10.1&nbsp;</a></td><td class="gray1TD">Pattarini Nancy M</td><td class="gray1TD">2450</td><td class="gray1TD">E Lake Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">312803 - Village of Jordan (Town of Elblridge)</td><td class="gray0TD"><a href='propdetail.aspx?swis=312803&amp;printkey=00100000010110000000'>001.-01-11.0&nbsp;</a></td><td class="gray0TD">Smith Kelli M</td><td class="gray0TD"></td><td class="gray0TD">N Main St</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313400 - Town of Lafayette</td><td class="gray1TD"><a href='propdetail.aspx?swis=313400&amp;printkey=00100000010110000000'>001.-01-11.0&nbsp;</a></td><td class="gray1TD">Mattis Robert E Jr</td><td class="gray1TD">4083</td><td class="gray1TD">LaFayette Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313601 - Village of Baldwinsville (Town of Lysander)</td><td class="gray0TD"><a href='propdetail.aspx?swis=313601&amp;printkey=00100000010110000000'>001.-01-11.0&nbsp;</a></td><td class="gray0TD">Alton Barry L</td><td class="gray0TD">155</td><td class="gray0TD">Smokey Hollow Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313601 - Village of Baldwinsville (Town of Lysander)</td><td class="gray1TD"><a href='propdetail.aspx?swis=313601&amp;printkey=00100000010110000000'>001.-01-11.0&nbsp;</a></td><td class="gray1TD">Alton Hannah E</td><td class="gray1TD">155</td><td class="gray1TD">Smokey Hollow Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313805 - Village of Minoa (Town of Manlius)</td><td class="gray0TD"><a href='propdetail.aspx?swis=313805&amp;printkey=00100000010110000000'>001.-01-11.0&nbsp;</a></td><td class="gray0TD">Delucia Dan W Jr</td><td class="gray0TD">229</td><td class="gray0TD">Osborne St</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313805 - Village of Minoa (Town of Manlius)</td><td class="gray1TD"><a href='propdetail.aspx?swis=313805&amp;printkey=00100000010110000000'>001.-01-11.0&nbsp;</a></td><td class="gray1TD">Delucia Leonard J</td><td class="gray1TD">229</td><td class="gray1TD">Osborne St</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314200 - Town of Onondaga</td><td class="gray0TD"><a href='propdetail.aspx?swis=314200&amp;printkey=00100000010110000000'>001.-01-11.0&nbsp;</a></td><td class="gray0TD">Newell Randy</td><td class="gray0TD">5223</td><td class="gray0TD">Cpl Welch Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314200 - Town of Onondaga</td><td class="gray1TD"><a href='propdetail.aspx?swis=314200&amp;printkey=00100000010110000000'>001.-01-11.0&nbsp;</a></td><td class="gray1TD">Newell Karen M</td><td class="gray1TD">5223</td><td class="gray1TD">Cpl Welch Rd</td>
+	</tr><tr class="historic">
+		<td class="gray0TD"></td><td class="gray0TD">314801 - Village of Liverpool (Town of Salina)</td><td class="gray0TD"><a href='propdetail.aspx?swis=314801&amp;printkey=00100000010110000000'>001.-01-11.0&nbsp;</a></td><td class="gray0TD">Saucier Patricia</td><td class="gray0TD">1104</td><td class="gray0TD">Tulip St</td>
+	</tr><tr class="historic">
+		<td class="gray1TD"></td><td class="gray1TD">314801 - Village of Liverpool (Town of Salina)</td><td class="gray1TD"><a href='propdetail.aspx?swis=314801&amp;printkey=00100000010110000000'>001.-01-11.0&nbsp;</a></td><td class="gray1TD">Saucier Robert Sr.</td><td class="gray1TD">1104</td><td class="gray1TD">Tulip St</td>
+	</tr><tr class="historic">
+		<td class="gray0TD"></td><td class="gray0TD">314801 - Village of Liverpool (Town of Salina)</td><td class="gray0TD"><a href='propdetail.aspx?swis=314801&amp;printkey=00100000010110000000'>001.-01-11.0&nbsp;</a></td><td class="gray0TD">Saucier Robert Leo Jr.</td><td class="gray0TD">1104</td><td class="gray0TD">Tulip St</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">315200 - Town of Spafford</td><td class="gray1TD"><a href='propdetail.aspx?swis=315200&amp;printkey=00100000010110000000'>001.-01-11.0&nbsp;</a></td><td class="gray1TD">Hardy Janice M</td><td class="gray1TD">2458</td><td class="gray1TD">E Lake Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">315200 - Town of Spafford</td><td class="gray0TD"><a href='propdetail.aspx?swis=315200&amp;printkey=00100000010110000000'>001.-01-11.0&nbsp;</a></td><td class="gray0TD">Hardy Irrevocable Trust Janice M</td><td class="gray0TD">2458</td><td class="gray0TD">E Lake Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">315200 - Town of Spafford</td><td class="gray1TD"><a href='propdetail.aspx?swis=315200&amp;printkey=00100000010110000000'>001.-01-11.0&nbsp;</a></td><td class="gray1TD">Hardy Nicholas J</td><td class="gray1TD">2458</td><td class="gray1TD">E Lake Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314801 - Village of Liverpool (Town of Salina)</td><td class="gray0TD"><a href='propdetail.aspx?swis=314801&amp;printkey=00100000010110010000'>001.-01-11.1&nbsp;</a></td><td class="gray0TD">Saucier Patricia</td><td class="gray0TD">1104</td><td class="gray0TD">Tulip St</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314801 - Village of Liverpool (Town of Salina)</td><td class="gray1TD"><a href='propdetail.aspx?swis=314801&amp;printkey=00100000010110010000'>001.-01-11.1&nbsp;</a></td><td class="gray1TD">Saucier Robert Sr.</td><td class="gray1TD">1104</td><td class="gray1TD">Tulip St</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314801 - Village of Liverpool (Town of Salina)</td><td class="gray0TD"><a href='propdetail.aspx?swis=314801&amp;printkey=00100000010110010000'>001.-01-11.1&nbsp;</a></td><td class="gray0TD">Saucier Robert Leo Jr.</td><td class="gray0TD">1104</td><td class="gray0TD">Tulip St</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">312803 - Village of Jordan (Town of Elblridge)</td><td class="gray1TD"><a href='propdetail.aspx?swis=312803&amp;printkey=00100000010120000000'>001.-01-12.0&nbsp;</a></td><td class="gray1TD">Smith Kelli M</td><td class="gray1TD"></td><td class="gray1TD">N Main St</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313400 - Town of Lafayette</td><td class="gray0TD"><a href='propdetail.aspx?swis=313400&amp;printkey=00100000010120000000'>001.-01-12.0&nbsp;</a></td><td class="gray0TD">Burgess Steven R.</td><td class="gray0TD">4049</td><td class="gray0TD">LaFayette Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313400 - Town of Lafayette</td><td class="gray1TD"><a href='propdetail.aspx?swis=313400&amp;printkey=00100000010120000000'>001.-01-12.0&nbsp;</a></td><td class="gray1TD">Burgess Wendy L.</td><td class="gray1TD">4049</td><td class="gray1TD">LaFayette Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313601 - Village of Baldwinsville (Town of Lysander)</td><td class="gray0TD"><a href='propdetail.aspx?swis=313601&amp;printkey=00100000010120000000'>001.-01-12.0&nbsp;</a></td><td class="gray0TD">Fulton Kari L</td><td class="gray0TD">153</td><td class="gray0TD">Smokey Hollow Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313805 - Village of Minoa (Town of Manlius)</td><td class="gray1TD"><a href='propdetail.aspx?swis=313805&amp;printkey=00100000010120000000'>001.-01-12.0&nbsp;</a></td><td class="gray1TD">Landry James D</td><td class="gray1TD">225</td><td class="gray1TD">Osborne St</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313805 - Village of Minoa (Town of Manlius)</td><td class="gray0TD"><a href='propdetail.aspx?swis=313805&amp;printkey=00100000010120000000'>001.-01-12.0&nbsp;</a></td><td class="gray0TD">Landry Kelley A</td><td class="gray0TD">225</td><td class="gray0TD">Osborne St</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314200 - Town of Onondaga</td><td class="gray1TD"><a href='propdetail.aspx?swis=314200&amp;printkey=00100000010120000000'>001.-01-12.0&nbsp;</a></td><td class="gray1TD">Blasi John F</td><td class="gray1TD"></td><td class="gray1TD">Cpl Welch Rd Off</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314801 - Village of Liverpool (Town of Salina)</td><td class="gray0TD"><a href='propdetail.aspx?swis=314801&amp;printkey=00100000010120010000'>001.-01-12.1&nbsp;</a></td><td class="gray0TD">Kribs David</td><td class="gray0TD">96</td><td class="gray0TD">Sargent Ln</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314801 - Village of Liverpool (Town of Salina)</td><td class="gray1TD"><a href='propdetail.aspx?swis=314801&amp;printkey=00100000010120010000'>001.-01-12.1&nbsp;</a></td><td class="gray1TD">Kribs Tiffany</td><td class="gray1TD">96</td><td class="gray1TD">Sargent Ln</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">315200 - Town of Spafford</td><td class="gray0TD"><a href='propdetail.aspx?swis=315200&amp;printkey=00100000010120010000'>001.-01-12.1&nbsp;</a></td><td class="gray0TD">Ireland Jeffrey G</td><td class="gray0TD"></td><td class="gray0TD">E Lake Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">315200 - Town of Spafford</td><td class="gray1TD"><a href='propdetail.aspx?swis=315200&amp;printkey=00100000010120010000'>001.-01-12.1&nbsp;</a></td><td class="gray1TD">Ireland Steven A</td><td class="gray1TD"></td><td class="gray1TD">E Lake Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314801 - Village of Liverpool (Town of Salina)</td><td class="gray0TD"><a href='propdetail.aspx?swis=314801&amp;printkey=00100000010120020000'>001.-01-12.2&nbsp;</a></td><td class="gray0TD">Palmer Hana T</td><td class="gray0TD">94</td><td class="gray0TD">Sargent Ln</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314801 - Village of Liverpool (Town of Salina)</td><td class="gray1TD"><a href='propdetail.aspx?swis=314801&amp;printkey=00100000010120020000'>001.-01-12.2&nbsp;</a></td><td class="gray1TD">Emanuel Willie L</td><td class="gray1TD">94</td><td class="gray1TD">Sargent Ln</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">315200 - Town of Spafford</td><td class="gray0TD"><a href='propdetail.aspx?swis=315200&amp;printkey=00100000010120020000'>001.-01-12.2&nbsp;</a></td><td class="gray0TD">Menapace John</td><td class="gray0TD">2471</td><td class="gray0TD">E Lake Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">315200 - Town of Spafford</td><td class="gray1TD"><a href='propdetail.aspx?swis=315200&amp;printkey=00100000010120030000'>001.-01-12.3&nbsp;</a></td><td class="gray1TD">Robertson Douglas R</td><td class="gray1TD"></td><td class="gray1TD">E Lake Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">315200 - Town of Spafford</td><td class="gray0TD"><a href='propdetail.aspx?swis=315200&amp;printkey=00100000010120030000'>001.-01-12.3&nbsp;</a></td><td class="gray0TD">Robertson Judith P</td><td class="gray0TD"></td><td class="gray0TD">E Lake Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">315200 - Town of Spafford</td><td class="gray1TD"><a href='propdetail.aspx?swis=315200&amp;printkey=00100000010120040000'>001.-01-12.4&nbsp;</a></td><td class="gray1TD">Ireland Jeffrey G</td><td class="gray1TD">2471</td><td class="gray1TD">E Lake Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">315200 - Town of Spafford</td><td class="gray0TD"><a href='propdetail.aspx?swis=315200&amp;printkey=00100000010120040000'>001.-01-12.4&nbsp;</a></td><td class="gray0TD">Ireland Steven A</td><td class="gray0TD">2471</td><td class="gray0TD">E Lake Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">315200 - Town of Spafford</td><td class="gray1TD"><a href='propdetail.aspx?swis=315200&amp;printkey=00100000010120050000'>001.-01-12.5&nbsp;</a></td><td class="gray1TD">Menapace John</td><td class="gray1TD"></td><td class="gray1TD">E Lake Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313400 - Town of Lafayette</td><td class="gray0TD"><a href='propdetail.aspx?swis=313400&amp;printkey=00100000010130000000'>001.-01-13.0&nbsp;</a></td><td class="gray0TD">Burgess Steven R.</td><td class="gray0TD">4049</td><td class="gray0TD">LaFayette Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313400 - Town of Lafayette</td><td class="gray1TD"><a href='propdetail.aspx?swis=313400&amp;printkey=00100000010130000000'>001.-01-13.0&nbsp;</a></td><td class="gray1TD">Burgess Wendy L.</td><td class="gray1TD">4049</td><td class="gray1TD">LaFayette Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313601 - Village of Baldwinsville (Town of Lysander)</td><td class="gray0TD"><a href='propdetail.aspx?swis=313601&amp;printkey=00100000010130000000'>001.-01-13.0&nbsp;</a></td><td class="gray0TD">Monteleone Laura E</td><td class="gray0TD">151</td><td class="gray0TD">Smokey Hollow Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313805 - Village of Minoa (Town of Manlius)</td><td class="gray1TD"><a href='propdetail.aspx?swis=313805&amp;printkey=00100000010130000000'>001.-01-13.0&nbsp;</a></td><td class="gray1TD">Loope Robert</td><td class="gray1TD">221</td><td class="gray1TD">Osborne St</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314200 - Town of Onondaga</td><td class="gray0TD"><a href='propdetail.aspx?swis=314200&amp;printkey=00100000010130000000'>001.-01-13.0&nbsp;</a></td><td class="gray0TD">Mecca Andrew</td><td class="gray0TD"></td><td class="gray0TD">Cpl Welch Rd Off</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314801 - Village of Liverpool (Town of Salina)</td><td class="gray1TD"><a href='propdetail.aspx?swis=314801&amp;printkey=00100000010130000000'>001.-01-13.0&nbsp;</a></td><td class="gray1TD">Nortman David L</td><td class="gray1TD">1103</td><td class="gray1TD">Tulip St</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314801 - Village of Liverpool (Town of Salina)</td><td class="gray0TD"><a href='propdetail.aspx?swis=314801&amp;printkey=00100000010130000000'>001.-01-13.0&nbsp;</a></td><td class="gray0TD">Nortman Mary M</td><td class="gray0TD">1103</td><td class="gray0TD">Tulip St</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314801 - Village of Liverpool (Town of Salina)</td><td class="gray1TD"><a href='propdetail.aspx?swis=314801&amp;printkey=00100000010130000000'>001.-01-13.0&nbsp;</a></td><td class="gray1TD">Nortman Irrev. Trust</td><td class="gray1TD">1103</td><td class="gray1TD">Tulip St</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314801 - Village of Liverpool (Town of Salina)</td><td class="gray0TD"><a href='propdetail.aspx?swis=314801&amp;printkey=00100000010130000000'>001.-01-13.0&nbsp;</a></td><td class="gray0TD">Burniski Timothy</td><td class="gray0TD">1103</td><td class="gray0TD">Tulip St</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">315200 - Town of Spafford</td><td class="gray1TD"><a href='propdetail.aspx?swis=315200&amp;printkey=00100000010130000000'>001.-01-13.0&nbsp;</a></td><td class="gray1TD">BAUMAN COREY</td><td class="gray1TD">2498</td><td class="gray1TD">E Lake Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313400 - Town of Lafayette</td><td class="gray0TD"><a href='propdetail.aspx?swis=313400&amp;printkey=00100000010140000000'>001.-01-14.0&nbsp;</a></td><td class="gray0TD">Christoffel Glenn</td><td class="gray0TD">4035</td><td class="gray0TD">LaFayette Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313400 - Town of Lafayette</td><td class="gray1TD"><a href='propdetail.aspx?swis=313400&amp;printkey=00100000010140000000'>001.-01-14.0&nbsp;</a></td><td class="gray1TD">Christoffel Megan</td><td class="gray1TD">4035</td><td class="gray1TD">LaFayette Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313601 - Village of Baldwinsville (Town of Lysander)</td><td class="gray0TD"><a href='propdetail.aspx?swis=313601&amp;printkey=00100000010140000000'>001.-01-14.0&nbsp;</a></td><td class="gray0TD">Bond Keith P</td><td class="gray0TD">5</td><td class="gray0TD">Canterbury Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313805 - Village of Minoa (Town of Manlius)</td><td class="gray1TD"><a href='propdetail.aspx?swis=313805&amp;printkey=00100000010140000000'>001.-01-14.0&nbsp;</a></td><td class="gray1TD">Hynes William J</td><td class="gray1TD">217</td><td class="gray1TD">Osborne St</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313805 - Village of Minoa (Town of Manlius)</td><td class="gray0TD"><a href='propdetail.aspx?swis=313805&amp;printkey=00100000010140000000'>001.-01-14.0&nbsp;</a></td><td class="gray0TD">Hynes Suzanne</td><td class="gray0TD">217</td><td class="gray0TD">Osborne St</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314200 - Town of Onondaga</td><td class="gray1TD"><a href='propdetail.aspx?swis=314200&amp;printkey=00100000010140000000'>001.-01-14.0&nbsp;</a></td><td class="gray1TD">Kelley Karen A</td><td class="gray1TD"></td><td class="gray1TD">Cpl Welch Rd Off</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314200 - Town of Onondaga</td><td class="gray0TD"><a href='propdetail.aspx?swis=314200&amp;printkey=00100000010140000000'>001.-01-14.0&nbsp;</a></td><td class="gray0TD">Crockett Kevin H</td><td class="gray0TD"></td><td class="gray0TD">Cpl Welch Rd Off</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314801 - Village of Liverpool (Town of Salina)</td><td class="gray1TD"><a href='propdetail.aspx?swis=314801&amp;printkey=00100000010140000000'>001.-01-14.0&nbsp;</a></td><td class="gray1TD">Robinson William A</td><td class="gray1TD">98</td><td class="gray1TD">Sargent Ln</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314801 - Village of Liverpool (Town of Salina)</td><td class="gray0TD"><a href='propdetail.aspx?swis=314801&amp;printkey=00100000010140000000'>001.-01-14.0&nbsp;</a></td><td class="gray0TD">Robinson Henrie A</td><td class="gray0TD">98</td><td class="gray0TD">Sargent Ln</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">315200 - Town of Spafford</td><td class="gray1TD"><a href='propdetail.aspx?swis=315200&amp;printkey=00100000010140010000'>001.-01-14.1&nbsp;</a></td><td class="gray1TD">Leumaple Lane Dairy Farm LLC</td><td class="gray1TD"></td><td class="gray1TD">Church Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">315200 - Town of Spafford</td><td class="gray0TD"><a href='propdetail.aspx?swis=315200&amp;printkey=00100000010140020000'>001.-01-14.2&nbsp;</a></td><td class="gray0TD">Fleming Donald D</td><td class="gray0TD"></td><td class="gray0TD">Church Rd</td>
+	</tr><tr class="historic">
+		<td class="gray1TD"></td><td class="gray1TD">313400 - Town of Lafayette</td><td class="gray1TD"><a href='propdetail.aspx?swis=313400&amp;printkey=00100000010150000000'>001.-01-15.0&nbsp;</a></td><td class="gray1TD">Christoffel Edwin G</td><td class="gray1TD">4025</td><td class="gray1TD">LaFayette Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313601 - Village of Baldwinsville (Town of Lysander)</td><td class="gray0TD"><a href='propdetail.aspx?swis=313601&amp;printkey=00100000010150000000'>001.-01-15.0&nbsp;</a></td><td class="gray0TD">Hurd Christopher W</td><td class="gray0TD">19</td><td class="gray0TD">Chaucer Cir</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313601 - Village of Baldwinsville (Town of Lysander)</td><td class="gray1TD"><a href='propdetail.aspx?swis=313601&amp;printkey=00100000010150000000'>001.-01-15.0&nbsp;</a></td><td class="gray1TD">Hurd Dedra J</td><td class="gray1TD">19</td><td class="gray1TD">Chaucer Cir</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314200 - Town of Onondaga</td><td class="gray0TD"><a href='propdetail.aspx?swis=314200&amp;printkey=00100000010150000000'>001.-01-15.0&nbsp;</a></td><td class="gray0TD">Kelley Karen A</td><td class="gray0TD"></td><td class="gray0TD">Cpl Welch Rd Off</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314200 - Town of Onondaga</td><td class="gray1TD"><a href='propdetail.aspx?swis=314200&amp;printkey=00100000010150000000'>001.-01-15.0&nbsp;</a></td><td class="gray1TD">Crockett Kevin H</td><td class="gray1TD"></td><td class="gray1TD">Cpl Welch Rd Off</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314801 - Village of Liverpool (Town of Salina)</td><td class="gray0TD"><a href='propdetail.aspx?swis=314801&amp;printkey=00100000010150000000'>001.-01-15.0&nbsp;</a></td><td class="gray0TD">Herrmann Scott</td><td class="gray0TD">100</td><td class="gray0TD">Sargent Ln</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314801 - Village of Liverpool (Town of Salina)</td><td class="gray1TD"><a href='propdetail.aspx?swis=314801&amp;printkey=00100000010150000000'>001.-01-15.0&nbsp;</a></td><td class="gray1TD">Herrmann Heidi</td><td class="gray1TD">100</td><td class="gray1TD">Sargent Ln</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313400 - Town of Lafayette</td><td class="gray0TD"><a href='propdetail.aspx?swis=313400&amp;printkey=00100000010150010000'>001.-01-15.1&nbsp;</a></td><td class="gray0TD">Christoffel Walter R</td><td class="gray0TD">4025</td><td class="gray0TD">LaFayette Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313400 - Town of Lafayette</td><td class="gray1TD"><a href='propdetail.aspx?swis=313400&amp;printkey=00100000010150010000'>001.-01-15.1&nbsp;</a></td><td class="gray1TD">Christoffel Janet B</td><td class="gray1TD">4025</td><td class="gray1TD">LaFayette Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313400 - Town of Lafayette</td><td class="gray0TD"><a href='propdetail.aspx?swis=313400&amp;printkey=00100000010150010000'>001.-01-15.1&nbsp;</a></td><td class="gray0TD">Christoffel Douglas W</td><td class="gray0TD">4025</td><td class="gray0TD">LaFayette Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313400 - Town of Lafayette</td><td class="gray1TD"><a href='propdetail.aspx?swis=313400&amp;printkey=00100000010150010000'>001.-01-15.1&nbsp;</a></td><td class="gray1TD">Krahling Heidi J</td><td class="gray1TD">4025</td><td class="gray1TD">LaFayette Rd</td>
+	</tr><tr class="historic">
+		<td class="gray0TD"></td><td class="gray0TD">313400 - Town of Lafayette</td><td class="gray0TD"><a href='propdetail.aspx?swis=313400&amp;printkey=00100000010160000000'>001.-01-16.0&nbsp;</a></td><td class="gray0TD">Christoffel Walter R</td><td class="gray0TD"></td><td class="gray0TD">LaFayette Rd</td>
+	</tr><tr class="historic">
+		<td class="gray1TD"></td><td class="gray1TD">313400 - Town of Lafayette</td><td class="gray1TD"><a href='propdetail.aspx?swis=313400&amp;printkey=00100000010160000000'>001.-01-16.0&nbsp;</a></td><td class="gray1TD">Christoffel Janet B</td><td class="gray1TD"></td><td class="gray1TD">LaFayette Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313601 - Village of Baldwinsville (Town of Lysander)</td><td class="gray0TD"><a href='propdetail.aspx?swis=313601&amp;printkey=00100000010160000000'>001.-01-16.0&nbsp;</a></td><td class="gray0TD">Hopper William R Jr</td><td class="gray0TD">17</td><td class="gray0TD">Chaucer Cir</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313601 - Village of Baldwinsville (Town of Lysander)</td><td class="gray1TD"><a href='propdetail.aspx?swis=313601&amp;printkey=00100000010160000000'>001.-01-16.0&nbsp;</a></td><td class="gray1TD">Hopper Susan J</td><td class="gray1TD">17</td><td class="gray1TD">Chaucer Cir</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313805 - Village of Minoa (Town of Manlius)</td><td class="gray0TD"><a href='propdetail.aspx?swis=313805&amp;printkey=00100000010160000000'>001.-01-16.0&nbsp;</a></td><td class="gray0TD">Mastrangelo Brandon A</td><td class="gray0TD">145</td><td class="gray0TD">Osborne St</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313805 - Village of Minoa (Town of Manlius)</td><td class="gray1TD"><a href='propdetail.aspx?swis=313805&amp;printkey=00100000010160000000'>001.-01-16.0&nbsp;</a></td><td class="gray1TD">Mastrangelo Sarah K</td><td class="gray1TD">145</td><td class="gray1TD">Osborne St</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314200 - Town of Onondaga</td><td class="gray0TD"><a href='propdetail.aspx?swis=314200&amp;printkey=00100000010160000000'>001.-01-16.0&nbsp;</a></td><td class="gray0TD">Kelley Karen A</td><td class="gray0TD"></td><td class="gray0TD">Cpl Welch Rd Off</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314200 - Town of Onondaga</td><td class="gray1TD"><a href='propdetail.aspx?swis=314200&amp;printkey=00100000010160000000'>001.-01-16.0&nbsp;</a></td><td class="gray1TD">Crockett Kevin H</td><td class="gray1TD"></td><td class="gray1TD">Cpl Welch Rd Off</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314801 - Village of Liverpool (Town of Salina)</td><td class="gray0TD"><a href='propdetail.aspx?swis=314801&amp;printkey=00100000010160000000'>001.-01-16.0&nbsp;</a></td><td class="gray0TD">Tucci Jillian P</td><td class="gray0TD">102</td><td class="gray0TD">Sargent Ln</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313601 - Village of Baldwinsville (Town of Lysander)</td><td class="gray1TD"><a href='propdetail.aspx?swis=313601&amp;printkey=00100000010170000000'>001.-01-17.0&nbsp;</a></td><td class="gray1TD">Dickson Douglas</td><td class="gray1TD">15</td><td class="gray1TD">Chaucer Cir</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313601 - Village of Baldwinsville (Town of Lysander)</td><td class="gray0TD"><a href='propdetail.aspx?swis=313601&amp;printkey=00100000010170000000'>001.-01-17.0&nbsp;</a></td><td class="gray0TD">Dickson Anne</td><td class="gray0TD">15</td><td class="gray0TD">Chaucer Cir</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313805 - Village of Minoa (Town of Manlius)</td><td class="gray1TD"><a href='propdetail.aspx?swis=313805&amp;printkey=00100000010170000000'>001.-01-17.0&nbsp;</a></td><td class="gray1TD">McConnell Marilyn H</td><td class="gray1TD">143</td><td class="gray1TD">Osborne St</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314200 - Town of Onondaga</td><td class="gray0TD"><a href='propdetail.aspx?swis=314200&amp;printkey=00100000010170000000'>001.-01-17.0&nbsp;</a></td><td class="gray0TD">Kelley Karen A</td><td class="gray0TD"></td><td class="gray0TD">Colin Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314200 - Town of Onondaga</td><td class="gray1TD"><a href='propdetail.aspx?swis=314200&amp;printkey=00100000010170000000'>001.-01-17.0&nbsp;</a></td><td class="gray1TD">Crockett Kevin H</td><td class="gray1TD"></td><td class="gray1TD">Colin Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314801 - Village of Liverpool (Town of Salina)</td><td class="gray0TD"><a href='propdetail.aspx?swis=314801&amp;printkey=00100000010170000000'>001.-01-17.0&nbsp;</a></td><td class="gray0TD">Wiley Mary M</td><td class="gray0TD">104</td><td class="gray0TD">Sargent Ln</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314801 - Village of Liverpool (Town of Salina)</td><td class="gray1TD"><a href='propdetail.aspx?swis=314801&amp;printkey=00100000010170000000'>001.-01-17.0&nbsp;</a></td><td class="gray1TD">Wiley Gary C</td><td class="gray1TD">104</td><td class="gray1TD">Sargent Ln</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314801 - Village of Liverpool (Town of Salina)</td><td class="gray0TD"><a href='propdetail.aspx?swis=314801&amp;printkey=00100000010170000000'>001.-01-17.0&nbsp;</a></td><td class="gray0TD">Weiss Linda</td><td class="gray0TD">104</td><td class="gray0TD">Sargent Ln</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313400 - Town of Lafayette</td><td class="gray1TD"><a href='propdetail.aspx?swis=313400&amp;printkey=00100000010170010000'>001.-01-17.1&nbsp;</a></td><td class="gray1TD">Christoffel Edwin G</td><td class="gray1TD">3997</td><td class="gray1TD">LaFayette Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313400 - Town of Lafayette</td><td class="gray0TD"><a href='propdetail.aspx?swis=313400&amp;printkey=00100000010170020000'>001.-01-17.2&nbsp;</a></td><td class="gray0TD">O'Brien William D</td><td class="gray0TD">3973</td><td class="gray0TD">LaFayette Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313400 - Town of Lafayette</td><td class="gray1TD"><a href='propdetail.aspx?swis=313400&amp;printkey=00100000010170020000'>001.-01-17.2&nbsp;</a></td><td class="gray1TD">O'Brien William J</td><td class="gray1TD">3973</td><td class="gray1TD">LaFayette Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313601 - Village of Baldwinsville (Town of Lysander)</td><td class="gray0TD"><a href='propdetail.aspx?swis=313601&amp;printkey=00100000010180000000'>001.-01-18.0&nbsp;</a></td><td class="gray0TD">Russell Michael A</td><td class="gray0TD">13</td><td class="gray0TD">Chaucer Cir</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313601 - Village of Baldwinsville (Town of Lysander)</td><td class="gray1TD"><a href='propdetail.aspx?swis=313601&amp;printkey=00100000010180000000'>001.-01-18.0&nbsp;</a></td><td class="gray1TD">Russell Constance I</td><td class="gray1TD">13</td><td class="gray1TD">Chaucer Cir</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313805 - Village of Minoa (Town of Manlius)</td><td class="gray0TD"><a href='propdetail.aspx?swis=313805&amp;printkey=00100000010180000000'>001.-01-18.0&nbsp;</a></td><td class="gray0TD">Brazill William F</td><td class="gray0TD">141</td><td class="gray0TD">Osborne St</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313805 - Village of Minoa (Town of Manlius)</td><td class="gray1TD"><a href='propdetail.aspx?swis=313805&amp;printkey=00100000010180000000'>001.-01-18.0&nbsp;</a></td><td class="gray1TD">Brazill Cynthia L</td><td class="gray1TD">141</td><td class="gray1TD">Osborne St</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314200 - Town of Onondaga</td><td class="gray0TD"><a href='propdetail.aspx?swis=314200&amp;printkey=00100000010180000000'>001.-01-18.0&nbsp;</a></td><td class="gray0TD">Fonzi Roberto A</td><td class="gray0TD"></td><td class="gray0TD">Colin Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314801 - Village of Liverpool (Town of Salina)</td><td class="gray1TD"><a href='propdetail.aspx?swis=314801&amp;printkey=00100000010180000000'>001.-01-18.0&nbsp;</a></td><td class="gray1TD">Wilkie Elaine</td><td class="gray1TD">106</td><td class="gray1TD">Sargent Ln</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314801 - Village of Liverpool (Town of Salina)</td><td class="gray0TD"><a href='propdetail.aspx?swis=314801&amp;printkey=00100000010180000000'>001.-01-18.0&nbsp;</a></td><td class="gray0TD">Wilkie Living Trust</td><td class="gray0TD">106</td><td class="gray0TD">Sargent Ln</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313400 - Town of Lafayette</td><td class="gray1TD"><a href='propdetail.aspx?swis=313400&amp;printkey=00100000010190000000'>001.-01-19.0&nbsp;</a></td><td class="gray1TD">Coffin William F</td><td class="gray1TD"></td><td class="gray1TD">LaFayette Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313601 - Village of Baldwinsville (Town of Lysander)</td><td class="gray0TD"><a href='propdetail.aspx?swis=313601&amp;printkey=00100000010190000000'>001.-01-19.0&nbsp;</a></td><td class="gray0TD">Thomas A Karle Living Trust</td><td class="gray0TD">11</td><td class="gray0TD">Chaucer Cir</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313805 - Village of Minoa (Town of Manlius)</td><td class="gray1TD"><a href='propdetail.aspx?swis=313805&amp;printkey=00100000010190000000'>001.-01-19.0&nbsp;</a></td><td class="gray1TD">Oddo Kathryn J</td><td class="gray1TD">133</td><td class="gray1TD">Osborne St</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313805 - Village of Minoa (Town of Manlius)</td><td class="gray0TD"><a href='propdetail.aspx?swis=313805&amp;printkey=00100000010190000000'>001.-01-19.0&nbsp;</a></td><td class="gray0TD">Oddo Timothy S</td><td class="gray0TD">133</td><td class="gray0TD">Osborne St</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314200 - Town of Onondaga</td><td class="gray1TD"><a href='propdetail.aspx?swis=314200&amp;printkey=00100000010190000000'>001.-01-19.0&nbsp;</a></td><td class="gray1TD">Fonzi Roberto A</td><td class="gray1TD"></td><td class="gray1TD">Colin Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314801 - Village of Liverpool (Town of Salina)</td><td class="gray0TD"><a href='propdetail.aspx?swis=314801&amp;printkey=00100000010190000000'>001.-01-19.0&nbsp;</a></td><td class="gray0TD">Mc Curdy Jerry A</td><td class="gray0TD">108</td><td class="gray0TD">Sargent Ln</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314801 - Village of Liverpool (Town of Salina)</td><td class="gray1TD"><a href='propdetail.aspx?swis=314801&amp;printkey=00100000010190000000'>001.-01-19.0&nbsp;</a></td><td class="gray1TD">Mc Curdy Barbara H</td><td class="gray1TD">108</td><td class="gray1TD">Sargent Ln</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313601 - Village of Baldwinsville (Town of Lysander)</td><td class="gray0TD"><a href='propdetail.aspx?swis=313601&amp;printkey=00100000010200000000'>001.-01-20.0&nbsp;</a></td><td class="gray0TD">VanDeValk Cynthia A</td><td class="gray0TD">9</td><td class="gray0TD">Chaucer Cir</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313805 - Village of Minoa (Town of Manlius)</td><td class="gray1TD"><a href='propdetail.aspx?swis=313805&amp;printkey=00100000010200000000'>001.-01-20.0&nbsp;</a></td><td class="gray1TD">Buffum Christi</td><td class="gray1TD">127</td><td class="gray1TD">Osborne St</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314200 - Town of Onondaga</td><td class="gray0TD"><a href='propdetail.aspx?swis=314200&amp;printkey=00100000010200000000'>001.-01-20.0&nbsp;</a></td><td class="gray0TD">Fernandez Margo</td><td class="gray0TD"></td><td class="gray0TD">Colin Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314801 - Village of Liverpool (Town of Salina)</td><td class="gray1TD"><a href='propdetail.aspx?swis=314801&amp;printkey=00100000010200000000'>001.-01-20.0&nbsp;</a></td><td class="gray1TD">Ward Michael R</td><td class="gray1TD">110</td><td class="gray1TD">Sargent Ln</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313601 - Village of Baldwinsville (Town of Lysander)</td><td class="gray0TD"><a href='propdetail.aspx?swis=313601&amp;printkey=00100000010210000000'>001.-01-21.0&nbsp;</a></td><td class="gray0TD">Hipolito Mark S</td><td class="gray0TD">7</td><td class="gray0TD">Chaucer Cir</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313601 - Village of Baldwinsville (Town of Lysander)</td><td class="gray1TD"><a href='propdetail.aspx?swis=313601&amp;printkey=00100000010210000000'>001.-01-21.0&nbsp;</a></td><td class="gray1TD">Hipolito Patricia A</td><td class="gray1TD">7</td><td class="gray1TD">Chaucer Cir</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313805 - Village of Minoa (Town of Manlius)</td><td class="gray0TD"><a href='propdetail.aspx?swis=313805&amp;printkey=00100000010210000000'>001.-01-21.0&nbsp;</a></td><td class="gray0TD">Clemons Family Trust John E</td><td class="gray0TD">125</td><td class="gray0TD">Osborne St</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313805 - Village of Minoa (Town of Manlius)</td><td class="gray1TD"><a href='propdetail.aspx?swis=313805&amp;printkey=00100000010210000000'>001.-01-21.0&nbsp;</a></td><td class="gray1TD">Lewis Shannon E</td><td class="gray1TD">125</td><td class="gray1TD">Osborne St</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313805 - Village of Minoa (Town of Manlius)</td><td class="gray0TD"><a href='propdetail.aspx?swis=313805&amp;printkey=00100000010210000000'>001.-01-21.0&nbsp;</a></td><td class="gray0TD">Clemons Anissa I</td><td class="gray0TD">125</td><td class="gray0TD">Osborne St</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314200 - Town of Onondaga</td><td class="gray1TD"><a href='propdetail.aspx?swis=314200&amp;printkey=00100000010210000000'>001.-01-21.0&nbsp;</a></td><td class="gray1TD">Fernadez Margo</td><td class="gray1TD"></td><td class="gray1TD">Colin Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314801 - Village of Liverpool (Town of Salina)</td><td class="gray0TD"><a href='propdetail.aspx?swis=314801&amp;printkey=00100000010210000000'>001.-01-21.0&nbsp;</a></td><td class="gray0TD">Reichert Joan F</td><td class="gray0TD">112</td><td class="gray0TD">Sargent Ln</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313601 - Village of Baldwinsville (Town of Lysander)</td><td class="gray1TD"><a href='propdetail.aspx?swis=313601&amp;printkey=00100000010220000000'>001.-01-22.0&nbsp;</a></td><td class="gray1TD">D'Eredita Steven</td><td class="gray1TD">5</td><td class="gray1TD">Chaucer Cir</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313601 - Village of Baldwinsville (Town of Lysander)</td><td class="gray0TD"><a href='propdetail.aspx?swis=313601&amp;printkey=00100000010220000000'>001.-01-22.0&nbsp;</a></td><td class="gray0TD">D'Eredita Margaret F</td><td class="gray0TD">5</td><td class="gray0TD">Chaucer Cir</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313805 - Village of Minoa (Town of Manlius)</td><td class="gray1TD"><a href='propdetail.aspx?swis=313805&amp;printkey=00100000010220000000'>001.-01-22.0&nbsp;</a></td><td class="gray1TD">Orbaker Richard G</td><td class="gray1TD">117</td><td class="gray1TD">Osborne St</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314200 - Town of Onondaga</td><td class="gray0TD"><a href='propdetail.aspx?swis=314200&amp;printkey=00100000010220000000'>001.-01-22.0&nbsp;</a></td><td class="gray0TD">Heffernan John F Jr</td><td class="gray0TD"></td><td class="gray0TD">Colin Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314801 - Village of Liverpool (Town of Salina)</td><td class="gray1TD"><a href='propdetail.aspx?swis=314801&amp;printkey=00100000010220000000'>001.-01-22.0&nbsp;</a></td><td class="gray1TD">Kelley Lori L</td><td class="gray1TD">114</td><td class="gray1TD">Sargent Ln</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314801 - Village of Liverpool (Town of Salina)</td><td class="gray0TD"><a href='propdetail.aspx?swis=314801&amp;printkey=00100000010220000000'>001.-01-22.0&nbsp;</a></td><td class="gray0TD">Kelley Daniel J</td><td class="gray0TD">114</td><td class="gray0TD">Sargent Ln</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313601 - Village of Baldwinsville (Town of Lysander)</td><td class="gray1TD"><a href='propdetail.aspx?swis=313601&amp;printkey=00100000010230000000'>001.-01-23.0&nbsp;</a></td><td class="gray1TD">Wood Allen J</td><td class="gray1TD">3</td><td class="gray1TD">Chaucer Cir</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313601 - Village of Baldwinsville (Town of Lysander)</td><td class="gray0TD"><a href='propdetail.aspx?swis=313601&amp;printkey=00100000010230000000'>001.-01-23.0&nbsp;</a></td><td class="gray0TD">Wood Julie A</td><td class="gray0TD">3</td><td class="gray0TD">Chaucer Cir</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313805 - Village of Minoa (Town of Manlius)</td><td class="gray1TD"><a href='propdetail.aspx?swis=313805&amp;printkey=00100000010230000000'>001.-01-23.0&nbsp;</a></td><td class="gray1TD">Bowhall Margaret</td><td class="gray1TD">113</td><td class="gray1TD">Osborne St</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313805 - Village of Minoa (Town of Manlius)</td><td class="gray0TD"><a href='propdetail.aspx?swis=313805&amp;printkey=00100000010230000000'>001.-01-23.0&nbsp;</a></td><td class="gray0TD">Carney Johnna M</td><td class="gray0TD">113</td><td class="gray0TD">Osborne St</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313805 - Village of Minoa (Town of Manlius)</td><td class="gray1TD"><a href='propdetail.aspx?swis=313805&amp;printkey=00100000010230000000'>001.-01-23.0&nbsp;</a></td><td class="gray1TD">Rank Rebekah M</td><td class="gray1TD">113</td><td class="gray1TD">Osborne St</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313805 - Village of Minoa (Town of Manlius)</td><td class="gray0TD"><a href='propdetail.aspx?swis=313805&amp;printkey=00100000010230000000'>001.-01-23.0&nbsp;</a></td><td class="gray0TD">Van De Walker Devera A</td><td class="gray0TD">113</td><td class="gray0TD">Osborne St</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313805 - Village of Minoa (Town of Manlius)</td><td class="gray1TD"><a href='propdetail.aspx?swis=313805&amp;printkey=00100000010230000000'>001.-01-23.0&nbsp;</a></td><td class="gray1TD">Johnna Carney trst for V. Horn</td><td class="gray1TD">113</td><td class="gray1TD">Osborne St</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314200 - Town of Onondaga</td><td class="gray0TD"><a href='propdetail.aspx?swis=314200&amp;printkey=00100000010230000000'>001.-01-23.0&nbsp;</a></td><td class="gray0TD">Heffernan John F Jr</td><td class="gray0TD">5195</td><td class="gray0TD">Cpl Welch Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314801 - Village of Liverpool (Town of Salina)</td><td class="gray1TD"><a href='propdetail.aspx?swis=314801&amp;printkey=00100000010230000000'>001.-01-23.0&nbsp;</a></td><td class="gray1TD">Lindsley-Furman Mary Jane</td><td class="gray1TD">116</td><td class="gray1TD">Sargent Ln</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313601 - Village of Baldwinsville (Town of Lysander)</td><td class="gray0TD"><a href='propdetail.aspx?swis=313601&amp;printkey=00100000010240000000'>001.-01-24.0&nbsp;</a></td><td class="gray0TD">Wilson Cindy A</td><td class="gray0TD">1</td><td class="gray0TD">Chaucer Cir</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314801 - Village of Liverpool (Town of Salina)</td><td class="gray1TD"><a href='propdetail.aspx?swis=314801&amp;printkey=00100000010240000000'>001.-01-24.0&nbsp;</a></td><td class="gray1TD">Bersani Luigi C</td><td class="gray1TD">118</td><td class="gray1TD">Sargent Ln</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314801 - Village of Liverpool (Town of Salina)</td><td class="gray0TD"><a href='propdetail.aspx?swis=314801&amp;printkey=00100000010240000000'>001.-01-24.0&nbsp;</a></td><td class="gray0TD">Bersani Toni</td><td class="gray0TD">118</td><td class="gray0TD">Sargent Ln</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314801 - Village of Liverpool (Town of Salina)</td><td class="gray1TD"><a href='propdetail.aspx?swis=314801&amp;printkey=00100000010240000000'>001.-01-24.0&nbsp;</a></td><td class="gray1TD">Guadagnolo Kyle</td><td class="gray1TD">118</td><td class="gray1TD">Sargent Ln</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314801 - Village of Liverpool (Town of Salina)</td><td class="gray0TD"><a href='propdetail.aspx?swis=314801&amp;printkey=00100000010240000000'>001.-01-24.0&nbsp;</a></td><td class="gray0TD">Cardone Rosita</td><td class="gray0TD">118</td><td class="gray0TD">Sargent Ln</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313805 - Village of Minoa (Town of Manlius)</td><td class="gray1TD"><a href='propdetail.aspx?swis=313805&amp;printkey=00100000010240010000'>001.-01-24.1&nbsp;</a></td><td class="gray1TD">MRO Properties LLC</td><td class="gray1TD">408</td><td class="gray1TD">Main St N</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313805 - Village of Minoa (Town of Manlius)</td><td class="gray0TD"><a href='propdetail.aspx?swis=313805&amp;printkey=00100000010240020000'>001.-01-24.2&nbsp;</a></td><td class="gray0TD">Dygert Patricia</td><td class="gray0TD">111</td><td class="gray0TD">Osborne St</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313601 - Village of Baldwinsville (Town of Lysander)</td><td class="gray1TD"><a href='propdetail.aspx?swis=313601&amp;printkey=00100000010250000000'>001.-01-25.0&nbsp;</a></td><td class="gray1TD">Bogaczyk John G</td><td class="gray1TD">2</td><td class="gray1TD">Chaucer Cir</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313601 - Village of Baldwinsville (Town of Lysander)</td><td class="gray0TD"><a href='propdetail.aspx?swis=313601&amp;printkey=00100000010250000000'>001.-01-25.0&nbsp;</a></td><td class="gray0TD">Lamb Debra J</td><td class="gray0TD">2</td><td class="gray0TD">Chaucer Cir</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314200 - Town of Onondaga</td><td class="gray1TD"><a href='propdetail.aspx?swis=314200&amp;printkey=00100000010250000000'>001.-01-25.0&nbsp;</a></td><td class="gray1TD">Heffernan Stacey</td><td class="gray1TD"></td><td class="gray1TD">Cpl Welch Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314801 - Village of Liverpool (Town of Salina)</td><td class="gray0TD"><a href='propdetail.aspx?swis=314801&amp;printkey=00100000010250000000'>001.-01-25.0&nbsp;</a></td><td class="gray0TD">Eleanor Traub Trust</td><td class="gray0TD">120</td><td class="gray0TD">Sargent Ln</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314801 - Village of Liverpool (Town of Salina)</td><td class="gray1TD"><a href='propdetail.aspx?swis=314801&amp;printkey=00100000010250000000'>001.-01-25.0&nbsp;</a></td><td class="gray1TD">Traub Craig &amp; Bruce</td><td class="gray1TD">120</td><td class="gray1TD">Sargent Ln</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313601 - Village of Baldwinsville (Town of Lysander)</td><td class="gray0TD"><a href='propdetail.aspx?swis=313601&amp;printkey=00100000010260000000'>001.-01-26.0&nbsp;</a></td><td class="gray0TD">Kempisty Virginia B</td><td class="gray0TD">6</td><td class="gray0TD">Chaucer Cir</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314801 - Village of Liverpool (Town of Salina)</td><td class="gray1TD"><a href='propdetail.aspx?swis=314801&amp;printkey=00100000010260000000'>001.-01-26.0&nbsp;</a></td><td class="gray1TD">Matousek Robert B</td><td class="gray1TD">122</td><td class="gray1TD">Sargent Ln</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314200 - Town of Onondaga</td><td class="gray0TD"><a href='propdetail.aspx?swis=314200&amp;printkey=00100000010260010000'>001.-01-26.1&nbsp;</a></td><td class="gray0TD">ADR Holdings LLC</td><td class="gray0TD"></td><td class="gray0TD">Cpl Welch Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314200 - Town of Onondaga</td><td class="gray1TD"><a href='propdetail.aspx?swis=314200&amp;printkey=00100000010260020000'>001.-01-26.2&nbsp;</a></td><td class="gray1TD">Calley Frank</td><td class="gray1TD"></td><td class="gray1TD">Cpl Welch Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314200 - Town of Onondaga</td><td class="gray0TD"><a href='propdetail.aspx?swis=314200&amp;printkey=00100000010260020000'>001.-01-26.2&nbsp;</a></td><td class="gray0TD">Calley Carol</td><td class="gray0TD"></td><td class="gray0TD">Cpl Welch Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314200 - Town of Onondaga</td><td class="gray1TD"><a href='propdetail.aspx?swis=314200&amp;printkey=00100000010260030000'>001.-01-26.3&nbsp;</a></td><td class="gray1TD">Bealer Margaret Cornelia</td><td class="gray1TD">5137</td><td class="gray1TD">Cpl Welch Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314200 - Town of Onondaga</td><td class="gray0TD"><a href='propdetail.aspx?swis=314200&amp;printkey=00100000010260030000'>001.-01-26.3&nbsp;</a></td><td class="gray0TD">Bealer James</td><td class="gray0TD">5137</td><td class="gray0TD">Cpl Welch Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314200 - Town of Onondaga</td><td class="gray1TD"><a href='propdetail.aspx?swis=314200&amp;printkey=00100000010260040000'>001.-01-26.4&nbsp;</a></td><td class="gray1TD">Bealer Margaret Cornelia</td><td class="gray1TD"></td><td class="gray1TD">Cpl Welch Rd Off</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314200 - Town of Onondaga</td><td class="gray0TD"><a href='propdetail.aspx?swis=314200&amp;printkey=00100000010260050000'>001.-01-26.5&nbsp;</a></td><td class="gray0TD">Calley Frank</td><td class="gray0TD">5129</td><td class="gray0TD">Cpl Welch Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314200 - Town of Onondaga</td><td class="gray1TD"><a href='propdetail.aspx?swis=314200&amp;printkey=00100000010260050000'>001.-01-26.5&nbsp;</a></td><td class="gray1TD">Calley Carol</td><td class="gray1TD">5129</td><td class="gray1TD">Cpl Welch Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314200 - Town of Onondaga</td><td class="gray0TD"><a href='propdetail.aspx?swis=314200&amp;printkey=00100000010260050000'>001.-01-26.5&nbsp;</a></td><td class="gray0TD">Calley John</td><td class="gray0TD">5129</td><td class="gray0TD">Cpl Welch Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314200 - Town of Onondaga</td><td class="gray1TD"><a href='propdetail.aspx?swis=314200&amp;printkey=00100000010260050000'>001.-01-26.5&nbsp;</a></td><td class="gray1TD">Calley Irrevocable Trust Frank &amp; Carol</td><td class="gray1TD">5129</td><td class="gray1TD">Cpl Welch Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314200 - Town of Onondaga</td><td class="gray0TD"><a href='propdetail.aspx?swis=314200&amp;printkey=00100000010260060000'>001.-01-26.6&nbsp;</a></td><td class="gray0TD">Calley Frank</td><td class="gray0TD"></td><td class="gray0TD">Cpl Welch Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314200 - Town of Onondaga</td><td class="gray1TD"><a href='propdetail.aspx?swis=314200&amp;printkey=00100000010260060000'>001.-01-26.6&nbsp;</a></td><td class="gray1TD">Calley Carol</td><td class="gray1TD"></td><td class="gray1TD">Cpl Welch Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314200 - Town of Onondaga</td><td class="gray0TD"><a href='propdetail.aspx?swis=314200&amp;printkey=00100000010260070000'>001.-01-26.7&nbsp;</a></td><td class="gray0TD">Vitale Paul H</td><td class="gray0TD">315</td><td class="gray0TD">Starksboro Dr</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314200 - Town of Onondaga</td><td class="gray1TD"><a href='propdetail.aspx?swis=314200&amp;printkey=00100000010260070000'>001.-01-26.7&nbsp;</a></td><td class="gray1TD">Vitale Lisa R</td><td class="gray1TD">315</td><td class="gray1TD">Starksboro Dr</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314200 - Town of Onondaga</td><td class="gray0TD"><a href='propdetail.aspx?swis=314200&amp;printkey=00100000010260080000'>001.-01-26.8&nbsp;</a></td><td class="gray0TD">Yanushchik Nikolay</td><td class="gray0TD">515</td><td class="gray0TD">Emann Dr</td>
+	</tr><tr class="historic">
+		<td class="gray1TD"></td><td class="gray1TD">314200 - Town of Onondaga</td><td class="gray1TD"><a href='propdetail.aspx?swis=314200&amp;printkey=00100000010260090000'>001.-01-26.9&nbsp;</a></td><td class="gray1TD">Vitale Paul H</td><td class="gray1TD"></td><td class="gray1TD">Cpl Welch Rd</td>
+	</tr><tr class="historic">
+		<td class="gray0TD"></td><td class="gray0TD">314200 - Town of Onondaga</td><td class="gray0TD"><a href='propdetail.aspx?swis=314200&amp;printkey=00100000010260090000'>001.-01-26.9&nbsp;</a></td><td class="gray0TD">Vitale Lisa R</td><td class="gray0TD"></td><td class="gray0TD">Cpl Welch Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313601 - Village of Baldwinsville (Town of Lysander)</td><td class="gray1TD"><a href='propdetail.aspx?swis=313601&amp;printkey=00100000010270000000'>001.-01-27.0&nbsp;</a></td><td class="gray1TD">Klein Frederick III</td><td class="gray1TD">8</td><td class="gray1TD">Chaucer Cir</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313601 - Village of Baldwinsville (Town of Lysander)</td><td class="gray0TD"><a href='propdetail.aspx?swis=313601&amp;printkey=00100000010270000000'>001.-01-27.0&nbsp;</a></td><td class="gray0TD">Klein Michelle</td><td class="gray0TD">8</td><td class="gray0TD">Chaucer Cir</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314200 - Town of Onondaga</td><td class="gray1TD"><a href='propdetail.aspx?swis=314200&amp;printkey=00100000010270000000'>001.-01-27.0&nbsp;</a></td><td class="gray1TD">Erwin Stephen</td><td class="gray1TD">5300</td><td class="gray1TD">Falcon Ledge</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314200 - Town of Onondaga</td><td class="gray0TD"><a href='propdetail.aspx?swis=314200&amp;printkey=00100000010270000000'>001.-01-27.0&nbsp;</a></td><td class="gray0TD">Erwin Carolyn</td><td class="gray0TD">5300</td><td class="gray0TD">Falcon Ledge</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314801 - Village of Liverpool (Town of Salina)</td><td class="gray1TD"><a href='propdetail.aspx?swis=314801&amp;printkey=00100000010270000000'>001.-01-27.0&nbsp;</a></td><td class="gray1TD">Pratt Sherry J</td><td class="gray1TD">124</td><td class="gray1TD">Sargent Ln</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314801 - Village of Liverpool (Town of Salina)</td><td class="gray0TD"><a href='propdetail.aspx?swis=314801&amp;printkey=00100000010270000000'>001.-01-27.0&nbsp;</a></td><td class="gray0TD">Pratt Holly B</td><td class="gray0TD">124</td><td class="gray0TD">Sargent Ln</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313601 - Village of Baldwinsville (Town of Lysander)</td><td class="gray1TD"><a href='propdetail.aspx?swis=313601&amp;printkey=00100000010280000000'>001.-01-28.0&nbsp;</a></td><td class="gray1TD">Thorpe Ryan G</td><td class="gray1TD">10</td><td class="gray1TD">Chaucer Cir</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313601 - Village of Baldwinsville (Town of Lysander)</td><td class="gray0TD"><a href='propdetail.aspx?swis=313601&amp;printkey=00100000010280000000'>001.-01-28.0&nbsp;</a></td><td class="gray0TD">Thorpe Diana B</td><td class="gray0TD">10</td><td class="gray0TD">Chaucer Cir</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314200 - Town of Onondaga</td><td class="gray1TD"><a href='propdetail.aspx?swis=314200&amp;printkey=00100000010280000000'>001.-01-28.0&nbsp;</a></td><td class="gray1TD">Heffernan Stacey</td><td class="gray1TD"></td><td class="gray1TD">Cpl Welch Rd Off</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313601 - Village of Baldwinsville (Town of Lysander)</td><td class="gray0TD"><a href='propdetail.aspx?swis=313601&amp;printkey=00100000010290000000'>001.-01-29.0&nbsp;</a></td><td class="gray0TD">Holcomb Jason</td><td class="gray0TD">14</td><td class="gray0TD">Chaucer Cir</td>
+	</tr><tr class="historic">
+		<td class="gray1TD"></td><td class="gray1TD">314801 - Village of Liverpool (Town of Salina)</td><td class="gray1TD"><a href='propdetail.aspx?swis=314801&amp;printkey=00100000010290010000'>001.-01-29.1&nbsp;</a></td><td class="gray1TD">Meyer Manor LLC</td><td class="gray1TD"></td><td class="gray1TD">Tulip St</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313601 - Village of Baldwinsville (Town of Lysander)</td><td class="gray0TD"><a href='propdetail.aspx?swis=313601&amp;printkey=00100000010300000000'>001.-01-30.0&nbsp;</a></td><td class="gray0TD">Crawford Ralph Jr</td><td class="gray0TD">16</td><td class="gray0TD">Chaucer Cir</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313601 - Village of Baldwinsville (Town of Lysander)</td><td class="gray1TD"><a href='propdetail.aspx?swis=313601&amp;printkey=00100000010310000000'>001.-01-31.0&nbsp;</a></td><td class="gray1TD">May Gregory</td><td class="gray1TD">18</td><td class="gray1TD">Chaucer Cir</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313601 - Village of Baldwinsville (Town of Lysander)</td><td class="gray0TD"><a href='propdetail.aspx?swis=313601&amp;printkey=00100000010310000000'>001.-01-31.0&nbsp;</a></td><td class="gray0TD">May Joan</td><td class="gray0TD">18</td><td class="gray0TD">Chaucer Cir</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314801 - Village of Liverpool (Town of Salina)</td><td class="gray1TD"><a href='propdetail.aspx?swis=314801&amp;printkey=00100000010310000000'>001.-01-31.0&nbsp;</a></td><td class="gray1TD">Ajemian Properties Llc</td><td class="gray1TD"></td><td class="gray1TD">Tulip St</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313601 - Village of Baldwinsville (Town of Lysander)</td><td class="gray0TD"><a href='propdetail.aspx?swis=313601&amp;printkey=00100000010320000000'>001.-01-32.0&nbsp;</a></td><td class="gray0TD">Hurley Stephen C</td><td class="gray0TD">20</td><td class="gray0TD">Chaucer Cir</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314801 - Village of Liverpool (Town of Salina)</td><td class="gray1TD"><a href='propdetail.aspx?swis=314801&amp;printkey=00100000010320000000'>001.-01-32.0&nbsp;</a></td><td class="gray1TD">Meyer Manor LLC</td><td class="gray1TD"></td><td class="gray1TD">Tulip St</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313601 - Village of Baldwinsville (Town of Lysander)</td><td class="gray0TD"><a href='propdetail.aspx?swis=313601&amp;printkey=00100000010330000000'>001.-01-33.0&nbsp;</a></td><td class="gray0TD">Stadtmiller Daniel R</td><td class="gray0TD">22</td><td class="gray0TD">Chaucer Cir</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313601 - Village of Baldwinsville (Town of Lysander)</td><td class="gray1TD"><a href='propdetail.aspx?swis=313601&amp;printkey=00100000010330000000'>001.-01-33.0&nbsp;</a></td><td class="gray1TD">Stadtmiller Kelly C</td><td class="gray1TD">22</td><td class="gray1TD">Chaucer Cir</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314801 - Village of Liverpool (Town of Salina)</td><td class="gray0TD"><a href='propdetail.aspx?swis=314801&amp;printkey=00100000010330000000'>001.-01-33.0&nbsp;</a></td><td class="gray0TD">Latuga Michael J</td><td class="gray0TD"></td><td class="gray0TD">Tulip St</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313601 - Village of Baldwinsville (Town of Lysander)</td><td class="gray1TD"><a href='propdetail.aspx?swis=313601&amp;printkey=00100000010340000000'>001.-01-34.0&nbsp;</a></td><td class="gray1TD">Wrench Jason K</td><td class="gray1TD">24</td><td class="gray1TD">Chaucer Cir</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313601 - Village of Baldwinsville (Town of Lysander)</td><td class="gray0TD"><a href='propdetail.aspx?swis=313601&amp;printkey=00100000010340000000'>001.-01-34.0&nbsp;</a></td><td class="gray0TD">Wrench Megan E</td><td class="gray0TD">24</td><td class="gray0TD">Chaucer Cir</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313601 - Village of Baldwinsville (Town of Lysander)</td><td class="gray1TD"><a href='propdetail.aspx?swis=313601&amp;printkey=00100000010350000000'>001.-01-35.0&nbsp;</a></td><td class="gray1TD">Osolinsky Gregory</td><td class="gray1TD">26</td><td class="gray1TD">Chaucer Cir</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313601 - Village of Baldwinsville (Town of Lysander)</td><td class="gray0TD"><a href='propdetail.aspx?swis=313601&amp;printkey=00100000010350000000'>001.-01-35.0&nbsp;</a></td><td class="gray0TD">Osolinsky Kathleen R</td><td class="gray0TD">26</td><td class="gray0TD">Chaucer Cir</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313601 - Village of Baldwinsville (Town of Lysander)</td><td class="gray1TD"><a href='propdetail.aspx?swis=313601&amp;printkey=00100000010360000000'>001.-01-36.0&nbsp;</a></td><td class="gray1TD">Gramiak Erik S</td><td class="gray1TD">7</td><td class="gray1TD">Knights Cir</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313601 - Village of Baldwinsville (Town of Lysander)</td><td class="gray0TD"><a href='propdetail.aspx?swis=313601&amp;printkey=00100000010360000000'>001.-01-36.0&nbsp;</a></td><td class="gray0TD">Gramiak Catherine A</td><td class="gray0TD">7</td><td class="gray0TD">Knights Cir</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313601 - Village of Baldwinsville (Town of Lysander)</td><td class="gray1TD"><a href='propdetail.aspx?swis=313601&amp;printkey=00100000010370000000'>001.-01-37.0&nbsp;</a></td><td class="gray1TD">Talaber Michael</td><td class="gray1TD">9</td><td class="gray1TD">Knights Cir</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313601 - Village of Baldwinsville (Town of Lysander)</td><td class="gray0TD"><a href='propdetail.aspx?swis=313601&amp;printkey=00100000010380000000'>001.-01-38.0&nbsp;</a></td><td class="gray0TD">Sacco Michael E</td><td class="gray0TD">11</td><td class="gray0TD">Knights Cir</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313601 - Village of Baldwinsville (Town of Lysander)</td><td class="gray1TD"><a href='propdetail.aspx?swis=313601&amp;printkey=00100000010380000000'>001.-01-38.0&nbsp;</a></td><td class="gray1TD">Sacco Carolyn A</td><td class="gray1TD">11</td><td class="gray1TD">Knights Cir</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313601 - Village of Baldwinsville (Town of Lysander)</td><td class="gray0TD"><a href='propdetail.aspx?swis=313601&amp;printkey=00100000010390000000'>001.-01-39.0&nbsp;</a></td><td class="gray0TD">Cross Megan</td><td class="gray0TD">13</td><td class="gray0TD">Knights Cir</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313601 - Village of Baldwinsville (Town of Lysander)</td><td class="gray1TD"><a href='propdetail.aspx?swis=313601&amp;printkey=00100000010400000000'>001.-01-40.0&nbsp;</a></td><td class="gray1TD">Bardot Irene S</td><td class="gray1TD">15</td><td class="gray1TD">Knights Cir</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313601 - Village of Baldwinsville (Town of Lysander)</td><td class="gray0TD"><a href='propdetail.aspx?swis=313601&amp;printkey=00100000010410000000'>001.-01-41.0&nbsp;</a></td><td class="gray0TD">Szczurek Andrzej</td><td class="gray0TD">16</td><td class="gray0TD">Knights Cir</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313601 - Village of Baldwinsville (Town of Lysander)</td><td class="gray1TD"><a href='propdetail.aspx?swis=313601&amp;printkey=00100000010410000000'>001.-01-41.0&nbsp;</a></td><td class="gray1TD">Szczurek Danuta R</td><td class="gray1TD">16</td><td class="gray1TD">Knights Cir</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313601 - Village of Baldwinsville (Town of Lysander)</td><td class="gray0TD"><a href='propdetail.aspx?swis=313601&amp;printkey=00100000010420000000'>001.-01-42.0&nbsp;</a></td><td class="gray0TD">Catalino Michael J</td><td class="gray0TD">14</td><td class="gray0TD">Knights Cir</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313601 - Village of Baldwinsville (Town of Lysander)</td><td class="gray1TD"><a href='propdetail.aspx?swis=313601&amp;printkey=00100000010420000000'>001.-01-42.0&nbsp;</a></td><td class="gray1TD">Catalino Kathryn A</td><td class="gray1TD">14</td><td class="gray1TD">Knights Cir</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313601 - Village of Baldwinsville (Town of Lysander)</td><td class="gray0TD"><a href='propdetail.aspx?swis=313601&amp;printkey=00100000010430000000'>001.-01-43.0&nbsp;</a></td><td class="gray0TD">Stein Derrick J</td><td class="gray0TD">12</td><td class="gray0TD">Knights Cir</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313601 - Village of Baldwinsville (Town of Lysander)</td><td class="gray1TD"><a href='propdetail.aspx?swis=313601&amp;printkey=00100000010430000000'>001.-01-43.0&nbsp;</a></td><td class="gray1TD">Stein Danica P</td><td class="gray1TD">12</td><td class="gray1TD">Knights Cir</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313601 - Village of Baldwinsville (Town of Lysander)</td><td class="gray0TD"><a href='propdetail.aspx?swis=313601&amp;printkey=00100000010440000000'>001.-01-44.0&nbsp;</a></td><td class="gray0TD">Jordan Michael K</td><td class="gray0TD">10</td><td class="gray0TD">Knights Cir</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313601 - Village of Baldwinsville (Town of Lysander)</td><td class="gray1TD"><a href='propdetail.aspx?swis=313601&amp;printkey=00100000010440000000'>001.-01-44.0&nbsp;</a></td><td class="gray1TD">Jordan Sharon A</td><td class="gray1TD">10</td><td class="gray1TD">Knights Cir</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313601 - Village of Baldwinsville (Town of Lysander)</td><td class="gray0TD"><a href='propdetail.aspx?swis=313601&amp;printkey=00100000010450000000'>001.-01-45.0&nbsp;</a></td><td class="gray0TD">Chwala Glenwood C</td><td class="gray0TD">8</td><td class="gray0TD">Knights Cir</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">312001 - Village of Camillus</td><td class="gray1TD"><a href='propdetail.aspx?swis=312001&amp;printkey=00100000020010000000'>001.-02-01.0&nbsp;</a></td><td class="gray1TD">Dwire Diane M</td><td class="gray1TD">42</td><td class="gray1TD">Elderkin Ave</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">312401 - Village of North Syracuse (Town of Clay)</td><td class="gray0TD"><a href='propdetail.aspx?swis=312401&amp;printkey=00100000020010000000'>001.-02-01.0&nbsp;</a></td><td class="gray0TD">Kanik Robert W</td><td class="gray0TD">203</td><td class="gray0TD">Kenruth Dr</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">312401 - Village of North Syracuse (Town of Clay)</td><td class="gray1TD"><a href='propdetail.aspx?swis=312401&amp;printkey=00100000020010000000'>001.-02-01.0&nbsp;</a></td><td class="gray1TD">Kanik Judy A</td><td class="gray1TD">203</td><td class="gray1TD">Kenruth Dr</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">312601 - Village of East Syracuse (Town of Dewitt)</td><td class="gray0TD"><a href='propdetail.aspx?swis=312601&amp;printkey=00100000020010000000'>001.-02-01.0&nbsp;</a></td><td class="gray0TD">Goodfellow Robert</td><td class="gray0TD">110</td><td class="gray0TD">Worth St</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">312601 - Village of East Syracuse (Town of Dewitt)</td><td class="gray1TD"><a href='propdetail.aspx?swis=312601&amp;printkey=00100000020010000000'>001.-02-01.0&nbsp;</a></td><td class="gray1TD">Connor Robin</td><td class="gray1TD">110</td><td class="gray1TD">Worth St</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">312803 - Village of Jordan (Town of Elblridge)</td><td class="gray0TD"><a href='propdetail.aspx?swis=312803&amp;printkey=00100000020010000000'>001.-02-01.0&nbsp;</a></td><td class="gray0TD">Kessler Gregory S</td><td class="gray0TD">124</td><td class="gray0TD">N Main St</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313601 - Village of Baldwinsville (Town of Lysander)</td><td class="gray1TD"><a href='propdetail.aspx?swis=313601&amp;printkey=00100000020010000000'>001.-02-01.0&nbsp;</a></td><td class="gray1TD">Sweeney Hugh J</td><td class="gray1TD">43</td><td class="gray1TD">Braeside Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313601 - Village of Baldwinsville (Town of Lysander)</td><td class="gray0TD"><a href='propdetail.aspx?swis=313601&amp;printkey=00100000020010000000'>001.-02-01.0&nbsp;</a></td><td class="gray0TD">Sweeney Roberta H</td><td class="gray0TD">43</td><td class="gray0TD">Braeside Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313805 - Village of Minoa (Town of Manlius)</td><td class="gray1TD"><a href='propdetail.aspx?swis=313805&amp;printkey=00100000020010000000'>001.-02-01.0&nbsp;</a></td><td class="gray1TD">Stoddard Linda L</td><td class="gray1TD">144</td><td class="gray1TD">East Ave</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314200 - Town of Onondaga</td><td class="gray0TD"><a href='propdetail.aspx?swis=314200&amp;printkey=00100000020010000000'>001.-02-01.0&nbsp;</a></td><td class="gray0TD">Welch Colleen M</td><td class="gray0TD">5132</td><td class="gray0TD">Cpl Welch Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314600 - Town of Pompey</td><td class="gray1TD"><a href='propdetail.aspx?swis=314600&amp;printkey=00100000020010000000'>001.-02-01.0&nbsp;</a></td><td class="gray1TD">Mastro Robert Jr</td><td class="gray1TD">4252</td><td class="gray1TD">Taylor Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314600 - Town of Pompey</td><td class="gray0TD"><a href='propdetail.aspx?swis=314600&amp;printkey=00100000020010000000'>001.-02-01.0&nbsp;</a></td><td class="gray0TD">Brennan Shannon</td><td class="gray0TD">4252</td><td class="gray0TD">Taylor Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">315200 - Town of Spafford</td><td class="gray1TD"><a href='propdetail.aspx?swis=315200&amp;printkey=00100000020010000000'>001.-02-01.0&nbsp;</a></td><td class="gray1TD">Hardy Nicholas J</td><td class="gray1TD">2434</td><td class="gray1TD">E Lake Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">315200 - Town of Spafford</td><td class="gray0TD"><a href='propdetail.aspx?swis=315200&amp;printkey=00100000020010000000'>001.-02-01.0&nbsp;</a></td><td class="gray0TD">Schneider Kate M</td><td class="gray0TD">2434</td><td class="gray0TD">E Lake Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313400 - Town of Lafayette</td><td class="gray1TD"><a href='propdetail.aspx?swis=313400&amp;printkey=00100000020010010000'>001.-02-01.1&nbsp;</a></td><td class="gray1TD">Evans Steven P</td><td class="gray1TD">4303</td><td class="gray1TD">Barker Hill Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313400 - Town of Lafayette</td><td class="gray0TD"><a href='propdetail.aspx?swis=313400&amp;printkey=00100000020010010000'>001.-02-01.1&nbsp;</a></td><td class="gray0TD">Evans Kerry L</td><td class="gray0TD">4303</td><td class="gray0TD">Barker Hill Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">314001 - Village of Marcellus</td><td class="gray1TD"><a href='propdetail.aspx?swis=314001&amp;printkey=00100000020010010000'>001.-02-01.1&nbsp;</a></td><td class="gray1TD">Riggall Paul R</td><td class="gray1TD">18</td><td class="gray1TD">Orchard St</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">314001 - Village of Marcellus</td><td class="gray0TD"><a href='propdetail.aspx?swis=314001&amp;printkey=00100000020010010000'>001.-02-01.1&nbsp;</a></td><td class="gray0TD">Riggall Karol L</td><td class="gray0TD">18</td><td class="gray0TD">Orchard St</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313400 - Town of Lafayette</td><td class="gray1TD"><a href='propdetail.aspx?swis=313400&amp;printkey=00100000020010020000'>001.-02-01.2&nbsp;</a></td><td class="gray1TD">Silver Ohnemkee L</td><td class="gray1TD">4245</td><td class="gray1TD">Barker Hill Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313400 - Town of Lafayette</td><td class="gray0TD"><a href='propdetail.aspx?swis=313400&amp;printkey=00100000020010030000'>001.-02-01.3&nbsp;</a></td><td class="gray0TD">Evans Joseph</td><td class="gray0TD">4225</td><td class="gray0TD">Barker Hill Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313400 - Town of Lafayette</td><td class="gray1TD"><a href='propdetail.aspx?swis=313400&amp;printkey=00100000020010030000'>001.-02-01.3&nbsp;</a></td><td class="gray1TD">Diane Jimenez</td><td class="gray1TD">4225</td><td class="gray1TD">Barker Hill Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">312001 - Village of Camillus</td><td class="gray0TD"><a href='propdetail.aspx?swis=312001&amp;printkey=00100000020020000000'>001.-02-02.0&nbsp;</a></td><td class="gray0TD">Schneiweiss June</td><td class="gray0TD">19</td><td class="gray0TD">Kastor Ave</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">312401 - Village of North Syracuse (Town of Clay)</td><td class="gray1TD"><a href='propdetail.aspx?swis=312401&amp;printkey=00100000020020000000'>001.-02-02.0&nbsp;</a></td><td class="gray1TD">Courbat Douglas R</td><td class="gray1TD">205</td><td class="gray1TD">Kenruth Dr</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">312601 - Village of East Syracuse (Town of Dewitt)</td><td class="gray0TD"><a href='propdetail.aspx?swis=312601&amp;printkey=00100000020020000000'>001.-02-02.0&nbsp;</a></td><td class="gray0TD">Green Jerry Floyd</td><td class="gray0TD">4512</td><td class="gray0TD">James St</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">312601 - Village of East Syracuse (Town of Dewitt)</td><td class="gray1TD"><a href='propdetail.aspx?swis=312601&amp;printkey=00100000020020000000'>001.-02-02.0&nbsp;</a></td><td class="gray1TD">Green Patsy A</td><td class="gray1TD">4512</td><td class="gray1TD">James St</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313400 - Town of Lafayette</td><td class="gray0TD"><a href='propdetail.aspx?swis=313400&amp;printkey=00100000020020000000'>001.-02-02.0&nbsp;</a></td><td class="gray0TD">Akl Wahid J</td><td class="gray0TD">4223</td><td class="gray0TD">Barker Hill Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313400 - Town of Lafayette</td><td class="gray1TD"><a href='propdetail.aspx?swis=313400&amp;printkey=00100000020020000000'>001.-02-02.0&nbsp;</a></td><td class="gray1TD">Akl Ronda T</td><td class="gray1TD">4223</td><td class="gray1TD">Barker Hill Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313601 - Village of Baldwinsville (Town of Lysander)</td><td class="gray0TD"><a href='propdetail.aspx?swis=313601&amp;printkey=00100000020020000000'>001.-02-02.0&nbsp;</a></td><td class="gray0TD">Dailey Thomas J</td><td class="gray0TD">41</td><td class="gray0TD">Braeside Rd</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313601 - Village of Baldwinsville (Town of Lysander)</td><td class="gray1TD"><a href='propdetail.aspx?swis=313601&amp;printkey=00100000020020000000'>001.-02-02.0&nbsp;</a></td><td class="gray1TD">Dailey Lynn M</td><td class="gray1TD">41</td><td class="gray1TD">Braeside Rd</td>
+	</tr><tr>
+		<td class="gray0TD"></td><td class="gray0TD">313805 - Village of Minoa (Town of Manlius)</td><td class="gray0TD"><a href='propdetail.aspx?swis=313805&amp;printkey=00100000020020000000'>001.-02-02.0&nbsp;</a></td><td class="gray0TD">Theobald Edmond J</td><td class="gray0TD">204</td><td class="gray0TD">East Ave</td>
+	</tr><tr>
+		<td class="gray1TD"></td><td class="gray1TD">313805 - Village of Minoa (Town of Manlius)</td><td class="gray1TD"><a href='propdetail.aspx?swis=313805&amp;printkey=00100000020020000000'>001.-02-02.0&nbsp;</a></td><td class="gray1TD">Theobald Bridget M</td><td class="gray1TD">204</td><td class="gray1TD">East Ave</td>
+	</tr>
+</table>
+            
+      <div id="pnlPageControls2">
+	
+        <p id="pageControls2" style="text-align:center">
+          
+          | Page <span id="lblCurrentPage2">1</span> of <span id="lblPageCount2">654</span> |
+          <a id="lnkNextPage2" href="?sort=printkey&amp;swis=all&amp;sitetype=res&amp;advanced=true&amp;page=2">Next Page &rarr;</a> 
+       </p>
+      
+</div>
+      
+      <p><span id="lblCount">Showing results 1&ndash;400 of 261508</span></p>
+               
+      
+      
+      
+    </form>
+  </body>
+</html>

@@ -1,0 +1,790 @@
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+    <title>Property Details - Image Mate Online</title>
+    <link media="print" href="styles/printersheet.css" type="text/css" rel="stylesheet" />
+    <link href="styles/imostyle.css" type="text/css" rel="stylesheet" />
+    <link href="styles/propdetail.css" type="text/css" rel="stylesheet" />
+    <style type="text/css" media="all">
+         #pnlResButtons p, #pnlComButtons p {
+            text-align: center;
+         }
+         #tblPropertyInfo td.headerTD {
+            padding-left: 3px;
+         }
+         #tblPropertyInfo td.dataTD {
+            padding-left: 1em;
+         }
+      </style>
+      <style type="text/css" media="all">
+      /* Dropdown Button */
+.dropbtn {
+      background-color: #E0E8FF;
+  border: 2px solid #608BFF;
+  display: block;
+  padding: 0.5em;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+      </style>
+    <style type="text/css" media="all">
+	body {
+		font-family: helvetica;
+	}
+	.map_container {
+		width: 175px;
+		height: 350px	;
+	}
+	#map_canvas_cont, #pano_cont {
+		width: 100%;
+		height: 50%;
+		margin: 2px;
+	}
+
+	#pano, #map_canvas {
+		width: 100%;
+		height: 100%;
+	}
+
+    span.tab1 {padding-left: 1.3em;}
+    span.tab2 {padding-left: 2.6em;}
+    span.tab3 {padding-left: 3.0em;}
+</style>
+     <script type="text/javascript">
+function httpGet()
+{
+    /*location.href = 'https://systemsdevelopmentgroup.com/installApp';*/
+    /* window.location.assign("https://systemsdevelopmentgroup.com/installApp"); */
+   var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "GET", "https://systemsdevelopmentgroup.com/installApp", false ); // false for synchronous request
+    xmlHttp.send( null );
+     return xmlHttp.responseText; 
+    
+}
+</script>
+    <script type="text/javascript" src="javascript/jquery-1.2.6.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript" src="https://maps.google.com/maps/api/js?key=AIzaSyDBY0IwYJv_ckfHhME0BAie3ZykoPUKfVg&region=us"></script>
+
+    <script type="text/javascript" src="javascript/propdetail-photo.js"></script>
+
+    <script type="text/javascript">
+      	var address ='9 Rolling Hills Rd, Camillus, NY';;  
+    </script>
+
+    <script type="text/javascript" src="javascript/streetview.js">
+      	
+    </script>
+    
+    <script type="text/javascript">
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+ </script> 
+    <script type="text/javascript" language="javascript">
+         function goToReport(siteType) {
+            var resSiteNum = 1;
+            var comSiteNum = 0;
+           
+            var reportURL = 'report.aspx?file=' + _currentPhotoFile +
+                            '&swiscode=312001&printkey=00100000010010000000' +
+                            '&sitetype=' + siteType;
+            reportURL += '&siteNum=' + (siteType == 'res' ? resSiteNum : comSiteNum);
+           
+            window.location = reportURL;
+         }
+    </script>
+
+    <script type="text/javascript">                                                          
+                          function submitHiddenInputs() {
+                              var dataObj = {
+                                  swis : document.querySelector('.dataTD #lblSwis').innerHTML,
+                                  taxMapId  : document.querySelector('.dataTD #lblTaxID').innerHTML,
+                                  bldgStyle : document.querySelector('.dataTD #lblBuildingStyle').innerHTML,
+                                  numBaths : document.querySelector('.dataTD #lblBaths').innerHTML,                                
+                                  numBedrms : document.querySelector('.dataTD #lblBedrooms').innerHTML,
+                                  numKitchens : document.querySelector('.dataTD #lblKitchens').innerHTML,
+                                  numFireplaces : document.querySelector('.dataTD #lblFireplaces').innerHTML,
+                                  condition : document.querySelector('.dataTD #lblCondition').innerHTML,
+                                  overallGrade : document.querySelector('.dataTD #lblGrade').innerHTML,
+                                  porchType : document.querySelector('.dataTD #lblPorchType').innerHTML,
+                                  porchArea : document.querySelector('.dataTD #lblPorchArea').innerHTML,
+                                  yearBuilt : document.querySelector('.dataTD #lblYearBuilt').innerHTML,
+                                  basementType : document.querySelector('.dataTD #lblBasement').innerHTML,
+                                  basementGarageCap : document.querySelector('.dataTD #lblBasementGarage').innerHTML,
+                                  attachedGarageCap : document.querySelector('.dataTD #lblAttachedGarage').innerHTML,
+                                  livingArea : document.querySelector('.dataTD #lblLivingArea').innerHTML,
+                                  firstStoryArea : document.querySelector('.dataTD #lblFirstStory').innerHTML,
+                                  secondStoryArea : document.querySelector('.dataTD #lblSecondStory').innerHTML,
+                                  halfStoryArea : document.querySelector('.dataTD #lblHalfStory').innerHTML,
+                                  additionalStoryArea : document.querySelector('.dataTD #lblAdditionalStory').innerHTML,
+                                  threeQuarterStoryArea : document.querySelector('.dataTD #lbl3QuarterStory').innerHTML,
+                                  finishedBasement : document.querySelector('.dataTD #lblFinishedBasement').innerHTML,
+                                  finishedRecRoom : document.querySelector('.dataTD #lblFinishedRecRoom').innerHTML,
+                                  finishedAreaOverGarage : document.querySelector('.dataTD #lblFinishedOverGarage').innerHTML,
+                                  numStories : document.querySelector('.dataTD #lblNumStories').innerHTML,
+                                  sewerType : document.querySelector('.dataTD #lblSewer').innerHTML,
+                                  waterType : document.querySelector('.dataTD #lblWater').innerHTML,
+                                  utilities : document.querySelector('.dataTD #lblUtilities').innerHTML,
+                                  heatType : document.querySelector('.dataTD #lblHeat').innerHTML,
+                                  fuelType : document.querySelector('.dataTD #lblFuel').innerHTML,
+                                  centralAir : document.querySelector('.dataTD #lblCentralAir').innerHTML,
+                                  originUrl : document.location.host
+                              };
+                              var hiddenInput = document.getElementById('hiddenInput');
+                              hiddenInput.value = JSON.stringify(dataObj);                            
+                              var hiddenForm = document.getElementById('hiddenForm');                            
+                              hiddenForm.submit();
+                              return false;
+                          }
+    </script>
+    <script type="text/javascript" language="javascript">                                                          
+        function postToRp5217() { 
+
+               var hiddenRP5217Form = document.getElementById('hiddenRP5217Form');  
+                hiddenRP5217Form.setAttribute("target", "_blank");                        
+            hiddenRP5217Form.submit();
+            return false;
+        }
+    </script>
+</head>
+<body>
+    <form name="Form1" method="post" action="propdetail.aspx?swis=312001&amp;printkey=00100000010010000000" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTUwNzQ2NjE2NA9kFgJmD2QWLgIBDw8WAh4HVmlzaWJsZWdkFhYCAw8PFgIeBFRleHQFDEltcHJvdmVtZW50c2RkAgQPDxYEHwEFCFRheCBJbmZvHwBoZGQCBQ8PFgIfAGhkZAIGDw8WAh8AaGRkAgkPDxYCHwBoZGQCCg8PFgIfAGhkZAILDw8WAh8AaGRkAgwPFgIfAGhkAg0PFgIfAGhkAg4PDxYCHwBoZGQCEA8PFgIfAGhkFgICAw8PFgIfAQUBMWRkAgIPDxYCHwBoZGQCAw9kFhICAw8PFgIfAQUMSW1wcm92ZW1lbnRzZGQCBA8PFgIfAGhkZAIFDw8WAh8AaGRkAgcPDxYCHwBoZGQCCQ8PFgIfAGhkZAILDxYCHwBoZAIMDxYCHwBoZAINDw8WAh8AaGRkAg4PDxYCHwBoZBYCAgMPDxYCHwEFATBkZAIEDw8WAh8AaGRkAgUPZBYKZg8PFgIfAGhkZAIBDw8WAh8AaGRkAgIPDxYCHwBoZGQCAw8PFgIfAGhkZAIEDw8WAh8AaGRkAgcPZBYGAgEPDxYEHwEFVENsaWNrIHRoZSBidXR0b24gYmVsb3cgdG8gdmlldy9wcmludCB0YXggYmlsbHMsIHJlY2VpcHRzIGFuZCBkZWxpbnF1ZW50IHRheCBhbW91bnRzLh8AZ2RkAgMPDxYGHgtOYXZpZ2F0ZVVybAVUaHR0cHM6Ly9vbm9uZGFnYS5nbzJnb3YubmV0L2ZhY2VzL2FjY291bnRzP251bWJlcj0zMTIwMDEwMDEwMDAwMDAxMDAxMDAwMDAwMCZzcmM9U0RHHgZUYXJnZXQFBl9ibGFuax8AZ2RkAgUPFgIfAGhkAgoPDxYCHwBoZGQCDA9kFggCAQ8PFgIfAQUTVmlsbGFnZSBvZiBDYW1pbGx1c2RkAgMPDxYCHwEFBjMxMjAwMWRkAgUPDxYCHwEFDDAwMS4tMDEtMDEuMGRkAgcPZBYEAgEPDxYCHwEFC1Byb3BlcnR5ICM6ZGQCAw8PFgIfAWVkZAIND2QWBAIBDxBkZBYAZAIFDzwrAA0AZAIOD2QWAgIFDw8WAh8AaGRkAg8PZBYCAgEPEGRkFgBkAhAPZBYCAgcPZBYCZg8QZGQWAGQCEQ8PFgIfAGdkFjxmDw8WAh8BBQZBY3RpdmVkZAIBDw8WAh8BBQdUYXhhYmxlZGQCAg8PFgIfAQUSOSBSb2xsaW5nIEhpbGxzIFJkZGQCAw8PFgIfAQUSMjIwIC0gMiBGYW1pbHkgUmVzZGQCBA8PFgIfAQUVMjIwIC0gMiBGYW1pbHkgUmVzICAgZGQCBQ8PFgIfAWVkZAIGDw8WAh8BBQVSZXMgMWRkAgcPDxYCHwEFAk5vZGQCCQ8PFgIfAQUUMDIgLSBTaW5nbGVSZXNpZGVuY2VkZAILDw8WAh8BBQlPbGQgc3R5bGVkZAIMDw8WAh8BBQgyMDAwMSAtIGRkAg0PDxYCHwEFDFdlc3QgR2VuZXNlZWRkAg4PZBYCAgEPDxYCHwEFXEZsIDgwICAgICAgICAgICAgICAgICAgICAgICAgICAxMTA3OTQyICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgZGQCDw8PFgIfAQUEMS4zNmRkAhAPDxYCHwEFCiZuYnNwOy0tLS1kZAIRDw8WAh8BBQ4yMDE5IC0gJDMxLDEwMGRkAhIPDxYCHwEFDzIwMTkgLSAkMTEzLDUwMGRkAhMPDxYCHwEFDzIwMTkgLSAkMTEzLDUwMGRkAhQPDxYCHwEFCjIwMTkgLSAkMzNkZAIWDw8WAh8BBQQ1MDUwZGQCFw8PFgIfAQUDOTMzZGQCGA8PFgIfAQUGNTcxNjUzZGQCGQ8PFgIfAQUHMTEwNzk2M2RkAhoPDxYCHwBoZGQCHQ8PFgIfAGhkZAIeD2QWBAIBDw8WAh8BBRNFeGVtcHRpb25zIGZvciAyMDE5ZGQCAw8PFgIfAGhkZAIfDw8WAh8AaGRkAiAPDxYCHwBoZGQCIg8PFgIfAGhkZAIjDw8WAh8AaGRkAhIPDxYCHwBoZBYEAgMPZBYCZg8PZA8QFgNmAgECAhYDFgIeDlBhcmFtZXRlclZhbHVlZBYCHwRkFgIfBGQWAwIDAgMCA2RkAgUPZBYCAgEPPCsADQBkAhMPDxYCHwBoZGQCFA8PFgIfAGhkZAIVDw8WAh8AaGRkAhYPDxYGHwIFM2FsbGltYWdlcy5hc3B4P3N3aXM9MzEyMDAxJnNibD0wMDEwMDAwMDAxMDAxMDAwMDAwMB8BBQ9WaWV3IEFsbCBJbWFnZXMfAGhkZAIYDw8WAh8AaGRkAhkPDxYCHwBoZGQCGg8PFgIfAGhkFgICAQ8QZGQWAGQCHA8PFgIfAGdkFgICAQ8PFgQfAgVzaHR0cHM6Ly9waWN0b21ldHJ5Y29ubmVjdC5zZGdueXMuY29tL21haW4/c3dpcz0zMSZ0bWlkPTAwMS4tMDEtMDEuMCZsYXQ9NDMuMDQwNjQ2NDcwMjUyOSZsbmc9LTc2LjMxNDk2MDk2NTcyMDMmaWQ9MB8AZ2RkAh8PZBYKAgMPDxYCHwEFFzx1bCBpZD0ibWFwTGlua3MiPjwvdWw+ZGQCBQ8PFgYfAgUvcXVpY2tzdHJlYW0uYXNweD9maWxlPVBERk1BUFMvMzEyMDAxLzAwMTAwMC5wZGYfAwUGX2JsYW5rHwBnZGQCCQ8PFgYfAgVndG9HSVMuYXNweD9zd2lzPTMxMjAwMSZzYmw9MDAxMDAwMDAwMTAwMTAwMDAwMDAmcHJpbnRrZXk9MDAxLi0wMS0wMS4wJmdyaWRFYXN0PTU3MTY1MyZncmlkTm9ydGg9MTEwNzk2Mx8DBQZfYmxhbmsfAGdkZAINDw8WBh8CBUJodHRwczovL21hcHMuZ29vZ2xlLmNvbT9xPUA0My4wNDA2NDY0NzAyNTI5LC03Ni4zMTQ5NjA5NjU3MjAzJno9MTkfAwUGX2JsYW5rHwBnZGQCDw8PFgYfAgWiAWh0dHBzOi8vd3d3LmJpbmcuY29tL21hcHMvZGVmYXVsdC5hc3B4P3Y9MiZGT1JNPUxNTFRDUCZjcD00My4wNDA2NDY0NzAyNTI5fi03Ni4zMTQ5NjA5NjU3MjAzJnN0eWxlPWgmbHZsPTE3JnRpbHQ9LTkwJmRpcj0wJmFsdD0tMTAwMCZwaHg9MCZwaHk9MCZwaHNjbD0xJmVuY1R5cGU9MR8DBQZfYmxhbmsfAGdkZBgCBQ5ndkhpc3RvcmljRGVlZA9nZAUOZ3ZOb3Rlc0Rpc3BsYXkPZ2RI8oqZd85V1i6aGC1Xs3d50gpxsA==" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="05D99159" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBwL/qJnNBQLogv7wDwKOt4B4ArmB1eYFArOd68UIAujjja8FAr+88IUKZBoL5C98z0goYpCxQfaUdiJl5A0=" />
+        
+<script type="text/javascript">
+//<!--
+function openWindow(NewUrl){
+	var newWin;
+	newWin = window.open(NewUrl, 'display');
+	if (window.focus) {newWin.focus();}
+}
+
+function openHelp(HelpUrl)
+{	
+	var helpWin = window.open(HelpUrl, 'help', 
+	                          'width=800,height=600,scrollbars,toolbar');
+	if (window.focus) {
+	   helpWin.focus();
+	}
+}
+
+//window.onerror = function() {return true;}
+//-->
+</script>
+<script type="text/javascript" src="/Imate/javascript/dropdown.js"></script>
+<!--[if lt IE 8]>
+<script type="text/javascript" src="/Imate/javascript/common.js"></script>
+<script type="text/javascript">
+  addEvent(window, "load", fixIE, false);
+</script>
+<![endif]-->
+
+
+<script type="text/javascript">
+// <!--
+
+  function setupGisLinkForNewWindow() {
+    var gisLink = document.getElementById('gisLink');
+    if (gisLink) {
+      gisLink.onclick = openGisToFullExtent;
+    }
+  }
+  
+  function openGisToFullExtent() {
+    // We need to get the URL from the existing link because it includes the
+    // site's root URL
+    var gisLink = document.getElementById('gisLink');
+    var url = gisLink.href;
+    
+    // Note: the "gisWindow" ID is the same as the one used by the GIS pin
+    // button on the property details page
+    var gisWindow = window.open(url, 'gisWindow');
+    gisWindow.focus();
+    return false;
+  }
+
+// -->
+</script>
+
+
+<div id="header">
+    <table id="Linkbar1_tblSeals" border="0" bgcolor="White">
+	<tr>
+		<td width="16.5%"><font color="White"><h2 style="margin:0;line-height:1.5em;"><a href="https://www.ongov.net/" target="_blank"><img src="/Imate/images/countyseal.jpg" alt="Onondaga County" /></a></h2></font></td><td width="16.5%"><font color="White"><h2 style="margin:0;line-height:1.5em;"><a href="http://www.syracuse.ny.us" target="_blank"><img src="/Imate/images/cityseal.jpg" alt="City of Syracuse" /></a></h2></font></td><td><font color="White"><a href="https://www.sdgnys.com" target="_blank"><img src="/Imate/images/logo.png" alt="SDG Logo" /></a></font></td><td><font color="White"></font></td>
+	</tr>
+</table>
+    
+    <div id="links">
+        <ul id="linksList">
+            <li class="menu">Navigation<ul><li><a href="/Imate/search.aspx"  >Property Search</a></li><li><a href="/Imate/viewlist.aspx?sort=printkey&amp;swis=all&amp;sitetype=res&amp;advanced=true"  >Last Property Search</a></li><li><a href="/Imate/propdetail.aspx?swis=312001&amp;printkey=00100000010010000000"  >Last Property</a></li></ul></li><li><a href="/Imate/toGIS.aspx"  id="gisLink">GIS Map</a></li><li><a href="/Imate/taxmaps.aspx"  >Tax Maps</a></li><li>|</li><li class="menu">DTF Links<ul><li><a href="https://www.orps.state.ny.us/cfapps/MuniPro/muni_theme/county/county.cfm?swis=31" target="_blank" >County Info</a></li><li><a href="https://www.tax.ny.gov/research/property/default.htm" target="_blank" >DTF Home Page</a></li><li><a href="https://www.tax.ny.gov/forms/orpts_cur_forms.htm" target="_blank" >DTF Forms</a></li><li><a href="https://www.tax.ny.gov/pit/property/exemption/index.htm" target="_blank" >DTF Exemptions</a></li><li><a href="https://www.tax.ny.gov/pit/property/contest/contestasmt.htm" target="_blank" >DTF Grievances</a></li></ul></li><li class="menu">Assessment Info<ul><li><a href="assessmentinfo.aspx" target="_blank" >County Assessment Info</a></li></ul></li><li class="rightAlign"><a href="/Imate/logout.aspx?passthrough=true"  >Log In</a></li><li class="rightAlign"><a href="javascript:openHelp('/Imate/help/browser.aspx?page=propdetail')"  >Help</a></li>
+        </ul>
+        
+        <script type="text/javascript">setupGisLinkForNewWindow();</script>
+        
+    </div>
+</div>
+
+        <table id="Table1" cellspacing="1" cellpadding="8" width="100%" border="0">
+            <tr>
+                <td style="width: 15%" valign="top">
+                    <div id="pnlResButtons">
+	
+                        <table class="reportTable singleBlack" id="Table5" cellspacing="1" cellpadding="15"
+                            border="0">
+                            <tr>
+                                <td class="headerTD" style="height: 24px">
+                                    Residential</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>
+                                        <input type="submit" name="btnTaxID" value="Property Info" id="btnTaxID" class="btnLeft" />
+                                        <input type="submit" name="btnOwner" value="Owner/Sales" id="btnOwner" class="btnLeft" />
+                                        <input type="submit" name="btnInventory" value="Inventory" id="btnInventory" class="btnLeft" />
+                                        <input type="submit" name="btnImprove" value="Improvements" id="btnImprove" class="btnLeft" />
+                                    </p>
+                                    <p>
+                                        
+                                        
+                                        
+                                    </p>
+                                    <p>
+                                        <input name="btnReport" type="button" id="btnReport" class="btnLeft" onclick="goToReport('res')" value="Report" />
+                                        <input type="submit" name="btnComps" value="Comparables" id="btnComps" class="btnLeft" />
+                                        
+                                        
+                                    </p>
+                                    <p>
+                                        </p>
+                                    <!--ADDED FOR RP5217-->
+                                    <p></p>      
+                                    <p>
+                                    <a href="https://storage.googleapis.com/sdg_installers_release/RP5217_Setup.exe" >
+                                    </a></p>
+                                    <p>                                  
+                                    <!--/ADDED FOR RP5217-->   
+                                    <p>
+                                        </p>
+                                    <p>
+                                        </p>
+                                </td>
+                            </tr>
+                        </table>
+                        
+                    
+</div>
+                    
+                    
+                    
+                    
+                    <!-- begin new button creating -->
+                    
+                    <!-- end new button creation -->
+                    <div id="pnlTools">
+	
+                        <table class="reportTable singleBlack" id="tblTools" cellpadding="15">
+                            <tr>
+                                <td class="headerTD">
+                                    Tax Info</td>
+                            </tr>
+                            <tr>
+                                <td align="center">
+                                    <span id="lblOnondagaTaxMsg"><b>Click the button below to view/print tax bills, receipts and delinquent tax amounts.</b></span><br />
+                                    <br />
+                                    <a id="linkOnondagaTax" class="buttonLink" href="https://onondaga.go2gov.net/faces/accounts?number=31200100100000010010000000&amp;src=SDG" target="_blank">Tax Info</a>
+                                    
+                                    <div id="divTaxData">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top" align="center">
+                                    <p align="center">
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                        <p align="center">
+                            &nbsp;</p>
+                    
+</div>
+                    
+                    
+                    
+                </td>
+                <!-- Beginning of Center Panel -->
+                <td valign="top">
+                    
+                    <div id="pnlLabel" class="centerColumn">
+	
+                        <p class="reportSection" align="center">
+                            Municipality of
+                            <span id="lblMunic">Village of Camillus</span></p>
+                        <hr />
+                        <table id="tblPropertyInfo" class="reportTable singleBlack">
+                            <tr>
+                                <td class="headerTD leftalign" width="15%">
+                                    SWIS:</td>
+                                <td class="dataTD" width="25%">
+                                    <span id="lblSwis">312001</span></td>
+                                <td class="headerTD leftalign" width="25%">
+                                    Tax ID:</td>
+                                <td class="dataTD" width="35%">
+                                    <span id="lblTaxID">001.-01-01.0</span></td>
+                            </tr>
+                            <!--<div id="pnlPropNum">
+		-->
+                            <tr>
+                                <td class="headerTD leftalign">
+                                    <span id="lblPropNumHeader">Property #:</span></td>
+                                <td class="dataTD" colspan="3">
+                                    <span id="lblPropNum"></span></td>
+                            </tr>
+                            <!--
+	</div>-->
+                        </table>
+                        <hr />
+                    
+</div>
+                    
+                    
+                    
+                    
+                    <div id="pnlRTaxID" class="centerColumn">
+	
+                        <p class="reportSection" align="center">
+                            Tax Map ID / Property Data</p>
+                        <table class="reportTable singleBlack">
+                            <tr>
+                                <td class="headerTD leftalign" width="25%">
+                                    Status:</td>
+                                <td class="dataTD" width="25%">
+                                    <span id="lblStatus">Active</span></td>
+                                <td class="headerTD leftalign" width="25%">
+                                    Roll Section:</td>
+                                <td class="dataTD" width="25%">
+                                    <span id="lblRollSection">Taxable</span></td>
+                            </tr>
+                            <tr>
+                                <td class="headerTD leftalign" width="25%">
+                                    Address:</td>
+                                <td class="dataTD" colspan="3">
+                                    <span id="lblAddress">9 Rolling Hills Rd</span></td>
+                            </tr>
+                            <tr>
+                                <td class="headerTD leftalign" width="25%">
+                                    Property Class:</td>
+                                <td class="dataTD" width="25%">
+                                    <span id="lblBasePropClass">220 - 2 Family Res</span></td>
+                                <td class="headerTD leftalign" width="25%">
+                                    Site Property Class:</td>
+                                <td class="dataTD" width="25%">
+                                    <span id="lblSitePropClass">220 - 2 Family Res   </span></td>
+                            </tr>
+                            <tr>
+                                <td class="headerTD leftalign" width="25%">
+                                    Ownership Code:</td>
+                                <td class="dataTD" colspan="3">
+                                    <span id="lblOwnerShipCode"></span></td>
+                            </tr>
+                            <tr>
+                                
+                                <td class="headerTD leftalign" width="25%">
+                                    Site:</td>
+                                <td class="dataTD" width="25%">
+                                    <span id="lblSite">Res 1</span></td>
+                                <td class="headerTD leftalign" width="25%">
+                                    In Ag. District:</td>
+                                <td class="dataTD" width="25%">
+                                    <span id="lblAgDistrict">No</span></td>
+                                
+                            </tr>
+                            <tr>
+                                
+                                <td class="headerTD leftalign" width="25%">Zonning Code:</td>
+                                <td class="dataTD" width="25%">
+                                    <span id="lblZoningCode">02 - SingleResidence</span></td>
+                                
+                                <td class="headerTD leftalign" width="25%">
+                                    Bldg. Style:</td>
+                                <td class="dataTD" width="25%">
+                                    <span id="lblBldgStyle">Old style</span></td>
+                            </tr>
+                            <tr>
+                                <td class="headerTD leftalign" width="25%">
+                                    Neighborhood:</td>
+                                <td class="dataTD" width="25%">
+                                    <span id="lblNeighborhood">20001 - </span></td>
+                                <td class="headerTD leftalign" width="25%">
+                                    School District:</td>
+                                <td class="dataTD" width="25%">
+                                    <span id="lblSchoolDist">West Genesee</span></td>
+                            </tr>
+                            <!--<div id="pnlLegalPropDesc">
+		-->
+                            <tr>
+                                <td class="headerTD leftalign" width="25%">
+                                    Property Description:</td>
+                                <td class="dataTD" width="25%" colspan="3">
+                                    <span id="lblLglPropDesc">Fl 80                          1107942                                                      </span></td>
+                            </tr>
+                            <!--
+	</div>-->
+                            <tr>
+                                <td class="headerTD leftalign" width="25%">
+                                    Total Acreage/Size:</td>
+                                <td class="dataTD">
+                                    <span id="lblTotalAcreage">1.36</span></td>
+                                <td class="headerTD leftalign" width="25%">
+                                    Equalization Rate:</td>
+                                <td class="dataTD">
+                                    <span id="lblEqualizationRate">&nbsp;----</span></td>
+                            </tr>
+                            <tr>
+                                <td class="headerTD leftalign" width="25%">
+                                    Land Assessment:</td>
+                                <td class="dataTD" width="25%">
+                                    <span id="lblLandAssess">2019 - $31,100</span></td>
+                                <td class="headerTD leftalign" width="25%">
+                                    Total Assessment:</td>
+                                <td class="dataTD" width="25%">
+                                    <span id="lblTotalAssess">2019 - $113,500</span></td>
+                            </tr>
+                            <tr>
+                                <td class="headerTD leftalign" width="25%">
+                                    Full Market Value:</td>
+                                <td class="dataTD">
+                                    <span id="lblFullMarketValue">2019 - $113,500</span></td>
+                                
+                                <td class="headerTD leftalign" width="25%">
+                                </td>
+                                <td class="dataTD">
+                                    <span id="lblNoPerSqFt"></span></td>
+                                
+                            </tr>
+                            <tr>
+                                <td class="headerTD leftalign" width="25%">
+                                    Deed Book:</td>
+                                <td class="dataTD" width="25%">
+                                    <span id="lblDeedBook">5050</span></td>
+                                <td class="headerTD leftalign" width="25%">
+                                    Deed Page:</td>
+                                <td class="dataTD" width="25%">
+                                    <span id="lblDeedPage">933</span></td>
+                            </tr>
+                            <tr>
+                                <td class="headerTD leftalign" width="25%">
+                                    Grid East:</td>
+                                <td class="dataTD" width="25%">
+                                    <span id="lblGridEast">571653</span></td>
+                                <td class="headerTD leftalign" width="25%">
+                                    Grid North:</td>
+                                <td class="dataTD" width="25%">
+                                    <span id="lblGridNorth">1107963</span></td>
+                            </tr>
+                            <!---->
+                        </table>
+                        <hr>
+                        <!-- Special Districts -->
+                        
+
+<div id="ucSpecialDistricts" class="report_section">
+
+   <p class="reportSection">Special Districts for 2019<br />
+      <span style="color: #990000"></span></p>
+
+   
+   <table class="reportTable singleBlack" width="100%">
+      <tr>
+         
+         <td class="headerTD">Description</td>
+         
+         <td class="headerTD">Units</td>
+         
+         <td class="headerTD">Percent</td>
+         
+         <td class="headerTD">Type</td>
+         
+         <td class="headerTD">Value</td>
+         
+      </tr>
+      
+      <tr>
+         
+         <td class="dataTD">CSW15-Onon co san un      </td>
+         
+         <td class="dataTD">1.5</td>
+         
+         <td class="dataTD">0%</td>
+         
+         <td class="dataTD"></td>
+         
+         <td class="dataTD">0</td>
+         
+      </tr>
+      
+      <tr>
+         
+         <td class="dataTD">CWR40-County water        </td>
+         
+         <td class="dataTD">0</td>
+         
+         <td class="dataTD">0%</td>
+         
+         <td class="dataTD"></td>
+         
+         <td class="dataTD">0</td>
+         
+      </tr>
+      
+      <tr>
+         
+         <td class="dataTD">EM001-Camillus ambulance  </td>
+         
+         <td class="dataTD">0</td>
+         
+         <td class="dataTD">0%</td>
+         
+         <td class="dataTD"></td>
+         
+         <td class="dataTD">0</td>
+         
+      </tr>
+      
+      <tr>
+         
+         <td class="dataTD">VSW01-Camillus vill sewer </td>
+         
+         <td class="dataTD">1.5</td>
+         
+         <td class="dataTD">0%</td>
+         
+         <td class="dataTD"></td>
+         
+         <td class="dataTD">0</td>
+         
+      </tr>
+      
+   </table>
+   
+</div>
+
+                        <hr>
+                        <!-- Taxable Values -->
+                        
+                        <div id="pnlExemptionsCurr">
+		
+                            <p class="reportSection">
+                                <span id="lblExemptionsCurr">Exemptions for 2019</span></p>
+                            <p class="reportSection">
+                                
+                            </p>
+                            <span id="lblNoExemptionsCurr">
+			                     <p align="center"><i>No Details Available</i></p>
+                            </span>
+                        
+	</div>
+                        
+                        
+                        <hr>
+                        
+                        
+                        <!-- Land Types -->
+                        <p class="reportSection">
+                            Land Types</p>
+                        <p>
+                            <table id="tblLandTypes" class="reportTable singleBlack" border="0" width="100%">
+		<tr>
+			<td class="headerTD">Type</td><td class="headerTD" width="30%">Size</td>
+		</tr><tr>
+			<td class="dataTD">Residual</td><td class="dataTD" style="text-align:center;">0.36&nbsp;acres</td>
+		</tr><tr>
+			<td class="dataTD">Leased Land</td><td class="dataTD" style="text-align:center;">1.00&nbsp;acres</td>
+		</tr>
+	</table>
+                        </p>
+                        
+                        <!-- BAS History -->
+                        
+                    
+</div>
+                    
+                    
+                    
+                    
+                </td>
+                <!-- End of Center Panel -->
+                <td valign="top" style="width: 24%">
+                    
+                    <!-- PHOTOS -->
+                    <div id="pnlNoPhotos">
+	
+                        <table class="reportTable singleBlack" cellspacing="1" cellpadding="15" width="300"
+                            border="0">
+                            <tr>
+                                <td class="headerTD">
+                                    Photographs</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center" width="201" height="152">
+                                    No Photo Available
+                                </td>
+                            </tr>
+                        </table>
+                    
+</div>
+                    
+                    <br>
+                    <!-- JIT (Just In Time) TAX BILLS :: Tax Bills created "On the fly" -->
+                    
+                    
+                    <!-- END ... Mark Added Panel for Available Tax Bills -->
+                    <!-- PICTOMETRY LIVELINK -->
+                    
+                    <div id="pnlIpaViewer">
+	
+                        <div id="Div1" class="sideSection">
+                            <!-- <a href="IPAViewer.aspx" visible="false">IPA Viewer</a>   -->
+                            <a id="lnkIpaViewer" class="buttonLink" href="https://pictometryconnect.sdgnys.com/main?swis=31&amp;tmid=001.-01-01.0&amp;lat=43.0406464702529&amp;lng=-76.3149609657203&amp;id=0">Pictometry Connect</a>
+                        </div>
+                    
+</div>
+                    <!-- HISTORIC LINKS -->
+                    
+                    <!-- DOCUMENTS -->
+                    <div id="pnlDocs">
+	
+                        <div id="documents" class="sideSection">
+                            <p class="sideSectionTitle">
+                                Documents</p>
+                            <p>
+                                <span id="lblDocuments">No documents found
+                           for this parcel</span></p>
+                        </div>
+                    
+</div>
+                    <div id="pnlMaps">
+	
+                        <br>
+                        <table class="reportTable singleBlack" id="tblMaps" cellpadding="15" width="100%">
+                            <tr>
+                                <td class="headerTD">
+                                    Maps</td>
+                            </tr>
+                            <tr>
+                                <td align="center" >
+                                    <span id="lblPurchaseTM"></span>
+                                    
+                                    <a id="lnkTaxMap" class="buttonLink" href="quickstream.aspx?file=PDFMAPS/312001/001000.pdf" target="_blank">View Tax Map</a>
+                                    
+                                    <a id="lnkGisMap" class="buttonLink" href="toGIS.aspx?swis=312001&amp;sbl=00100000010010000000&amp;printkey=001.-01-01.0&amp;gridEast=571653&amp;gridNorth=1107963" target="_blank">
+                              Pin Property on GIS Map
+                                    </a>
+                                    
+                                    <a id="lnkGoogleMapsLink" class="buttonLink" href="https://maps.google.com?q=@43.0406464702529,-76.3149609657203&amp;z=19" target="_blank">View in Google Maps</a>
+                                    <a id="lnkBingMapsLink" class="buttonLink" href="https://www.bing.com/maps/default.aspx?v=2&amp;FORM=LMLTCP&amp;cp=43.0406464702529~-76.3149609657203&amp;style=h&amp;lvl=17&amp;tilt=-90&amp;dir=0&amp;alt=-1000&amp;phx=0&amp;phy=0&amp;phscl=1&amp;encType=1" target="_blank">View in Bing Maps</a>
+                                    
+                                    <br />
+                                 <script language="javascript">
+										<!-- // BEGIN
+										
+										function showDisclaimer() {
+											window.alert('Map Disclaimer: Google Maps, Bing Maps ' +
+														 'and Yahoo Maps buttons link to third party sites and ' +
+														 'as such SDG, its clients, and partners make no representations ' +
+														 'or warranties regarding the accuracy or completeness of the ' +
+														 'information provided while using them. These links should not ' +
+														 'be used in any way to perform any task where exact accuracy ' +
+														 'would be necessary and should be considered for informational ' +
+														 'purposes only.');
+											return false;
+										}
+										
+										// END -->
+                                    </script>
+
+                                    <a id="hlinkMapDisclaimer" onclick="return showDisclaimer();" href="#">Map Disclaimer</a>
+                                </td>
+                            </tr>
+                        </table>
+                    
+</div>
+                </td>
+            </tr>
+        </table>
+    </form>
+    
+    <form id="hiddenForm" action="https://email.sdgnys.com/complaint" method="post">
+        <input id="hiddenInput" type="hidden" name="json" value="" />
+    </form>
+    
+        <!-- ADDED FOR RP5217 -->
+        <!--<form id="Form2" action="http://35.196.192.252:8080/rp5217"  method="post"> -->
+         <form id="hiddenRP5217Form" action="https://systemsdevelopmentgroup.com/rp5217" method="post">
+        
+    </form>    
+    <!-- ADDED FOR RP5217 -->
+
+</body>
+</html>

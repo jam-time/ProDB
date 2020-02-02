@@ -1,0 +1,1320 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+<link rel="alternate stylesheet" href="/theme/clients/10756/css/Master4.css"
+	type="text/css" title="master4">
+<link rel="alternate stylesheet" href="/theme/clients/10756/css/Master3.css"
+	type="text/css" title="master3">
+<link rel="alternate stylesheet" href="/theme/clients/10756/css/Master2.css"
+	type="text/css" title="master2">
+<link rel="stylesheet" href="/theme/clients/10756/css/Master1.css"
+	type="text/css" title="master1">
+<link rel="stylesheet" type="text/css" href="/theme/stylesheet.css">
+<link rel="stylesheet" type="text/css" href="/theme/msgbox-styles.css">
+<link rel="stylesheet" type="text/css" href="/theme/clients/10756/css/common.css">
+<script language="JavaScript" src="/js/styleswitcher.js"></script>
+<script language="JavaScript" src="/js/jquery-1.11.1.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+<title>Onondaga County Real Property Tax - Account# 31460000400000230050010000 - Payment Confirmation</title>
+<script language="JavaScript" src="js/common.js"></script>
+<script type="text/javascript">
+	var curPymtsCBrendered = false;
+
+	var tokenBalAfterForCurrent = "balance1";
+	var tokenBalAfterForDelinq  = "balance2";
+	var tokenAmntAppliedForCurrent 	= "appliedAmount1";
+	var tokenAmntAppliedForCurrentDISP 	= "appliedAmount1DISP";
+	var tokenAmntAppliedForDelinq	= "appliedAmount2";
+	var tokenAmntAppliedForDelinqDISP	= "appliedAmount2DISP";
+	var tokenTotalDueForCurrent = "amountDue1";
+	var tokenTotalDueForDelinq = "amountDue2";
+
+	var clickEventTime = Number(300);
+	var clickEventTimeThreshold = Number(300);
+	
+	function debug(s){
+		;;;
+	}
+/** Returns false if at least one of the curr/delq boxes is checkmarked **/
+	var isBlankForm = function (element_checkbox) {
+		var blankForm = false;
+		var selected =false;
+		$('.checkBoxes').each( function(i) {
+		     if (this.checked){
+		        selected = true;
+		        return false;
+		    }
+		});		
+		if (!selected) {
+			$('.checkBoxes1').each( function(i) {
+		    	 if (this.checked){
+		        	selected = true;
+		        	return false;
+		    	}
+			});
+		}	
+		if (!selected){
+			blankForm = true;
+		}	
+		return blankForm;
+	};
+	
+/** Initializes the checkboxes in their default state. Attempts to 'pre-select' all boxes that have the 
+    same PID, sequentially, until one is different
+ **/	
+	var initializeForm = function(alsoCheckMarkIt) {
+		var checkboxes = [];
+		var checkboxes1 = [];
+		var pids = [];
+		var pidsC = [];
+		var pidsD = [];
+
+
+		try{
+			checkboxes = document.getElementsByClassName("checkBoxes");		// delinquent checkboxes
+			checkboxes1 = document.getElementsByClassName("checkBoxes1");	// current checkboxes
+			pids = document.getElementsByClassName("pids");
+			pidsC = document.getElementsByClassName("pidsC");
+			pidsD = document.getElementsByClassName("pidsD");
+		}catch(err){
+			//solve issue with IE not supporting "getElementByClassName"
+			var delinqRows = document.getElementById("etaxTemplateForm:payments_").children[1].children.length;
+			var pz = 0;
+			for(var i = 0; i < delinqRows; i++){
+				checkboxes[i] = document.getElementById("etaxTemplateForm:payments_:"+i+":delinquentCB");
+				pidsD[i] = document.getElementById("etaxTemplateForm:payments_:"+i+":delinquentPID");
+				pids[pz++] = document.getElementById("etaxTemplateForm:payments_:"+i+":delinquentPID");
+			}
+
+			var currRows = document.getElementById("etaxTemplateForm:payments1").children[1].children.length;
+			for(var y = 0; i < currRows; i++){
+				checkboxes1[i] = document.getElementById("etaxTemplateForm:payments1:"+i+":paymentCB");
+				pidsC[i] = document.getElementById("etaxTemplateForm:payments_:"+i+":currentPID");
+				pids[pz++] = document.getElementById("etaxTemplateForm:payments_:"+i+":currentPID");
+			}
+		};
+
+		// get first unique pid
+		var pid = '';
+		for (var i=0; i < pids.length; i++){		
+			if (pids[i] != null && pids[i].value != '' && pids[i].value != null){
+				pid = pids[i].value;
+				break;
+			}
+		}
+		
+		var notContiguous = false;
+		
+		//default all check boxes to checked
+		for(var y = 0; y < checkboxes1.length; y++){
+			if (alsoCheckMarkIt) checkboxes1[y].checked = true;
+			checkboxes1[y].disabled = false;
+			if (pidsC[y] != null && pidsC[y].value != pid){
+				// if doesn't match the primary/first pid; then clear it.
+				checkboxes1[y].checked = false;							
+			}
+		}
+		for(var i = 0; i < checkboxes.length; i++){
+			if (alsoCheckMarkIt) checkboxes[i].checked = true;
+			checkboxes[i].disabled = false;
+			if ( (pidsD[i] != null && pidsD[i].value != pid) || notContiguous ){
+				// if doesn't match the primary/first pid; then clear it.
+				checkboxes[i].checked = false;		
+				notContiguous = true;
+				if (i > 0){
+					/** disable, unless it's the first in the group; so the user can attempt to pay it, and get the error message popup. **/
+					checkboxes[i].disabled = true;			
+				}
+			}
+		}
+	};
+	
+	window.onload = function(){
+		initializeForm(true);
+		$('.checkBoxes1').each(function(i){
+			rowCalculateCurrent(this);
+		});
+		$('.checkBoxes').each(function(i){
+			rowCalculateDelinquent(this);
+		});
+		calculateTotalPaymentByRows();
+	}
+
+	var resetIfBlank = function(preCheckTheBoxes){
+		if (isBlankForm()) {
+			initializeForm(preCheckTheBoxes);
+			hideMultiPIDNotice();
+		}
+	};
+	var hideMultiPIDNotice = function(){
+		$('#multiPIDNotice').hide();
+	}
+	var displayMultiPIDNotice = function(){
+		$('#multiPIDNotice').hide();
+		$('#multiPIDNotice').show('slow');
+	};
+	
+	/**
+	*	IE ONLY: Prevent double click by determining the time of clicks and
+	*	evaluating them on an allowed threshold.*/
+	function preventDoubleClick(){
+		if(navigator.userAgent.match(/MSIE/)!==null){
+			if((Date.now() - clickEventTime) < clickEventTimeThreshold){
+				return true;
+			}
+			clickEventTime = Date.now();
+		}
+		return false;
+	}
+
+	function hide(buttonId) {
+		var element = document.getElementById(buttonId);
+
+		if(element != null) {
+			element.style.display = 'none';
+		}
+	}
+
+	function show(buttonId) {
+		var element = document.getElementById(buttonId);
+
+		if(element != null) {
+			element.style.display = 'inline';
+		}
+	}
+
+	/*--------------------------------------------------*/
+	$(document).ready(function(){
+		/** Add event handler to the checkbox via jquery. */
+	    var currentCheckboxes = $('.checkBoxes1');
+	    var delinquentCheckboxes = $('.checkBoxes');
+
+	    for(var int_i=0; int_i < currentCheckboxes.length; int_i++){
+	      $(currentCheckboxes[int_i]).on("change", onchangeCurrentCheckboxListener);
+	    }
+
+	    for(var int_i=0; int_i < delinquentCheckboxes.length; int_i++) {
+	      $(delinquentCheckboxes[int_i]).on("change", onchangeDelinquentCheckboxListener);
+	    }
+	});
+
+	/**
+	* onChange Listener for Current checkboxes.
+	*/
+	var onchangeCurrentCheckboxListener = function(){
+	  if(preventDoubleClick()){
+	    return false;
+	  }
+	  onchangeCurrentCheckbox(this);
+	  resetIfBlank(false);
+	};
+
+
+	/**
+	* onChange Listener for Delinquent checkboxes.
+	*/
+	var onchangeDelinquentCheckboxListener = function(){
+	  if(preventDoubleClick()){
+	    return false;
+	  }
+	  onchangeDelinquentCheckbox(this);
+	  if ($('.checkBoxes1').size() > 0) {
+	  	  // only reset if has current_tax due; otherwise, form flow is fine.
+		  resetIfBlank(false);
+	  }
+	};
+
+
+	/**
+	* onChange Handler for Current checkboxes.
+	* Determines if current taxes are required for paying delinquent taxes.
+	*/
+	var onchangeCurrentCheckbox = function (element_checkbox) {
+	  var elementId = (element_checkbox).id;
+	  var elementIdTokens = (element_checkbox).id.split(':');
+	  
+	  onSelectValidate(element_checkbox);
+	  if (!onSelectValidate(element_checkbox)){
+	  	  return;
+	  }
+	  
+
+	  try{
+	    rowCalculateCurrent(element_checkbox);
+	  } catch (err){
+	    alert(err);
+	  }
+
+	  var currChkboxes = new Array();
+	  var delinqChkboxes = new Array();
+
+	  /** Gather all checkboxes */
+	  try{
+	    /* get all checkboxes */
+	    currChkboxes = document.getElementsByClassName("checkBoxes1");
+	    delinqChkboxes = document.getElementsByClassName("checkBoxes");
+
+	  } catch(err){
+	    /** getElementsByClassName failed/not supported, resort to alternative. */
+
+	    /* row count on table CURRENT, then get each checkbox.*/
+	    var cRows = document.getElementById("etaxTemplateForm:payments1").children[1].children.length;
+	    for(var x = 0; x < cRows; x++){
+	      currChkboxes[x] = document.getElementById("etaxTemplateForm:payments1:"+ x + ":paymentCB");
+	    }
+
+	    /* row count on table DELINQUENT, then get each checkbox. */
+	    var dRows = document.getElementById("etaxTemplateForm:payments_").children[1].children.length;
+	    for(var y = 0; y < dRows; y++){
+	      delinqChkboxes[y] = document.getElementById("etaxTemplateForm:payments_:"+ y + ":delinquentCB");
+	    }
+	  }
+
+	  /** Get count of checked boxes */
+	  var countCurrChkboxesChecked = 0;
+	  for(var i=0; i < currChkboxes.length; i++){
+	    if(currChkboxes[i].checked){
+	      countCurrChkboxesChecked++;
+	    }
+	  }
+
+	  /** Determine Current tax requirement */
+	  try{
+	    var booleanCurrentRequired = false;
+	    for(var i = 0; i<currChkboxes.length; i++){
+	      var elementIdTokens = currChkboxes[i].id.split(':');
+	      var pmtReqdElement = document.getElementById(elementIdTokens[0] +":"+ elementIdTokens[1] +":"+ elementIdTokens[2] +":paymentCBREQ");
+	      if(pmtReqdElement != null && pmtReqdElement.checked == true && currChkboxes[i].checked == false ){
+	        booleanCurrentRequired = true;
+	      }
+	    }
+
+	    if(booleanCurrentRequired){
+	      countCurrChkboxesChecked = 0;
+	    }else{
+	      /** force enabled on delinquent taxes */
+	      countCurrChkboxesChecked = 1;
+	    }
+	  } catch(err){
+	    ;
+	  }
+	  if(countCurrChkboxesChecked == 0){
+	    /** Uncheck/Disable delinquent checkboxes if current taxes are unchecked */
+	    for(var i=0; i < delinqChkboxes.length; i++){
+	      try{
+	        var delqElement = document.getElementById("etaxTemplateForm:payments_:"+ i +":delinquentCB");
+	            delqElement.checked = false;
+
+	        rowCalculateDelinquent(delqElement);
+	      } catch(err){
+	        ;
+	      }
+
+	      try{
+	        document.getElementById("etaxTemplateForm:payments_:"+ i +":delinquentCB").disabled = true;
+	      } catch(err){
+	        ;
+	      }
+	    }
+	  } else {
+	    /** If at least one current tax is checked, then enable the upper most delinquent tax */
+	    try{
+	      document.getElementById("etaxTemplateForm:payments_:0:delinquentCB").disabled = false;
+	    } catch(err){
+	      ;
+	    }
+	  }
+
+	  calculateTotalPaymentByRows();
+	};
+
+
+	/**
+	* onChange Handler for Delinquent checkboxes.
+	* Delinquent taxes must be paid using a top-down approach.
+	*/
+	var onchangeDelinquentCheckbox = function(element_checkbox) {
+	  var elementId = (element_checkbox).id;
+	  var elementIdTokens = (element_checkbox).id.split(':');
+
+  
+	  if (!onSelectValidate(element_checkbox)){
+	  	  return;
+	  }
+	  
+	  
+	  /** next element */
+	  var nextElementIndex = Number(elementIdTokens[2]) + 1;
+	  var nextElementId = elementIdTokens[0] +":"+ elementIdTokens[1] +":"+ nextElementIndex +":"+ elementIdTokens[3];
+
+	  try{
+	    var boolean_rowCalc = true;
+
+	    /** re-calculate the row values */
+	    if(boolean_rowCalc){
+	      rowCalculateDelinquent(element_checkbox);
+	    }
+
+	    /** determine if next element needs to be disabled */
+	    if((element_checkbox).checked == true){
+	      document.getElementById(nextElementId).disabled = false;
+	    }else {
+	      document.getElementById(nextElementId).checked = false;
+	      document.getElementById(nextElementId).disabled = true;
+	      onchangeDelinquentCheckbox(document.getElementById(nextElementId));
+	    }
+	  } catch(err){
+	    ;
+	  }
+
+	  delinquentCheckboxPrevious(element_checkbox);
+	  calculateTotalPaymentByRows();
+	};
+
+
+ 
+ 	/**
+ 	  * Finds the first selected "PID" value; first in current, then looks in delq;
+ 	  */
+	var getFirstPID = function(self) {
+		var pid = '';
+		var checkboxes = [];
+		var checkboxes1 = [];
+		var pids = [];
+		var pidsC = [];
+		var pidsD = [];
+
+		try{
+			checkboxes1 = document.getElementsByClassName("checkBoxes1");	// current checkboxes
+			checkboxes = document.getElementsByClassName("checkBoxes");		// delinquent checkboxes
+			pidsC = document.getElementsByClassName("pidsC");
+			pidsD = document.getElementsByClassName("pidsD");
+		}catch(err){
+			//solve issue with IE not supporting "getElementByClassName"
+			var pz = 0;
+			var currRows = document.getElementById("etaxTemplateForm:payments1").children[1].children.length;
+			for(var y = 0; i < currRows; i++){
+				checkboxes1[i] = document.getElementById("etaxTemplateForm:payments1:"+i+":paymentCB");
+				if (checkboxes1[i].checked && checkboxes1[i] != self){
+					var o = document.getElementById("etaxTemplateForm:payments_:"+i+":currentPID");
+					pid  = o.value;
+					return pid;
+				}
+			}
+			
+			var delinqRows = document.getElementById("etaxTemplateForm:payments_").children[1].children.length;
+			for(var i = 0; i < delinqRows; i++){
+				checkboxes[i] = document.getElementById("etaxTemplateForm:payments_:"+i+":delinquentCB");
+				if (checkboxes[i].checked && checkboxes[i] != self){
+					var o = document.getElementById("etaxTemplateForm:payments_:"+i+":delinquentPID");
+					var pid = o.value;
+					return pid;
+				}
+			}
+		};
+	
+
+		var pid = '';
+		for (var i=0; i < checkboxes1.length; i++){
+			if (checkboxes1[i].checked && checkboxes1[i] != self){
+				pid = pidsC[i].value;
+				return pid;
+			}		
+		}
+		for (var i=0; i < checkboxes.length; i++){
+			if (checkboxes[i].checked && checkboxes[i] != self){
+				pid = pidsD[i].value;
+				return pid;
+			}
+		}
+			
+		return pid;
+	};
+	
+	
+	
+
+	/**
+	* Verify selected checkbox is allowed to be checked.
+	*/
+	var onSelectValidate = function(obj) {
+	
+		/** identify the first selected PID; only items with that 
+		  * same pid can be selected
+		  **/
+	  var selectedPid = getFirstPID(obj);
+	  if (selectedPid == null || selectedPid == ''){
+	  	  return true;
+	  }
+	  if (!obj.checked){
+	  	/** un-checking is always allowed **/
+	  	return true;
+	  }
+	  
+	  var elementId = (obj).id;
+	  var elementIdTokens = (obj).id.split(':');
+	  
+	  var thisElementIndex = Number(elementIdTokens[2]);
+	  var refName = 'currentPID';
+	  if (elementIdTokens[3] == "paymentCB"){
+	  	refName = 'currentPID';
+	  } else {
+	  	refName = 'delinquentPID';
+	  }
+	  
+	  /** find the PID value of the item being selected; then validate if it's allowed  **/
+	  var pidElementId = elementIdTokens[0] +"\\:"+ elementIdTokens[1] +"\\:"+ elementIdTokens[2] +"\\:"+ refName;
+	  var pidObjs = $('#' + pidElementId);
+	  if (pidObjs.length > 0){
+		  var pidObj = pidObjs[0];
+		  var myPid = pidObj.value;
+		
+		  if (selectedPid != '' && selectedPid != null && selectedPid != myPid){
+		  	  /** Element is not allowed to pay, since it does not match existing PID.**/
+		  	  displayMultiPIDNotice();
+		  	  obj.checked = false;
+		  	  obj.disabled = true;
+		  	  return false;
+		  }
+	  }else {
+			;;
+			///debug('ERROR: cannot find PID element for the clicked object.');	  
+	  }
+	  
+	  return true;
+	};
+
+
+
+	/**
+	* Verify selected checkbox is allowed to be checked.
+	*/
+	var delinquentCheckboxPrevious = function(element_checkbox) {
+	  var elementId = (element_checkbox).id;
+	  var elementIdTokens = (element_checkbox).id.split(':');
+
+	  /** previous element */
+	  var thisElementIndex = Number(elementIdTokens[2]);
+	  var prevElementIndex = (isNaN(thisElementIndex)) ? Number(0) : thisElementIndex - 1;
+
+	  if(prevElementIndex > -1) {
+	    var prevElementId = elementIdTokens[0] +":"+ elementIdTokens[1] +":"+ prevElementIndex +":"+ elementIdTokens[3];
+
+	    try{
+	      var prevElement = document.getElementById(prevElementId);
+	      if(prevElement != null
+	        && prevElement.checked == false
+			    && element_checkbox.checked == true){
+	        alert("Error: Delinquent taxes must be paid in reverse chronological order, without skipping any years.");
+	        element_checkbox.checked = false;
+	        element_checkbox.disabled = true;
+	      }
+	    } catch (err){
+	      ;
+	    }
+
+	  }
+	};
+
+
+	/**
+	* Disable Payment Buttons
+	*/
+	var disablePayButtons = function(){
+	    try{
+	      document.getElementById('etaxTemplateForm:payByCreditCardBtn').disabled = true;
+	    }catch(err){
+	      ;
+	    }
+	    try{
+	      document.getElementById('etaxTemplateForm:payByCheckBtn').disabled = true;
+	    }catch(err){
+	      ;
+	    }
+	    try{
+	      document.getElementById('etaxTemplateForm:payByEFTBtn').disabled = true;
+	    }catch(err){
+	      ;
+	    }
+	};
+
+	/**
+	* Enable Payment Buttons
+	*/
+	var enablePayButtons = function(){
+	    try{
+	      document.getElementById('etaxTemplateForm:payByCreditCardBtn').disabled = false;
+	    }catch(err){
+	      ;
+	    }
+	    try{
+	      document.getElementById('etaxTemplateForm:payByCheckBtn').disabled = false;
+	    }catch(err){
+	      ;
+	    }
+	    try{
+	      document.getElementById('etaxTemplateForm:payByEFTBtn').disabled = false;
+	    }catch(err){
+	      ;
+	    }
+	};
+
+
+	/**
+	* Calculate amounts on selected/deselected Delinquent checkbox.
+	*/
+	var rowCalculateDelinquent = function(checkbox){
+	  var elementId = checkbox.id;
+	  var elementIdTokens = checkbox.id.split(':');
+
+	  var totalDueAmount = Number(document.getElementById(elementIdTokens[0] +":"+ elementIdTokens[1] +":"+ elementIdTokens[2] +":amountDue2").innerHTML.replace('$','').replace(',',''));
+	      totalDueAmount = isNaN(totalDueAmount) ? Number(0) : totalDueAmount;
+	  var appliedAmount = Number(document.getElementById(elementIdTokens[0] +":"+ elementIdTokens[1] +":"+ elementIdTokens[2] +":appliedAmount2").innerHTML.replace('$','').replace(',',''));
+	      appliedAmount = isNaN(appliedAmount) ? Number(0) : appliedAmount;
+
+	  if(checkbox.checked == false){
+	    /* remove amount applied */
+	    var balanceAfter = Number(totalDueAmount).toFixed(2);
+	    var amountToApply = Number(0).toFixed(2);
+	    document.getElementById(elementIdTokens[0] +":"+ elementIdTokens[1] +":"+ elementIdTokens[2] +":appliedAmount2DISP").innerHTML = "$"+(""+amountToApply).replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+	    document.getElementById(elementIdTokens[0] +":"+ elementIdTokens[1] +":"+ elementIdTokens[2] +":balance2").innerHTML = "$"+(""+balanceAfter).replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+	  }else{
+	    var balanceAfter = Number(totalDueAmount - appliedAmount).toFixed(2);
+	    var amountToApply = Number(appliedAmount).toFixed(2);
+	    document.getElementById(elementIdTokens[0] +":"+ elementIdTokens[1] +":"+ elementIdTokens[2] +":appliedAmount2DISP").innerHTML = "$"+(""+amountToApply).replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+	    document.getElementById(elementIdTokens[0] +":"+ elementIdTokens[1] +":"+ elementIdTokens[2] +":balance2").innerHTML = "$"+(""+balanceAfter).replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+	  }
+	};
+
+	/**
+	* Calculate amounts on selected/deselected Current checkbox.
+	*/
+	var rowCalculateCurrent = function (checkbox){
+	  var elementId = checkbox.id;
+	  var elementIdTokens = checkbox.id.split(':');
+
+	  var totalDueAmount = Number(document.getElementById(elementIdTokens[0] +":"+ elementIdTokens[1] +":"+ elementIdTokens[2] +":amountDue1").innerHTML.replace('$','').replace(',',''));
+	      totalDueAmount = isNaN(totalDueAmount) ? Number(0) : totalDueAmount;
+	  var appliedAmount = Number(document.getElementById(elementIdTokens[0] +":"+ elementIdTokens[1] +":"+ elementIdTokens[2] +":appliedAmount1").innerHTML.replace('$','').replace(',',''));
+	      appliedAmount = isNaN(appliedAmount) ? Number(0) : appliedAmount;
+
+	  if(checkbox.checked == false){
+	    /* remove amount applied */
+	    var balanceAfter = Number(totalDueAmount).toFixed(2);
+	    var amountToApply = Number(0).toFixed(2);
+	    document.getElementById(elementIdTokens[0] +":"+ elementIdTokens[1] +":"+ elementIdTokens[2] +":appliedAmount1DISP" ).innerHTML = "$"+(""+amountToApply).replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+	    document.getElementById(elementIdTokens[0] +":"+ elementIdTokens[1] +":"+ elementIdTokens[2] +":balance1").innerHTML = "$"+(""+balanceAfter).replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+	  }else{
+	    var balanceAfter = Number(totalDueAmount - appliedAmount).toFixed(2);
+	    var amountToApply = Number(appliedAmount).toFixed(2);
+	    document.getElementById(elementIdTokens[0] +":"+ elementIdTokens[1] +":"+ elementIdTokens[2] +":appliedAmount1DISP" ).innerHTML = "$"+(""+amountToApply).replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+	    document.getElementById(elementIdTokens[0] +":"+ elementIdTokens[1] +":"+ elementIdTokens[2] +":balance1").innerHTML = "$"+(""+balanceAfter).replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+	  }
+	};
+
+
+	/**
+	* Calculate total payment amount over the rendered tables rows.
+	* For each table row, add the applied amount to a total. If the 
+	* row contains the 'select' checkbox, verify it is checked. 
+	*/
+	var calculateTotalPaymentByRows = function(){
+	  var currentTableRows = new Array();
+	  var delinquentTableRows = new Array();
+
+	  /** Get amount rows */
+	  var currentTable = document.getElementById('etaxTemplateForm:payments1');
+	  if(currentTable != null){
+	  	currentTableRows = (currentTable).getElementsByTagName('TBODY')[0].children;
+	  }
+
+	  var delinquentTable = document.getElementById('etaxTemplateForm:payments_');
+	  if(delinquentTable != null){
+	  	delinquentTableRows = (delinquentTable).getElementsByTagName('TBODY')[0].children;
+	  }
+
+
+	  /**
+	  * Calculate total payment by iterating each row in order to get each APPLIED
+	  * amount.
+	  *   */
+	  var totalCurrentYearSelected = Number(0);
+	  var totalDelinquentYearSelected = Number(0);
+
+	  for(var int_i=0; int_i<currentTableRows.length; int_i++){
+	    var elementAmount = document.getElementById('etaxTemplateForm:payments1:'+int_i+':appliedAmount1');
+	    var elementAmountValue = (elementAmount==null) ? Number(0) : Number(elementAmount.innerHTML.replace("$","").replace(",",""));
+	        elementAmountValue = isNaN(elementAmountValue) ? Number(0) : elementAmountValue;
+
+		/* look for checkbox */
+		var rowCheckbox = document.getElementById('etaxTemplateForm:payments1:'+int_i+':paymentCB');
+		if(rowCheckbox != null && !rowCheckbox.checked) {
+			elementAmountValue = Number(0);
+		}
+
+	    totalCurrentYearSelected = Number(totalCurrentYearSelected) + Number(elementAmountValue);
+	  }
+
+	  for(var int_i=0; int_i<delinquentTableRows.length; int_i++){
+	    var elementAmount = document.getElementById('etaxTemplateForm:payments_:'+int_i+':appliedAmount2');
+	    var elementAmountValue = (elementAmount==null) ? Number(0) : Number(elementAmount.innerHTML.replace("$","").replace(",",""));
+	        elementAmountValue = isNaN(elementAmountValue) ? Number(0) : elementAmountValue;
+
+		/* look for checkbox */
+		var rowCheckbox = document.getElementById('etaxTemplateForm:payments_:'+int_i+':delinquentCB');
+		if(rowCheckbox != null && !rowCheckbox.checked) {
+			elementAmountValue = Number(0);
+		}
+
+	    totalDelinquentYearSelected = Number(totalDelinquentYearSelected) + Number(elementAmountValue);
+	  }
+
+
+	  /**
+	  * Output Total amount to DOM */
+	  var totalAmount = Number(Number(totalCurrentYearSelected) + Number(totalDelinquentYearSelected)).toFixed(2);
+	  document.getElementById("etaxTemplateForm:text7").innerHTML = "$"+(""+totalAmount).replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+
+
+	  /**
+	  * Disable pay buttons if total amount is zero */
+	  if(totalAmount <= Number(0)){
+	    disablePayButtons();
+	  }else{
+	    enablePayButtons();
+	  }
+	};
+
+
+	/**
+	* Calculate total payment amount over rendered checkboxes.
+	* For each selected checkbox, get and add the corresponding 
+	* applied amount to a total.  
+	*/
+	var calculateTotalPaymentByCheckboxes = function () {
+	    var currChkboxes = new Array();
+	    var delinqChkboxes = new Array();
+
+	    /** Gather all checkboxes */
+	    try{
+	      /* get all checkboxes */
+	      currChkboxes = document.getElementsByClassName("checkBoxes1");
+	      delinqChkboxes = document.getElementsByClassName("checkBoxes");
+
+	    } catch(err){
+	      /** Element By Class Name failed, resort to long way */
+	      /* dataTable CURRENT row count */
+	      var cRows = document.getElementById("etaxTemplateForm:payments1").children[1].children.length;
+	      for(var x = 0; x < cRows; x++){
+	        currChkboxes[x] = document.getElementById("etaxTemplateForm:payments1:"+ x + ":paymentCB");
+	      }
+
+	      /* dataTable CURRENT row count */
+	      var dRows = document.getElementById("etaxTemplateForm:payments_").children[1].children.length;
+	      for(var y = 0; y < dRows; y++){
+	        delinqChkboxes[y] = document.getElementById("etaxTemplateForm:payments_:"+ y + ":delinquentCB");
+	      }
+	    }
+
+	    var totalCurrentYearSelected = Number(0);
+	    var totalDelinquentYearSelected = Number(0);
+
+	    /** add selected amounts for CURRENT taxes */
+	    for(var i=0; i<currChkboxes.length; i++){
+	      if(currChkboxes[i].checked == true){
+	        var elemIdTokens = currChkboxes[i].id.split(':');
+	        var elementAmount = document.getElementById(elemIdTokens[0] +":"+ elemIdTokens[1] +":"+ elemIdTokens[2] +":appliedAmount1");
+	        var elementAmountVal = (elementAmount==null) ? Number(0) : Number(elementAmount.innerHTML.replace("$","").replace(",",""));
+	            elementAmountVal = isNaN(elementAmountVal) ? Number(0) : elementAmountVal;
+	        totalCurrentYearSelected = Number(totalCurrentYearSelected) + Number(elementAmountVal);
+	      }
+	    }
+
+	    /** add selected amounts for DELINQUENT  taxes */
+	    for(var i=0; i<delinqChkboxes.length; i++){
+	      if(delinqChkboxes[i].checked == true){
+	        var elemIdTokens = delinqChkboxes[i].id.split(':');
+	        var elementAmount = document.getElementById(elemIdTokens[0] +":"+ elemIdTokens[1] +":"+ elemIdTokens[2] +":appliedAmount2");
+	        var elementAmountVal = (elementAmount==null) ? Number(0) : Number(elementAmount.innerHTML.replace("$","").replace(",",""));
+	            elementAmountVal = isNaN(elementAmountVal) ? Number(0) : elementAmountVal;
+	        totalDelinquentYearSelected = Number(totalDelinquentYearSelected) + Number(elementAmountVal);
+	      }
+	    }
+
+	    var totalAmount = Number(Number(totalCurrentYearSelected) + Number(totalDelinquentYearSelected)).toFixed(2);
+	    document.getElementById("etaxTemplateForm:text7").innerHTML = "$"+(""+totalAmount).replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+
+	    if(totalAmount <= Number(0)){
+	      disablePayButtons();
+	    }else{
+	      enablePayButtons();
+	    }
+	};
+
+</script>
+
+<script type="text/javascript">
+var orgStmtHref= null;
+var selectedPriorYear = null;
+$(document).ready(function(){
+
+	
+	/*------------sequence----------------*/
+	/* set sequence from drop down menu */
+	selectedSequence = $('#etaxTemplateForm\\:sequenceSelectOne').val();
+	
+	$('#etaxTemplateForm\\:sequenceSelectOne').on('change',function(){
+		selectedSequence = this.value;
+		if (selectedSequence != "x") {
+			$('#etaxTemplateForm\\:link1').click();
+		}
+	});
+	
+	/* set original statement url w/o year */
+	orgStmtHref = "&1573648042508";
+	
+	/* set year from first drop menu value */
+	selectedPriorYear = $('#etaxTemplateForm\\:priorYear').val();
+	
+	
+	/* prior year change listener */
+	$('#etaxTemplateForm\\:priorYear').on('change',function(){
+		selectedPriorYear = this.value;
+	});
+	
+	$('#etaxTemplateForm\\:accountMenuLnk2342').on('click', function(e){
+		e.preventDefault();
+		showHidePriorYearBox();
+	});
+	
+	
+	
+	
+	
+});
+
+function displayStatement(){
+	selectedLink = $('#etaxTemplateForm\\:statementSelectOne');
+	if (selectedLink.val() != "x") {
+		window.open(selectedLink.val());
+		selectedLink.val("x");
+	}
+}
+
+function switchStyle(thisObj, thisEvent) {
+	setActiveStyleSheet(thisObj.value);
+}
+
+/* open prior original statement with selected year */
+function ViewPriorYear(){
+	window.open(orgStmtHref+"&year="+selectedPriorYear, "_blank");
+}
+
+function viewPriorYearTest(){
+	
+}
+function showHidePriorYearBox(){
+	var box = $('#multPriorYearsBox');
+	if($(box).is(":visible")){
+		$(box).hide();
+	}else{
+		$(box).show();
+	}
+}
+
+</script>
+<style>
+#multPriorYearsBox { font-size:14px;width:435px;height:auto;border:4px solid #000;background:white;position:absolute;display:none; }
+#multPriorYearsBox .boxTitle { height:auto;background:#EEE;padding:9px 6px;border-bottom:1px solid rgb(195,195,195);text-transform:uppercase;font-weight:bold;width:auto; }
+.priorYearSelMenu option{ padding:5px 6px; }
+#closePYboxBtn{background:white;}
+#closePYboxBtn:hover{color:white;background:black;}
+</style>
+</head>
+
+	<body>
+	
+<form id="etaxTemplateForm" name="etaxTemplateForm" method="post" action="/faces/paymentConfirmation.jsp" class="form" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="etaxTemplateForm" value="etaxTemplateForm" />
+
+		  <div id="container">
+			<div id="configuration">
+				FONT SIZE: <select id="etaxTemplateForm:styleMenu" name="etaxTemplateForm:styleMenu" class="selectOneMenu" size="1" onchange="return switchStyle(this, event);" onclick="return switchStyle(this, event);">	<option value="master1">Normal</option>
+	<option value="master2">Large</option>
+	<option value="master3">Larger</option>
+	<option value="master4">Largest</option>
+</select>
+			</div>
+	<!-- Start header.html --> 
+			
+				 
+<div style="padding-bottom: 6px; border-bottom: solid 2px black; font-size: 20px; font-weight: bold; background-color: rgb(41, 119, 195); color: white;">
+Onondaga County Department of Finance
+</div>
+
+	
+		
+			
+	<!-- End header.html -->
+			<div id="header">
+				<img id="etaxTemplateForm:clientImage" src="/theme/clients/10756/img/onon_new_header.jpg" alt="" class="clientImage" />
+				
+				<div class="paymentDisclaimer"
+	style="padding-bottom: 10px; padding-top: 10px;margin-top: 0; font-style: bold; color: black; background-color: #e6e6e6; min-width:500px; text-align: center">
+	Tax information for properties located in the City of Syracuse can be found <a href="https://www.xpress-pay.com/billSelect.asp" style="text-decoration:underline" target="_blank">here</a> or by calling (315) 448-8310.
+</div>
+
+<!-- Custom Disclaimer Dialog and agreement tracking below -->
+<style>
+	.disclaimerDialog{
+		background: white;
+		padding: 20px;
+		max-width: 800px;
+		min-width: 300px;
+		margin: auto;
+		border: solid 3px gray;
+		min-height: 490px;		
+		position: absolute;
+		top: 150px;
+		z-index:999;
+	}
+	.disclaimerText{
+		margin-left: 20px;
+		border: 1px solid gray;
+		border-bottom: solid 1px black;
+		padding: 8px;
+		min-height: 350px;		
+	}
+</style>
+<div style="display:none" class="disclaimerDialog" id="disclaimerDialogBox">
+   <H3> YOU MUST AGREE TO THE TERMS BELOW:</H3>
+   <span style="font-size: 12px;">(scroll down to read complete terms, then click "I Agree")</span>
+   <div class="disclaimerText">
+		The public information contained herein is furnished as a service by Onondaga County Real Property Tax Services. Property and tax information is available for the towns in Onondaga County. The property and owner information is the most current information as provided by the Town Assessors.
+		<br/><br/>
+		Property assessment information may change during the year but does not become final for taxing purposes until the official filing of the town Final Assessment Roll on or about July 1.
+		<br/><br/>
+		The amount of any unpaid tax represents delinquent County / Town taxes which could include unpaid school / village taxes from prior years, and are owed to Onondaga County.
+		<br/><br/>
+		Onondaga County provides this information with the understanding that it is not guaranteed to be accurate, correct, current or complete. Conclusions drawn from this information are the responsibility of the user. Appropriate agencies should be contacted to verify this information. While every reasonable effort has been made to ensure the timeliness and accuracy of the information, Onondaga County takes no responsibility for errors and omissions. Onondaga County shall not be liable under any circumstances for any claims or damages arising directly or indirectly from information presented herein.
+		<br/><br/>
+		The information obtained from this web site shall not be used for any unlawful purpose. Several categories of information are automatically collected from users and stored in a log file. if necessary, this information can be retrieved and analyzed. Article 156 of the New York state penal law regarding offenses involving computers states that a person is guilty of computer trespass when he knowingly uses a computer or computer service with the intent to commit or attempt to commit or further the commission of any felony. Computer trespass is a class e felony, punishable by a minimum of 3 years and a maximum of 4 years in prison. 
+		<br/><br/><br/><br/>
+   </div>   
+   <span style="font-size: 12px;"> </span>
+   <br/><br/>
+   <input type="button" onclick="javascript:agreeToTerms();" value="   I Agree   ">
+</div>
+<script>
+function showObject(name){
+	var x = document.getElementById(name);
+    if (x != null && x.style.display === "none") {
+        x.style.display = "block";
+    }
+}
+function hideObject(name){
+	var x = document.getElementById(name);
+    if (x != null) {
+        x.style.display = "none";
+    }
+}
+function setCookie(cname, cvalue, minutes) {    
+	var expires = '';
+	if (minutes > 0){
+		var d = new Date();
+		d.setTime(d.getTime() + (minutes * 60 * 1000));
+		expires = ";expires="+d.toUTCString();
+	}	
+	var newCookie = cname + "=" + cvalue + expires + ";path=/";	
+    document.cookie = newCookie;
+//alert(newCookie);		
+}
+
+function getCookie(cname) {
+//alert(document.cookie);
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+
+function verifyTermsAgreement() {
+	var cname = 'ononDisclaimerStatus';
+    var cookie = getCookie(cname);
+    if (cookie == "agreed") {
+        // repeat visitor, don't show the disclaimer
+    } else {		
+		showObject('disclaimerDialogBox');
+    }
+}  
+function agreeToTerms(){
+	var cname = 'ononDisclaimerStatus';
+	setCookie(cname, 'agreed', 0);        
+	hideObject('disclaimerDialogBox');
+}
+verifyTermsAgreement();
+</script>
+			</div>
+			<div id="contentRegion">
+			
+			  <table width="100%" cellpadding="0" cellpadding="0" border="0">
+				<tr>
+					<td id="navigation" rowspan="2">
+					<div class="linkHeader">
+						MENU
+					</div>
+					<div class="link">
+						<img src="/theme/clients/10756/img/_menu_bullet.gif" class="linkImage">&nbsp;
+						<a id="etaxTemplateForm:navigationLnk1" href="http://www.ongov.net/rpts/" target="_blank"><span id="etaxTemplateForm:navigationTxt1" class="linkText">Home</span></a>
+					</div>
+					
+					
+					<div class="link">
+						<img src="/theme/clients/10756/img/_menu_bullet.gif"
+						class="linkImage">&nbsp; <a id="etaxTemplateForm:navigationLnk3" href="/faces/_rlvid.jsp?_rap=pc_EtaxTemplate.doNavigationLnk3Action&_rvip=/paymentConfirmation.jsp" class="link"><span id="etaxTemplateForm:navigationTxt3" class="linkText">Research Taxes</span></a>
+					</div>
+					
+					<table id="etaxTemplateForm:links1" class="dataTableEx" width="100%" border="0" cellpadding="0" cellspacing="0" ><tbody >
+<tr class="link" ><td align="left" >
+							<img
+								src="/theme/clients/10756/img/_menu_bullet.gif"
+								class="linkImage">
+							<span id="etaxTemplateForm:links1:0:text1" class="outputText">&nbsp;</span><a id="etaxTemplateForm:links1:0:linkEx1" href="http://ocfintax.ongov.net/imate/search.aspx?cty=31" class="link" target="_blank"><span id="etaxTemplateForm:links1:0:name1" class="linkText">Assessment Search (SDG Image Mate)</span></a></td>
+</tr>
+</tbody>
+</table>
+
+			<!-- Start leftMenuSubContent --> 
+					
+						
+					
+			<!-- End leftMenuSubContent -->
+					</td>
+					<td id="menu">
+						<a id="etaxTemplateForm:menuLnk1" href="/faces/_rlvid.jsp?_rap=pc_EtaxAccountTemplate.doMenuLnk1Action&_rvip=/paymentConfirmation.jsp" class="requestLink"><span id="etaxTemplateForm:menuTxt1" class="outputText">NEW PROPERTY SEARCH</span></a><span id="etaxTemplateForm:textReceiptslink" class="outputText">&nbsp;&nbsp;|&nbsp;&nbsp;</span><a id="etaxTemplateForm:linkExReceipt" href="showReceipts.jsp?number=31460000400000230050010000" class="outputLinkEx"><span id="etaxTemplateForm:text72" class="outputText">RECEIPTS</span></a><span id="etaxTemplateForm:text174" class="outputText">&nbsp;&nbsp;|&nbsp;&nbsp;</span><a id="etaxTemplateForm:linkEx211paymenth" href="showPaymentHistory.jsp?number=31460000400000230050010000" class="requestLink"><span id="etaxTemplateForm:text71paymenth" class="outputText">PAYMENTS</span></a><span id="etaxTemplateForm:text175342" class="outputText">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+							<div style="position:relative;display:inline-block; text-transform:uppercase;">
+								<a id="etaxTemplateForm:accountMenuLnk2342" href="javascript.void(0);" class="requestLink"><span id="etaxTemplateForm:text2432" class="outputText">View Tax Bill</span></a>
+								<div id="multPriorYearsBox">
+									<div class="boxTitle">
+										<div class="headerText" style="display:inline-block;padding:0 4px;width:90%;">Select Statement and Year</div>
+										<input id="closePYboxBtn" type="button" value="X" onclick="showHidePriorYearBox();" style="display:inline-block;width:20px;height:20px;padding:0px;font-weight:bold;float:right;border:1px solid #000;"/></div>
+									<div style="text-align:center;text-transform:uppercase;" class="dataTableEx">
+										<table id="etaxTemplateForm:priorTaxTable" style="border: 1px solid gray; font-size:85%;" width="100%" border="0" cellpadding="2" cellspacing="2" ><thead ><tr ><th align="center" class="headerClass" scope="col" width="40%" ><div style="overflow: -moz-scrollbars-none; overflow-x: hidden; width: 100%;" ><span class="outputText" style="font-weight:bold;">Bill</span></div></th><th align="center" class="headerClass" scope="col" width="40%" ><div style="overflow: -moz-scrollbars-none; overflow-x: hidden; width: 100%;" ><span class="outputText" style="font-weight:bold;">Year</span></div></th><th class="headerClass" scope="col" width="20%" ><div style="overflow: -moz-scrollbars-none; overflow-x: hidden; width: 100%;" ><img src="/.ibmjsfres/img/1x1.gif" ></img></div></th></tr>
+</thead><tbody >
+<tr class="rowClass1" ><td width="40%" align="center" class="columnClass3" ><div style="overflow: -moz-scrollbars-none; overflow-x: hidden; width: 100%;" >County Tax Bill</div></td>
+<td width="40%" align="center" class="columnClass4" ><div style="overflow: -moz-scrollbars-none; overflow-x: hidden; width: 100%;" >
+													<div align="center">
+													
+														
+													
+													
+													<select id="etaxTemplateForm:priorTaxTable:0:sequenceSelectOne" name="etaxTemplateForm:priorTaxTable:0:sequenceSelectOne" class="priorYearSelMenu" size="1" style="width:80%px;font-size:100%;">	<option value="x">--Select A Year--</option>
+	<option value="2019">2019</option>
+	<option value="2018">2018</option>
+	<option value="2017">2017</option>
+	<option value="2016">2016</option>
+	<option value="2015">2015</option>
+	<option value="2014">2014</option>
+	<option value="2013">2013</option>
+</select>
+													</div>
+												</div></td>
+<td width="20%" class="columnClassScrollFix" ><div style="overflow: -moz-scrollbars-none; overflow-x: hidden; width: 100%;" >
+<script type="text/javascript" language="Javascript">function dpf(f) {var adp = f.adp;if (adp != null) {for (var i = 0;i < adp.length;i++) {f.removeChild(adp[i]);}}};function apf(f, pvp) {var adp = new Array();f.adp = adp;var i = 0;for (k in pvp) {var p = document.createElement("input");p.type = "hidden";p.name = k;p.value = pvp[k];f.appendChild(p);adp[i++] = p;}};function jsfcljs(f, pvp, t) {apf(f, pvp);var ft = f.target;if (t) {f.target = t;}f.submit();f.target = ft;dpf(f);};</script>
+<a href="#" style="width:80%; padding:0 15px;" onclick="if(typeof jsfcljs == 'function'){jsfcljs(document.forms['etaxTemplateForm'],{'etaxTemplateForm:priorTaxTable:0:j_id_jsp_639318683_57':'etaxTemplateForm:priorTaxTable:0:j_id_jsp_639318683_57'},'_blank');}return false" class="siteButton">Go</a></div></td>
+</tr>
+<tr class="rowClass2" ><td width="40%" align="center" class="columnClass3" ><div style="overflow: -moz-scrollbars-none; overflow-x: hidden; width: 100%;" >School Tax Bill</div></td>
+<td width="40%" align="center" class="columnClass4" ><div style="overflow: -moz-scrollbars-none; overflow-x: hidden; width: 100%;" >
+													<div align="center">
+													
+														
+													
+													
+													<select id="etaxTemplateForm:priorTaxTable:1:sequenceSelectOne" name="etaxTemplateForm:priorTaxTable:1:sequenceSelectOne" class="priorYearSelMenu" size="1" style="width:80%px;font-size:100%;">	<option value="x">--Select A Year--</option>
+	<option value="2019">2019</option>
+	<option value="2018">2018</option>
+	<option value="2017">2017</option>
+	<option value="2016">2016</option>
+	<option value="2015">2015</option>
+	<option value="2014">2014</option>
+	<option value="2013">2013</option>
+</select>
+													</div>
+												</div></td>
+<td width="20%" class="columnClassScrollFix" ><div style="overflow: -moz-scrollbars-none; overflow-x: hidden; width: 100%;" ><a href="#" style="width:80%; padding:0 15px;" onclick="if(typeof jsfcljs == 'function'){jsfcljs(document.forms['etaxTemplateForm'],{'etaxTemplateForm:priorTaxTable:1:j_id_jsp_639318683_57':'etaxTemplateForm:priorTaxTable:1:j_id_jsp_639318683_57'},'_blank');}return false" class="siteButton">Go</a></div></td>
+</tr>
+</tbody>
+</table>
+
+										
+									</div>
+								</div>
+							</div>
+						<a id="etaxTemplateForm:linkEx20" href="#" class="outputLinkEx"><span id="etaxTemplateForm:text90" class="outputText"></span></a><a id="etaxTemplateForm:linkEx30" href="#" class="outputLinkEx"><span id="etaxTemplateForm:text100" class="outputText"></span></a>
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+					
+					
+					
+						<!-- Start Current Year Select One Menu--> 
+						
+					
+						
+						<!-- End Current Year Select One Menu--> 
+					</td>
+				</tr>
+				<tr>
+					<td id="content">
+					
+					<div id="hud">
+						<div class="headerText">
+							OWNERSHIP INFORMATION
+						</div>
+						<center>
+						<table class="hud-container" width="100%">
+							<thead>
+								<tr>
+									<th class="hud-header">Tax Map Number</th>
+									<th class="hud-header">Owner Name</th>
+									<th class="hud-header">Mailing Address</th>
+									
+									
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="data20-center">
+										
+										
+											<span id="etaxTemplateForm:text3" class="outputText">314600004.-23-05.1                      </span>
+										
+									</td>
+									<td class="data20-center"><span id="etaxTemplateForm:text4" class="outputText">MORRISON JAMES</span></td>
+									<td class="data20-left"><span id="etaxTemplateForm:text5" class="outputText">2092 BLACK SPRUCE CIR<br>MANLIUS, NY 13104</span></td>
+										
+								</tr>
+								
+							</tbody>
+						</table>
+						</center>
+					</div>
+					
+					
+					
+					
+					<div class="bodyarea">
+					
+					
+					
+								<center>
+								<input id="etaxTemplateForm:synchronize" type="hidden" name="etaxTemplateForm:synchronize" value="false" />
+								<div class="paymentBody">
+									<table class="paymentHeader">
+										<tr>
+											<td align="left">
+												<span class="outputText">PAYMENT INFORMATION</span>
+											</td>
+										</tr>
+									</table>
+									
+									
+
+
+								<br>
+								<div class="headerText">
+								<div style="padding-left:10px;">
+									<span id="etaxTemplateForm:text8" class="outputText">DELINQUENT TAX</span><span style="font-style:normal;"> - Select the years you wish to pay.</span>
+									
+								</div>
+								</div>
+									<table id="etaxTemplateForm:payments_" style="border: 1px solid #dcdcdc;" class="dataTableEx" width="99%" border="0" cellpadding="2" cellspacing="2" ><thead ><tr ><th class="headerClass" scope="col" ><span id="etaxTemplateForm:payments_:addedOnTotal" class="outputText">Select to Pay</span></th><th align="center" class="headerClass" scope="col" ><span id="etaxTemplateForm:payments_:year2text" class="outputText">Year</span></th><th align="center" class="headerClass" scope="col" ><span id="etaxTemplateForm:payments_:custcolumn1text" class="outputText">Base Tax</span></th><th align="center" class="headerClass" scope="col" ><span id="etaxTemplateForm:payments_:custcolumn2text" class="outputText">Penalty</span></th><th align="center" class="headerClass" scope="col" ><span id="etaxTemplateForm:payments_:custcolumn3text" class="outputText">Other Fees</span></th><th class="headerClass" scope="col" ><span id="etaxTemplateForm:payments_:amountDue2text" class="outputText">Current Total Due</span></th><th align="center" class="headerClass" scope="col" style="display:none;" ><span id="etaxTemplateForm:payments_:balance2text" class="outputText">Balance After Payment</span></th><th class="headerClass" scope="col" style="display:none;" ><span id="etaxTemplateForm:payments_:appliedAmount2text" class="outputText">Applied</span></th></tr>
+</thead><tbody >
+<tr class="rowClass1" ><td class="data25-center-dt" ><input id="etaxTemplateForm:payments_:0:delinquentCB" type="checkbox" name="etaxTemplateForm:payments_:0:delinquentCB" checked="checked" class="checkBoxes" /><input id="etaxTemplateForm:payments_:0:delinquentPID" type="text" name="etaxTemplateForm:payments_:0:delinquentPID" value="837159207" class="pids pidsD" size="5" style="display:none;" /></td>
+<td align="center" class="data25-center-dt" ><a id="etaxTemplateForm:payments_:0:link1" href="/faces/_rlvid.jsp?_rap=!accountDetail&_rvip=/paymentConfirmation.jsp&year=2019&seqno=0&page=1" style="float:left;text-align:left;" class="requestLink"><span id="etaxTemplateForm:payments_:0:year1" class="outputText">2019</span>
+											<br/>
+											</a>
+										
+											
+										
+										
+										&nbsp;
+										</td>
+<td align="center" class="data25-center-dt" ><span id="etaxTemplateForm:payments_:0:taxesDueTxt" class="outputText">$40,303.34</span></td>
+<td align="center" class="data25-center-dt" ><span id="etaxTemplateForm:payments_:0:pniDueTxt" class="outputText">$805.98</span></td>
+<td align="center" class="data25-center-dt" ><span id="etaxTemplateForm:payments_:0:feeDueTxt" class="outputText">$0.00</span></td>
+<td class="data25-center-dt" ><span id="etaxTemplateForm:payments_:0:amountDue2" class="outputText">$41,109.32</span></td>
+<td align="center" style="display:none;" class="data25-center-dt" ><span id="etaxTemplateForm:payments_:0:balance2" class="outputText">$0.00</span></td>
+<td style="display:none;" class="data25-center-dt" ><span id="etaxTemplateForm:payments_:0:appliedAmount2" class="outputText" style="display:none;">41109.32</span><span id="etaxTemplateForm:payments_:0:appliedAmount2DISP" class="outputText">$41,109.32</span></td>
+</tr>
+<tr class="rowClass2" ><td class="data25-center-dt" ><input id="etaxTemplateForm:payments_:1:delinquentCB" type="checkbox" name="etaxTemplateForm:payments_:1:delinquentCB" checked="checked" class="checkBoxes" /><input id="etaxTemplateForm:payments_:1:delinquentPID" type="text" name="etaxTemplateForm:payments_:1:delinquentPID" value="837159207" class="pids pidsD" size="5" style="display:none;" /></td>
+<td align="center" class="data25-center-dt" ><a id="etaxTemplateForm:payments_:1:link1" href="/faces/_rlvid.jsp?_rap=!accountDetail&_rvip=/paymentConfirmation.jsp&year=2018&seqno=0&page=1" style="float:left;text-align:left;" class="requestLink"><span id="etaxTemplateForm:payments_:1:year1" class="outputText">2018</span>
+											<br/>
+											</a>
+										
+											
+										
+										
+										&nbsp;
+										</td>
+<td align="center" class="data25-center-dt" ><span id="etaxTemplateForm:payments_:1:taxesDueTxt" class="outputText">$35,466.27</span></td>
+<td align="center" class="data25-center-dt" ><span id="etaxTemplateForm:payments_:1:pniDueTxt" class="outputText">$4,964.59</span></td>
+<td align="center" class="data25-center-dt" ><span id="etaxTemplateForm:payments_:1:feeDueTxt" class="outputText">$0.00</span></td>
+<td class="data25-center-dt" ><span id="etaxTemplateForm:payments_:1:amountDue2" class="outputText">$40,430.86</span></td>
+<td align="center" style="display:none;" class="data25-center-dt" ><span id="etaxTemplateForm:payments_:1:balance2" class="outputText">$0.00</span></td>
+<td style="display:none;" class="data25-center-dt" ><span id="etaxTemplateForm:payments_:1:appliedAmount2" class="outputText" style="display:none;">40430.86</span><span id="etaxTemplateForm:payments_:1:appliedAmount2DISP" class="outputText">$40,430.86</span></td>
+</tr>
+</tbody>
+</table>
+
+
+									
+
+									
+									
+
+								
+								
+								<br>
+									<table class="paymentTotal">
+										<tr>
+											<td class="data75-right">
+												TOTAL PAYMENT:<br><span style="font-size: 80%;">(Service fee not included)</span>
+											</td>
+											<td class="data25-right">
+												<span id="etaxTemplateForm:text7" class="outputText">$81,540.18</span>
+											</td>
+										</tr>
+									</table>
+								<br>
+												<div class="paymentFooter">
+													<input type="submit" value="Cancel" id="etaxTemplateForm:cancelBtn2" name="etaxTemplateForm:cancelBtn2" class="siteButton" onmouseout="return hoverOut(this, event);" onmouseover="return hoverOver(this, event);" />
+													
+													
+													
+													
+													&nbsp;&nbsp;
+													<input type="submit" value="Pay By Credit Card" id="etaxTemplateForm:payByCreditCardBtn" name="etaxTemplateForm:payByCreditCardBtn" class="siteButton paybtns" onclick="hide('etaxTemplateForm:payByCreditCardBtn'); show('processingFake1');" onmouseout="return hoverOut(this, event);" onmouseover="return hoverOver(this, event);" />
+													<input
+														type="submit"
+														id="processingFake1"
+														value="Processing..."
+														disabled="disabled"
+														style="display: none;"
+														class="siteButton">
+													&nbsp;&nbsp;
+													<input type="submit" value="Pay By Check" id="etaxTemplateForm:payByCheckBtn" name="etaxTemplateForm:payByCheckBtn" class="siteButton paybtns" onclick="hide('etaxTemplateForm:payByCheckBtn'); show('processingFake2');" onmouseout="return hoverOut(this, event);" onmouseover="return hoverOver(this, event);" />
+													<input
+														type="submit"
+														id="processingFake2"
+														value="Processing..."
+														disabled="disabled"
+														style="display: none;"
+														class="siteButton">
+													&nbsp;&nbsp;
+													
+													<input
+														type="submit"
+														id="processingFake3"
+														value="Processing..."
+														disabled="disabled"
+														style="display: none;"
+														class="siteButton">
+												</div>
+												<div>
+													<!-- <div class="paymentDisclaimer">
+	There are unpaid taxes on this parcel. Select above to pay now or click on the year to view bill detail. 
+</div> -->
+
+<div class="paymentDisclaimer"  >
+	TAX YEARS MUST BE PAID IN FULL IN REVERSE CHRONOLOGICAL ORDER. (Newest to Oldest)
+</div>
+
+<div class="paymentDisclaimer" style="font-style:italic; color:maroon;" >
+	* Eligible property owners may repay delinquent taxes in monthly installments. Click <a href="http://ongov.net/rpts/documents/InstallmentAgreement.pdf" target="_blank">here</a> for more information.
+</div>
+
+
+
+												
+												</div>
+								</div>
+								</center>
+							
+
+	
+					</div>
+					</td>
+				</tr>
+			   </table>
+			</div>
+			<div id="footer">
+				<a id="etaxTemplateForm:footerLnk1" href="/faces/_rlvid.jsp?_rap=pc_EtaxTemplate.doFooterLnk1Action&_rvip=/paymentConfirmation.jsp" class="requestLink"><span id="etaxTemplateForm:footerTxt1" class="footerText">PRIVACY POLICY</span></a>
+				&nbsp;|&nbsp;
+				<a id="etaxTemplateForm:footerLnk2" href="/faces/_rlvid.jsp?_rap=pc_EtaxTemplate.doFooterLnk2Action&_rvip=/paymentConfirmation.jsp" class="requestLink"><span id="etaxTemplateForm:footerTxt2" class="footerText">SECURITY POLICY</span></a>
+				&nbsp;|&nbsp;
+				<a id="etaxTemplateForm:footerLnk3" href="/faces/_rlvid.jsp?_rap=pc_EtaxTemplate.doFooterLnk3Action&_rvip=/paymentConfirmation.jsp" class="requestLink"><span id="etaxTemplateForm:footerTxt3" class="footerText">LEGAL DISCLAIMER</span></a>
+				<br>
+				&#169;2019 <a href="http://www.hecorp.com" class="footerText" target="_blank">Hamer Enterprises.</a> - All Rights Reserved.
+			</div>
+		  </div>
+	  	<!-- Start footer.html -->
+			
+				<STYLE>
+#container  {
+	width: 940px;
+	min-width:940px;
+}
+#header img.clientImage{
+	width: 940px;
+	height: 185px;
+}
+</STYLE>
+<!-- <div align="center">
+	<div class="paymentDisclaimer" style="font-style:bold; color:black; background-color:white; width:945px;">
+	No tax information available for parcels located in the City of Syracuse  please call 315-448-8310 <br/>or<br/> visit: https://www.xpress-pay.com/billSelect.asp
+</div>
+</div> -->
+
+			
+		<!-- End footer.html -->
+		<input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="j_id15527:j_id15528" />
+</form>
+		
+		<script type="text/javascript">
+			var styleMenu = document.getElementById("etaxTemplateForm:styleMenu");
+			var selectedStyle = getActiveStyleSheet();
+			for (var i=0; i < styleMenu.options.length; i++) {
+				if (styleMenu.options[i].value == selectedStyle){
+					styleMenu.options[i].selected = true;
+				}
+				else {
+					styleMenu.options[i].selected = false;
+				}
+			}
+		</script>
+	
+
+	</body>
+
+</html>
